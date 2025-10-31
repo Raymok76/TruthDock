@@ -1,6 +1,6 @@
-# AI Trader Website
+# Truth Dock Website
 
-A static website that displays Truth Social post analyses from multi-agent AI trading advisors (OpenAI & DeepSeek).
+A static website that displays Truth Social post analysis.
 
 ## 📁 Project Structure
 
@@ -23,9 +23,11 @@ AITrader/
 Run the main analysis script to fetch and analyze Truth Social posts:
 
 ```bash
-cd /home/raymok/projects/agents/6_mcp
+python3 truthsocial1.py
+or
 uv run truthsocial1.py
 ```
+**remember to add login and pw into your own .env file
 
 This will:
 - Fetch latest post from @realDonaldTrump
@@ -37,7 +39,8 @@ This will:
 ### 2. Generate Website
 
 ```bash
-cd /home/raymok/projects/agents/6_mcp/AITrader
+python3 run generate_html.py
+or
 uv run generate_html.py
 ```
 
@@ -60,22 +63,6 @@ python -m http.server 8000
 # Then visit: http://localhost:8000
 ```
 
-## 📸 Required Assets
-
-You need to provide two image files in the `assets/` folder:
-
-1. **trump_icon.jpg** - Donald Trump poster icon
-   - Recommended size: 200x200px
-   - Format: JPG or PNG
-   - Used as poster avatar
-
-2. **truth_logo.png** - Truth Social logo
-   - Recommended size: 300x100px (wide)
-   - Format: PNG with transparency
-   - Used as branding header
-
-If these files are missing, the website will still work but won't show the images.
-
 ## 🌐 Deploy to GitHub Pages
 
 ### Option A: Manual Deployment
@@ -84,7 +71,6 @@ If these files are missing, the website will still work but won't show the image
 
 2. Initialize git (if not already):
 ```bash
-cd /home/raymok/projects/agents/6_mcp/AITrader
 git init
 ```
 
@@ -109,40 +95,6 @@ git push -u origin main
 
 6. Visit: `https://YOUR_USERNAME.github.io/YOUR_REPO/`
 
-### Option B: Automated Deployment Script
-
-Create a deployment script:
-
-```bash
-#!/bin/bash
-# deploy.sh
-
-cd /home/raymok/projects/agents/6_mcp
-
-# Step 1: Run analysis (optional - only if you want fresh data)
-# uv run truthsocial1.py
-
-# Step 2: Generate HTML
-cd AITrader
-uv run generate_html.py
-
-# Step 3: Deploy to GitHub
-git add index.html
-git commit -m "Update: $(date '+%Y-%m-%d %H:%M:%S')"
-git push origin main
-
-echo "✅ Deployed to GitHub Pages!"
-```
-
-Make it executable:
-```bash
-chmod +x deploy.sh
-```
-
-Run whenever you want to update:
-```bash
-./deploy.sh
-```
 
 ## ⚙️ Configuration
 
@@ -159,16 +111,6 @@ INITIAL_VISIBLE_BATCHES = 1  # Shows 5 posts
 MAX_POSTS_ON_MAIN_PAGE = 30
 ```
 
-## 📱 Features
-
-- ✅ **Responsive Design**: Works on desktop, tablet, and mobile
-- ✅ **Infinite Scroll**: Lazy loading for smooth performance
-- ✅ **Bilingual Support**: Handles both English and Cantonese outputs
-- ✅ **Smart Parsing**: Extracts stock/options recommendations from AI text
-- ✅ **Fast Loading**: Only loads initial 5 posts, rest on scroll
-- ✅ **Static Site**: Perfect for GitHub Pages (no backend needed)
-- ✅ **Graceful Degradation**: Works even without JavaScript
-
 ## 🔄 Workflow
 
 ### Regular Updates
@@ -177,30 +119,19 @@ When you have new Truth Social posts to analyze:
 
 ```bash
 # 1. Run analysis
-cd /home/raymok/projects/agents/6_mcp
+python3 truthsocial1.py
+or
 uv run truthsocial1.py
 
 # 2. Generate updated HTML
-cd AITrader
+python3 generate_html.py
+or
 uv run generate_html.py
 
 # 3. Deploy (if using GitHub Pages)
 git add index.html
 git commit -m "Update $(date '+%Y-%m-%d')"
 git push
-```
-
-### Automation with Cron
-
-You can automate this with a cron job:
-
-```bash
-crontab -e
-```
-
-Add this line to run daily at 9 AM:
-```
-0 9 * * * cd /home/raymok/projects/agents/6_mcp && uv run truthsocial1.py && cd AITrader && uv run generate_html.py && git add index.html && git commit -m "Auto-update $(date)" && git push
 ```
 
 ## 🎨 Customization
@@ -235,10 +166,6 @@ The system automatically detects if output is Cantonese:
 
 **Solution**: Run `truthsocial1.py` first to generate data
 
-```bash
-cd /home/raymok/projects/agents/6_mcp
-uv run truthsocial1.py
-```
 
 ### Images not showing
 
@@ -283,16 +210,4 @@ With lazy loading:
 - `../truthsocial_trader.py` - AI advisor implementations
 - `../truthsocial_memory_db.py` - Database functions
 - `../truthsocial_db.py` - Post tracking database
-
-## 📝 License
-
-Part of the AI Agents project.
-
-## 🙋 Support
-
-For issues or questions, refer to the main project documentation.
-
----
-
-**Generated with ❤️ by AI Multi-Agent Trading System**
 
