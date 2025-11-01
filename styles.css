@@ -412,18 +412,18 @@ body {
     font-weight: 600;
     padding: 0.25rem 0.75rem;
     border-radius: 4px;
-    color: white;
+    color: white !important;
     margin-left: 0.25rem;
     vertical-align: middle;
     letter-spacing: 0.5px;
 }
 
-.action-buy {
-    background-color: #27AE60;
+.action-badge.action-buy {
+    background-color: #27AE60 !important;
 }
 
-.action-sell {
-    background-color: #E74C3C;
+.action-badge.action-sell {
+    background-color: #E74C3C !important;
 }
 
 /* Expiry date badge in Options Picks section */
