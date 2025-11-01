@@ -405,6 +405,42 @@ body {
     content: "";
 }
 
+/* Action badges (BUY/SELL) in Stock Picks section */
+.action-badge {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    color: white;
+    margin-left: 0.25rem;
+    vertical-align: middle;
+    letter-spacing: 0.5px;
+}
+
+.action-buy {
+    background-color: #27AE60;
+}
+
+.action-sell {
+    background-color: #E74C3C;
+}
+
+/* Expiry date badge in Options Picks section */
+.expiry-badge {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.25rem 0.6rem;
+    border: 2px solid #E74C3C;
+    border-radius: 4px;
+    background-color: white;
+    color: #E74C3C;
+    margin-left: 0.25rem;
+    vertical-align: middle;
+    letter-spacing: 0.3px;
+}
+
 /* ===== Loading & End Messages ===== */
 .loading, .end-message {
     text-align: center;

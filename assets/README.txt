@@ -22,3 +22,4 @@ Where to get these images:
 - Ensure you have proper usage rights
 - Optimize images for web (compress to reduce file size)
 
+

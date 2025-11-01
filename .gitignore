@@ -9,6 +9,20 @@ venv/
 .venv
 .uv/
 
+# Python scripts (don't push to GitHub Pages)
+*.py
+
+# Database files (don't push to GitHub Pages)
+*.db
+*.sqlite
+*.sqlite3
+
+# Shell scripts (don't push to GitHub Pages)
+*.sh
+
+# Documentation files (don't push to GitHub Pages)
+*.md
+
 # IDE
 .vscode/
 .idea/
@@ -20,6 +34,10 @@ venv/
 .DS_Store
 Thumbs.db
 *.log
+
+# Windows metadata files
+*:Zone.Identifier
+*:mshield
 
 # Temporary files
 *.tmp
