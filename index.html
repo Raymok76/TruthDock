@@ -3,33 +3,1033 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Trader - Truth Social Stock Analysis</title>
+    <title>AlphaFrog -- Financial News and Analysis</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="main-header">
-        <h1>TRUTH DOCK</h1>
-        <p class="subtitle">Truth Social Stock Analysis</p>
+        <img src="assets/mainlogo02.png" alt="Alpha Frog Logo" class="header-logo">
     </header>
     
     <main id="posts-container">
         
     <article class="post-card " data-batch="1">
-        <div class="analysis-date" style="text-align: left;">分析日期: 2025-11-01 21:08:31</div>
-        <div class="post-header">
-            <div class="header-left">
-                <h2 class="section-title">Stock 股票</h2>
+        <div class="date-container">
+            <div class="time-ago-tag" data-analysis-date="2025-11-06T01:34:58.329291"></div>
+            <div class="dates-right">
+                <div class="analysis-date">分析日期: 2025-11-06 01:34:58</div>
+                <div class="current-date">現在日期: <span class="current-date-time"></span></div>
+            </div>
+        </div>
+        <div class="header-vote-wrapper">
+            <div class="post-header">
+                <div class="header-left">
+                    <h2 class="section-title">Stock 股票</h2>
+                    
+        <div class="summary-card">
+            <div class="card-ticker">XOM</div>
+            <div class="card-action card-action-buy">買入 (BUY)</div>
+        </div>
+        
+                </div>
                 
+                <div class="header-center">
+                    <h2 class="section-title">Options 期權</h2>
+                    
+        <div class="summary-card">
+            <div class="card-ticker">XOM</div>
+            <div class="card-action card-action-call">CALL</div>
+            
+            <div class="option-timeline" data-post-date="2025-11-05T15:28:27.863Z" data-expiry="2026-01-31">
+                <div class="timeline-bar">
+                    <div class="timeline-indicator">
+                        <div class="timeline-label timeline-current">最佳時機</div>
+                    </div>
+                </div>
+                <div class="timeline-labels">
+                    <div class="timeline-label timeline-target">目標: $115</div>
+                    <div class="timeline-label timeline-expiry">2026-01-31</div>
+                </div>
+            </div>
+            
+        </div>
+        
+                </div>
+            </div>
+            
+            <div class="meta-content-cell">
+                <div class="truth-logo">
+                    <img src="assets/truth_logo.png" alt="Truth Social" onerror="this.style.display='none'">
+                </div>
+                
+                <div class="post-meta">
+                    <img src="assets/trump_icon.jpg" alt="Trump" class="poster-icon" onerror="this.style.display='none'">
+                    <div class="meta-text">
+                        <div class="meta-date">
+                            Post Date: 2025-11-05 15:28:27
+                        </div>
+                        <div class="meta-name">Donald J. Trump</div>
+                        <div class="meta-id">@realDonaldTrump</div>
+                    </div>
+                </div>
+                
+                
+                <div class="post-language-tabs">
+                    <button class="lang-tab active" data-lang="eng" onclick="switchLanguage(this, 'eng')">Eng</button>
+                    <button class="lang-tab" data-lang="zh" onclick="switchLanguage(this, 'zh')">中</button>
+                </div>
+                <div class="post-content post-content-eng">
+                    Happy Anniversary! On this day, November 5th, one year ago, we had one of the Greatest Presidential Victories in History — Such an Honor to represent our Country. Our Economy is BOOMING, and Costs are coming way down. Affordability is our goal. Love to the American People! PRESIDENT DONALD J. TRUMP
+                </div>
+                <div class="post-content post-content-zh" style="display: none;">
+                    祝賀周年紀念！在這一天，11月5日，一年前，我們取得了歷史上最偉大的總統勝利之一——能夠代表我們的國家真是榮幸。我們的經濟正在蓬勃發展，成本也大幅下降。可負擔性是我們的目標。愛美國人民！總統唐納德·J·特朗普
+                </div>
+        
+            </div>
+            
+            <div class="vote-cell">
+                
+            <div class="vote-section" data-post-id="19">
+                <!-- Stock Vote -->
+                <div class="vote-item">
+                    <div class="vote-question">
+                        你怎麼看這次的<span class="vote-keyword-stock">股票</span>推薦?
+                    </div>
+                    <div class="vote-options">
+                        <button class="vote-button vote-positive" data-post-id="19" data-vote-type="stock" data-vote-value="positive" onclick="handleVote(this)">
+                            <span class="vote-option-text">看好</span>
+                            <span class="vote-count" id="stock-positive-count-19">211票</span>
+                            <span class="vote-percentage" id="stock-positive-pct-19">58.1%</span>
+                        </button>
+                        <button class="vote-button vote-negative" data-post-id="19" data-vote-type="stock" data-vote-value="negative" onclick="handleVote(this)">
+                            <span class="vote-option-text">看淡</span>
+                            <span class="vote-count" id="stock-negative-count-19">152票</span>
+                            <span class="vote-percentage" id="stock-negative-pct-19">41.9%</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Options Vote -->
+                <div class="vote-item">
+                    <div class="vote-question">
+                        你怎麼看這次的<span class="vote-keyword-options">期權</span>推薦?
+                    </div>
+                    <div class="vote-options">
+                        <button class="vote-button vote-positive" data-post-id="19" data-vote-type="options" data-vote-value="positive" onclick="handleVote(this)">
+                            <span class="vote-option-text">看好</span>
+                            <span class="vote-count" id="options-positive-count-19">200票</span>
+                            <span class="vote-percentage" id="options-positive-pct-19">55.1%</span>
+                        </button>
+                        <button class="vote-button vote-negative" data-post-id="19" data-vote-type="options" data-vote-value="negative" onclick="handleVote(this)">
+                            <span class="vote-option-text">看淡</span>
+                            <span class="vote-count" id="options-negative-count-19">163票</span>
+                            <span class="vote-percentage" id="options-negative-pct-19">44.9%</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            </div>
+        </div>
+        
+        <div class="post-body">
+            <div class="analysis-section section-gray-1">
+                <h3>📈 股票建議</h3>
+                <div class="analysis-content">
+                    <p><strong>Top 1: XOM <span class="action-badge action-buy">BUY</span></strong></p>
+<ul>
+<li>理由：特朗普強調美國經濟「BOOMING」及成本下降，能源需求持續穩健，ExxonMobil受益於政策支持和油價中高位的基本面穩定。股價近期走勢穩健，符合中期（1-4週）增長預期，且過去多次分析驗證XOM為政策驅動下的優質防守標的。</li>
+<li>信心水平：高</li>
+<li>主要風險：油價劇烈波動、地緣政治突發事件、政策執行延遲</li>
+</ul>
+<br>
+<p><strong>Top 2: CAT <span class="action-badge action-buy">BUY</span></strong></p>
+<ul>
+<li>理由：經濟繁榮與基建需求推動重型設備製造業強勁反彈，CAT股價近期大幅上升3.37%，反映市場對基建投資的信心。特朗普經濟正面訊號將延續對製造業的利好，適合中短期（1-3週）趨勢交易。</li>
+<li>信心水平：中高</li>
+<li>主要風險：政策落地不及預期、宏觀經濟波動影響基建需求</li>
+</ul>
+<br>
+<p><strong>Top 3: TGT <span class="action-badge action-buy">BUY</span></strong></p>
+<ul>
+<li>理由：Target受惠於成本下降及消費者信心回暖，股價近期強勢反彈2%以上，短期內有明顯反彈動能。消費板塊受特朗普「負擔能力」政策支持，適合把握短期（1-2週）反彈機會。</li>
+<li>信心水平：中</li>
+<li>主要風險：消費者支出波動、通脹壓力反覆</li>
+</ul>
+                </div>
+            </div>
+            
+            <div class="analysis-section section-gray-2">
+                <h3>📊 期權建議</h3>
+                <div class="analysis-content">
+                    <p><strong>Top 1: XOM  <span class="action-badge action-call">CALL</span> <span class="strike-badge">$115</span> <span class="expiry-badge">exp 2026-01-31</span></strong></p>
+<ul>
+<li>理由：配合中期能源需求增長與政策支持，認購期權可放大股價上漲收益，行使價115美元合理，適合1-3個月中期操作。</li>
+<li>信心水平：中高</li>
+<li>主要風險：油價波動風險、時間價值損耗</li>
+</ul>
+<br>
+<p><strong>Top 2: CAT  <span class="action-badge action-call">CALL</span> <span class="strike-badge">$580</span> <span class="expiry-badge">exp 2025-12-31</span></strong></p>
+<ul>
+<li>理由：基建需求帶動製造業股價上升，CAT看漲期權捕捉短中期利好，行使價580美元具合理上漲空間，適合12月底到期的短中期操作。</li>
+<li>信心水平：中</li>
+<li>主要風險：宏觀經濟波動、基建政策落地延遲</li>
+</ul>
+<br>
+<p><strong>Top 3: TGT  <span class="action-badge action-call">CALL</span> <span class="strike-badge">$90</span> <span class="expiry-badge">exp 2026-01-31</span></strong></p>
+<ul>
+<li>理由：Target短期反彈明顯，看漲期權適合參與消費回暖行情，1月到期給予足夠時間捕捉股價上行。</li>
+<li>信心水平：中</li>
+<li>主要風險：消費市場波動、季節性因素影響</li>
+</ul>
+                </div>
+            </div>
+            
+            <div class="analysis-section section-gray-1">
+                <h3>🎯 總結</h3>
+                <div class="analysis-content">
+                    <p><strong>整體推薦優先度：</strong></p>
+<p>以能源股ExxonMobil（XOM）為首選，結合基建強勢的CAT及消費回暖的TGT，形成「能源+基建+消費」三角布局。這三隻股票均受特朗普正面經濟訊號及政策支持推動，且近期股價表現已反映市場信心。期權策略則配合中短期時間窗口，利用認購期權放大收益，風險可控。</p>
+<br>
+<p><strong>整體信心水平：</strong></p>
+<p>XOM信心最高，屬高信心級別；CAT及TGT屬中高及中等信心水平。期權建議同樣以中高及中等信心為主，兼顧收益與風險。</p>
+<br>
+<p><strong>關鍵風險須監控：</strong></p>
+<ul>
+<li>油價及能源市場波動仍是最大不確定因素，尤其地緣政治可能導致價格劇烈波動。</li>
+<li>政府政策落實速度不一，基建及消費刺激政策可能受限於政治僵局。</li>
+<li>消費市場受通膨及經濟基本面影響波動較大，需密切關注數據變化。</li>
+</ul>
+<br>
+<p><strong>市場展望：</strong></p>
+<p>你知唔知，特朗普呢單貼文就係用勝利周年紀念同「經濟繁榮、成本降低」嘅正面訊號，為市場注入一支強心針。依家能源股XOM穩住基本盤，基建龍頭CAT跟住經濟起飛，消費股Target因為負擔能力政策短線爆發，呢啲都係今時今日市場最夠料嘅板塊。雖然政治同經濟波動唔少，但呢啲波動正正係高手入場嘅機會，唔使怕短期震盪，穩紮穩打先係王道。期權配合用得好，賺幅可以放大，等你轉眼捉住行情。江山易改，本性難移，能源同基建依然係政策核心，今次要玩就玩精選，唔好亂咁撈。細水長流，低吸高拋，穩賺唔蝕先係贏家！</p>
+                </div>
+            </div>
+        </div>
+    </article>
+    
+
+    <article class="post-card " data-batch="1">
+        <div class="date-container">
+            <div class="time-ago-tag" data-analysis-date="2025-11-06T01:43:04.449729"></div>
+            <div class="dates-right">
+                <div class="analysis-date">分析日期: 2025-11-06 01:43:04</div>
+                <div class="current-date">現在日期: <span class="current-date-time"></span></div>
+            </div>
+        </div>
+        <div class="header-vote-wrapper">
+            <div class="post-header">
+                <div class="header-left">
+                    <h2 class="section-title">Stock 股票</h2>
+                    
+        <div class="summary-card">
+            <div class="card-ticker">XOM</div>
+            <div class="card-action card-action-buy">買入 (BUY)</div>
+        </div>
+        
+                </div>
+                
+                <div class="header-center">
+                    <h2 class="section-title">Options 期權</h2>
+                    
+        <div class="summary-card">
+            <div class="card-ticker">XOM</div>
+            <div class="card-action card-action-call">CALL</div>
+            
+            <div class="option-timeline" data-post-date="2025-11-05T14:32:51.569Z" data-expiry="2026-01-31">
+                <div class="timeline-bar">
+                    <div class="timeline-indicator">
+                        <div class="timeline-label timeline-current">最佳時機</div>
+                    </div>
+                </div>
+                <div class="timeline-labels">
+                    <div class="timeline-label timeline-target">目標: $115</div>
+                    <div class="timeline-label timeline-expiry">2026-01-31</div>
+                </div>
+            </div>
+            
+        </div>
+        
+                </div>
+            </div>
+            
+            <div class="meta-content-cell">
+                <div class="truth-logo">
+                    <img src="assets/truth_logo.png" alt="Truth Social" onerror="this.style.display='none'">
+                </div>
+                
+                <div class="post-meta">
+                    <img src="assets/trump_icon.jpg" alt="Trump" class="poster-icon" onerror="this.style.display='none'">
+                    <div class="meta-text">
+                        <div class="meta-date">
+                            Post Date: 2025-11-05 14:32:51
+                        </div>
+                        <div class="meta-name">Donald J. Trump</div>
+                        <div class="meta-id">@realDonaldTrump</div>
+                    </div>
+                </div>
+                
+                
+                <div class="post-language-tabs">
+                    <button class="lang-tab active" data-lang="eng" onclick="switchLanguage(this, 'eng')">Eng</button>
+                    <button class="lang-tab" data-lang="zh" onclick="switchLanguage(this, 'zh')">中</button>
+                </div>
+                <div class="post-content post-content-eng">
+                    https://www.youtube.com/live/Bo8bMllxsDg?si=xO7KgV1wiz0jENDA
+
+[Music] Ladies and gentlemen, the President of the United States [Music] [Applause] Thank you. Thank you very much. That was quite a formal entrance. I thought we were just going to sit down and talk a little bit. We talk about exactly one year ago we had that big beautiful victory. Exactly one year. And last night it was uh you know not expected to be a victory. It was very Democrat areas but I I don&#39;t think it was good for Republicans. I don&#39;t think it was good. I&#39;m not sure it was good for anybody. But we had uh an interesting evening and we learned a lot and we&#39;re going to talk about that and I&#39;ll say a few remarks and then after that I&#39;ll ask the press to leave. Uh the press has been very very nice to us the last couple of months. They were great to us in terms of the foreign visits with China, Japan, South Korea, Malaysia, and they were actually terrific. So, I want to thank you for that. I&#39;m sure you&#39;ll get back to your normal ways soon, but uh but we did a great job over in China, and we&#39;ve done a great job in turning off wars. We stopped eight wars, eight wars, and we have one to go, as you probably know, and that&#39;ll get stopped also. But we&#39;ve done a great job. So, it&#39;s a really it&#39;s really been an honor to do it and I did it with many of the people in this room. Every one of you I know and every one of you I like. I like our leaders. I like everybody. But I thought we&#39;d have a discussion after the press leaves about uh what last night represented and what we should do about it and also about the shutdown and how that relates to last night. I think uh if you read the pollsters, the shutdown was a big factor. Negative for the Republicans and that was a big factor and they say that I wasn&#39;t on the ballot was the the biggest factor, but I don&#39;t know about that, but I was honored that they said that. And uh I just want to thank everybody for being here and a very special thanks to Vice President J Vance who&#39;s doing a terrific job. JD, thank you very much. [Applause] as well as the Senate leadership team that has been working very hard, working really, I will tell you, nobody&#39;s working any harder representing the American people, including Senator John Thun. John, thank you. Great job. [Applause] Senator John Baraso. John, thank you very much. Senator Tom Cotton, wherever you may be. Tom, thank you. Thank you, Tom. Thank you. S Senator Shelley Moore Capitol, who&#39;s been very involved. Thank you, Shelly. Senator James Langford from one of my favorite states. 77 out of 77. I always say 77 out of 77. Reagan was 56. That was the record. We got se We got every one of them. Thank you, James. and a fantastic friend of mine and an incredible advocate during the election a year ago, Tim Scott. Thank you, Tim. [Applause] So, as you know, we are in the midst of a disastrous Democratcreated government shutdown, and it is Democrat created, but I don&#39;t think they&#39;re getting really the blame that they should. That&#39;s now officially the longest shutdown in American history. the uh Democrat radicals in the Senate have shown zero interest in reopening the government and uh I don&#39;t think they&#39;ll act so soon. A lot of people disagree. I&#39;ve been saying for the last 30 days, we&#39;ve had four or five different points. Yes, sir. They&#39;re going to get it right now. We should have it done in a day. I&#39;ve heard that about four times. I heard it after Kings. You know, they said I was a king and I heard it after Kings. I heard it after a couple of other moments in time. And I said, &quot;No, I don&#39;t believe so.&quot; Oh, and now I heard it&#39;s after the election. I don&#39;t believe so. I think they will. I think they&#39;re kamicazi pilots. I just got back from Japan. I talked about the kamicazi pilots. I think these guys are kamicazi. They&#39;ll take down the country if they have to. So, I don&#39;t think so. Millions of Americans are going to be without SNAP benefits. And I I will say about SNAP benefits. So, when I was president, we had seven billion dollars worth. And now they have many times that because these benefits were given to anybody that asked and they&#39;re up to I hear many just many times 47 billion. Uh so it wasn&#39;t the purpose of SNAP. It was it was for people that really had problems down and out people that really had problems. But during Biden they gave it to anybody that wanted it. I think it&#39;s something you have to talk about because the numbers are incredible. But countless public servants are now not being paid and the air traffic control system is under increasing strain. We must get the government back open soon and really immediately. We have to get it up. We have the hottest economy we&#39;ve ever had and it&#39;s affecting the stock market now a little bit. But the stock market as of Friday has hit many record highs during the last nine months. Many. And uh it will again, this is just the beginning because when these plants that are being built right now start opening up. We&#39;ve never had anything like this as a boom. There&#39;s a construction boom right now, but that&#39;s going to be bigger than that. That&#39;s going to be an economic boom as as soon as they open up and it&#39;s going to be something special. We have car companies coming in. Uh when I was in Japan, Toyota, Mr. Toyota, I said, &quot;What&#39;s your name?&quot; Toyota. I said, &quot;Oh, you&#39;re rich.&quot; He said, &quot;How much of the company do you own?&quot; 92.1%. I said, &quot;I&#39;m glad you said the one. He wants to be.&quot; I said, &quot;You&#39;re a rich guy.&quot; And he said, &quot;Uh, I&#39;m investing10 billion dollars in the US.&quot; And uh you know who I&#39;m talking about, right? You introduced me, Mr. Senator. Uh you introduced me originally when you were the ambassador to Japan. He&#39;s he&#39;s still good. He&#39;s still strong, but he&#39;s he had no interest in investing in this country. Now he&#39;s investing 10 billion as of one week ago in building new plants. We have auto plants coming in incredibly. But we have AI and all of them. And uh we can&#39;t be extorted to give $1.5 trillion to people that came into the country illegally, many from prisons, many drug dealers. A lot of people came in from mental institutions. Uh they want to give a lot of money to the people that came in illegally. We have to get them out. We can&#39;t. No country can sustain that. That&#39;s not like an attack on our country and no country. These are not going to be productive people. These are going to be anti-productive people. And we can be all have big hearts. I have a bigger heart than anybody. But we can&#39;t let that happen. It&#39;s time for Republicans to do what they have to do, and that&#39;s terminate the filibuster. It&#39;s the only way you can do it. Uh and if you don&#39;t terminate the filibuster, you&#39;ll be in bad shape. We won&#39;t pass any legislation. There&#39;ll be no legislation passed for three and a quart. We have three and a quarter years. That&#39;s a long time. Uh, but when they can&#39;t do an extension, and John, I think they&#39;ve done an extension every single time they&#39;ve ever been asked forever. This is the first time they haven&#39;t done an extension. Extensions are supposed to be easy. But if they won&#39;t do an extension, they won&#39;t do any bill, even a simple bill. And we should do our own bills. We should get out. We should do our own bills. We should open up. We We should start tonight with the country is open. Congratulations. Then we should pass uh voter ID. We should pass no mailin voting. We should pass all the things that we want to pass. Make our election secure and safe because California is a disaster. Uh many of the states are disasters. But can you imagine when they vote almost unanimously against voter ID? All we want is voter ID. You go to a grocery store, you have to give ID. You go to a gas station, you give ID. But for voting, they want no voter ID. That&#39;s only for one reason because they cheat. We would pass that in 15 minutes. If you don&#39;t get it, you&#39;ll never pass that. You&#39;ll never talk about mail-in ballots. Mail-in ballots make it automatically corrupt. If you have mail-in ballots, automatically it&#39;s correct. Even Jimmy Carter, they had the Carter Commission after he got out of office, and he had a group of very distinguished people, Democrats and Republicans, and they passed uh they recommended things take place. It was a long time ago. And they said about mail-in ballots, if there is mail-in ballots, there will definitely be corruption because, you know, they pass through too many hands. I mean, you go in to vote and they want your card. Even me, I went into Palm Beach, you go in to vote, they want your card, you&#39;re this, you&#39;re that. They say, &quot;I&#39;m sorry to do this, sir, but I have to look at your identification.&quot; I said, &quot;That&#39;s all right. I I love that.&quot; And but, you know, you&#39;re really not going to get away with much. It was very, very professional, very good, the way it&#39;s supposed to be, but uh these people don&#39;t want that. They have legislation in California where it&#39;s illegal to ask somebody for voter ID. If you ask somebody for voter ID, if you&#39;re an official and you say, &quot;I&#39;d like to see your voter ID.&quot; They can arrest you, okay? They can arrest you because they want to cheat and they get away with it. And the Republicans let them get away with it. And we won&#39;t do that if we have the filibuster. So, I&#39;m just going to we&#39;re going to talk about that a little bit. And we&#39;re going to see if we can sway because I know we have a lot of uh not a lot. I&#39;d say half feel this way. Maybe a little bit less than half. and it&#39;s time to have a really good talk. Um, if I thought that they weren&#39;t going to pass the filibuster, I wouldn&#39;t even bring it up. They&#39;re going to pass it within the first hour. If they take power, and it&#39;s more likely that they take power if we don&#39;t do because we&#39;re not going to be passing any legislation. They&#39;re going to approve anything. We&#39;re going to go three and a quarter years. There won&#39;t be one bill that we&#39;re going to pass because the easiest thing to pass is exactly right now what they won&#39;t pass. And they&#39;ll do that and they&#39;ll wreak havoc. But let&#39;s assume they get in. They&#39;re doing it anyway, so it wouldn&#39;t matter. They&#39;re doing it anyway. And you know, I have a case where I have great US attorneys that can&#39;t be approved because of the blue slips. The blue slips, I think you should terminate blue slips, too. It&#39;s a mental termination because it&#39;s really a custom. But if you have a Democrat senator or two, two is bad, but it doesn&#39;t make any difference. If you have one senator writes a negative letter on some great US attorney, we had it in Manhattan Southern District. Jay Clayton, one of the most respected lawyers in the whole country by far. One of the most respected and uh couldn&#39;t get approved. The courts approved him. The courts couldn&#39;t believe it. They did it like instantly. He went to the best schools, got the best marks, top of his class, everything was perfect. I mean, he was like led the perfect life. went to Sullivan and Cromwell almost immediately became the head of Sullivan and Cromwell you know the most uh prestigious law firm I would say in the country just about whether it&#39;s Sullivan or two or three I could name but Sullivan I would say really maybe number one he was the head of Sullivan and Cromwell for like 20 years he went to the SEC was flawless he did it for me he was the SEC chairman he was flawless then he went to uh Apollo where he was the chairman of Apollo and it was flawless. Everything went good. The stock went through the roof and everything. I asked him to go to the Southern District and he said, &quot;I&#39;ll do what you&#39;d like to do, sir. This is a very high quality person.&quot; But he couldn&#39;t get approval from Schumer. Schumer didn&#39;t approve him. The best student, the best schools, everything. He&#39;s like flawless. And the courts actually said, &quot;You&#39;re not approving.&quot; Jay Clayton, right, Lindsay? You heard this. The courts actually interceded and they approved him. But that&#39;s an unusual guy. We have other people that are really good, but people don&#39;t know how good, top students, top colleges, and they&#39;re US attorneys, and they won&#39;t be approved. They&#39;re not going to be approved. We have one in Los Angeles who&#39;s phenomenal, but no, the senators, the Democrats are, you know, again, they&#39;re kamicazis. Uh the Democrats are not going to approve them. Blue slips are a disaster. So the only people I can get approved are Democrats. I was told that by the Democrats. We&#39;ll only approve Democrats. I said, &#39; Really? Is that right? Not going to work that way. Not going to work that way with me. But the blue slips are a total disaster. Uh we will I have 10 people right now that will not be that are doing a phenomenal job and they will be out of office pretty soon. They&#39;ve got another two, three weeks, a couple of them, and then they&#39;re going to have to leave. And uh it it&#39;s actually a blight on their record because you know nobody knows why they live. But it looks like they served eight weeks and then they had to leave. But they&#39;re not going to get the approval because the Democrat radical left lunatic senators are saying you can&#39;t you we&#39;re not going to approve you. And if we&#39;re not going to approve you, I had actually one Republican who got two great letters, but it turned out that he was a rhino, but that was a nice term for him. Now, he got two letters of approval. And when I said two Democrats approved him, I had to fire him because I figured if two Democrats approved him, they wrote the most beautiful letters. I found out, man, this is strange. And he was no good. I fired him. I He was He was really not much of a Republican. The recommendation of that one wasn&#39;t such a good recommendation. Someday I&#39;ll tell you who recommended him, but it wasn&#39;t exactly the best. But when I saw two, you know, when I when I saw the two senators from Virginia gave him glowing marks, Tim, I said, &quot;Let me see this.&quot; I read the most beautiful letters I&#39;ve ever seen. I said, &quot;Uh, I called him up. I said, &quot;Sorry, you&#39;re fired. Get the hell out of here.&quot; And but it&#39;s it&#39;s a horrible thing. Blue slips is a horrible thing because I have the right to pick judges and I have the right to pick US attorneys and this takes away the right from me. And I think we&#39;re going to go to court on it. And you know, we&#39;ll see what happens in court, but it it gives the president, it takes away the right of the president to pick people to serve on the court and to serve as US attorneys, which is very important. But the biggest thing is the filibuster. Uh we have to get the country going. We will pass legislation at levels you&#39;ve never seen before, and it&#39;ll be impossible to beat us. By the way, if they do, they they&#39;re going to do it anyway. And they are going to immediately do the filibuster. And when they do the filibuster, they&#39;re going to pack the court. They want five, at least five justice. Now they I hear it&#39;s up to five. I actually heard up to seven and up to nine. Okay? They want new judges. They want to pack the court. And they will do it in first day. Maybe the week. Maybe they&#39;ll slow it down because there&#39;s no reason to rush, but they&#39;ll do it first week. They&#39;ll vote on this. And I have friends over there that are Democrats. Very I&#39;m close to a lot of people. And I asked him about that because some people say, &quot;Well, maybe they won&#39;t do that.&quot; I mean, they destroyed the career of Mansion and Cinema and they got them out. They were the only objectors. Nobody else is going to object. They&#39;re going to do it the first day. They&#39;re going to pack the court. They&#39;re going to make DC a state and they&#39;re going to make Puerto Rico a state. So now they pick up two states. They pick up four senators. Okay. You think you have problems? They&#39;re going to do all of the things. They&#39;re going to pick up electoral votes. It&#39;s going to be a very very bad situation. And it&#39;s done. It&#39;s done. As soon as they attain power now, if we do what I&#39;m saying, you they&#39;ll never they&#39;ll most likely never attain power because we will have passed every single thing that you can imagine that it&#39;s good and all good for the country and there&#39;ll be no reason to. If we don&#39;t do that, uh people will say they&#39;re not doing much and they&#39;re in power. So, the good news is we did the great big beautiful bill and it&#39;s the greatest thing we could have done. And the smartest thing with John and and uh our speaker of the house who&#39;s so good, Mike Mike Johnson, uh we did all in one bill. If we didn&#39;t, John, it would be a problem because, you know, we would have gotten a small piece passed. A lot of people wanted to do that. A lot of people in the room wanted to do that. They went along with me and John and everybody and we we got this thing passed. Honestly, it&#39;s four years worth of goodies and no tax on tips, no tax on social security, no tax on, think of it, no tax on overtime. It&#39;s an unbelievable tax cut for the workers and for business where business is going to create jobs and we are. We&#39;re creating jobs at levels that nobody&#39;s ever seen before. All these things are good. We have to be able to get the word out. If we don&#39;t get the word out, we&#39;re making a very big mistake. So, I have this long, beautiful, and very boring speech. I won&#39;t bother reading it. But uh because we can just start talking and uh I think it&#39;s very important we have to get the country open and the way we&#39;re going to do it this afternoon is to uh terminate the filibuster and it&#39;s possible you&#39;re not going to do that and I&#39;m going to go by your wishes. You&#39;re very smart people. We&#39;re good friends. But I think it&#39;s a tremendous mistake. Really, it would be a tragic mistake actually. Uh it&#39;s time. It&#39;s time. If I thought they weren&#39;t going to approve, I&#39;d sort of be with you. I&#39;d be fine. I&#39;d be neutral to with you. But knowing that they&#39;re going to pass it as soon as they get any semblance of control, they&#39;ll pass it first thing. Then it&#39;s like we have to do it first. And we have two years and we we&#39;ll end up with two, three years and we&#39;ll have this country so perfect. We will have passed more legislation than any Congress and any sen group of senators or group of congressmen and uh we will get it through. They&#39;ll send it to us, we&#39;ll send it to them. It&#39;ll be a beautiful machine. Uh otherwise, we&#39;re just going to sit around and argue with these people all day long and and they&#39;re highly unrealistic, highly unrealistic. Many of them are radical uh subversives, frankly. So, I want to thank everybody and we&#39;re going to talk and I want to thank the press for treating us so really well for that foreign trip. It was an amazing We had a just an amazing meeting. Don&#39;t forget uh two months ago it looked like the whole world was in trouble over rare earth and that&#39;s no longer even a subject of people talk about. It was all worked out very quickly. Without tariffs I couldn&#39;t have done it. I I put a 100% tariff on China. As soon as I heard it within 20 minutes I put a 100% tariff on China on President Xi who&#39;s really a friend of mine as much as he can be a friend. He&#39;s a tough man. He&#39;s a tough man. Smart man actually. very smart. The press doesn&#39;t like it when I call them very smart. You know, they think I&#39;m not supposed to call them smart, but he leads 1.4 billion people without question. In fact, during the meeting, we were there and couple of you were there and some of you saw it. So, he&#39;s here and he&#39;s got about six people on each side. And every one of those people were standing like this. They were in attention. And I made a comment to one of them and they got no response. I said, &quot;Are you going to answer me?&quot; He got no response and president she didn&#39;t let him have any. So there&#39;s any question I said I want my cabinet to behave like that. That&#39;s the way I&#39;m demanding that my I want them sitting up like that Tim just nice and straight. I never saw posture like that. I&#39;ve never seen men so scared in their lives. They have the equivalent the equivalent of a vice president. He he was I said are you going to answer my question? And he&#39;s like he doesn&#39;t move. I said what&#39;s wrong with this guy? I will answer all questions. Why don&#39;t you behave like that? J D doesn&#39;t behave like that. J D buds into conversations. What&#39;s I want to have I want to have that for at least a couple of days. Okay, JD, we&#39;ll keep you long term, but a couple of days of that would a couple of days of that would be very very nice. Okay, I want to thank you and we&#39;ll talk a little bit and uh I see they set me up with a podium. I thought I&#39;d just be sitting, but it&#39;s probably easier. I want to thank you all very much. Thank you to the press and you can go and we&#39;ll speak to you later. Thank you. I&#39;m going to Miami to make a speech today at a big group and uh we have a nice big crowd and we&#39;ll see you there. A lot of you are traveling down with me. Thank you very much.
+                </div>
+                <div class="post-content post-content-zh" style="display: none;">
+                    https://www.youtube.com/live/Bo8bMllxsDg?si=xO7KgV1wiz0jENDA
+
+[音樂] 各位女士們、先生們，美國總統 [音樂] [掌聲] 謝謝你們。非常感謝。這真是一個正式的入場。我以為我們只是要坐下來聊一聊。我們談到的正是一年前我們取得的那場美麗的勝利。正好一年。昨晚的情況是，呃，大家都知道並不被預期會是一次勝利。那是非常民主黨的地區，但我不認為這對共和黨人來說是好事。我不認為這是好事。我不確定這對任何人來說都是好事。但我們度過了一個有趣的晚上，我們學到了很多，我們將談論這些，我會說幾句話，然後之後我會請媒體離開。呃，媒體在過去幾個月對我們非常友好。他們在與中國、日本、南韓、馬來西亞的外訪中對我們非常好，他們實際上表現得很棒。所以，我想感謝你們。我相信你們很快就會回到正常的方式，但呃，我們在中國做得很好，我們在結束戰爭方面也做得很好。我們停止了八場戰爭，八場戰爭，還有一場要結束，正如你們可能知道的，這場也會結束。但我們做得很好。所以，這真的很榮幸能做到這一點，我和在座的許多人一起完成了這件事。我認識你們每一位，我也喜歡你們每一位。我喜歡我們的領導者。我喜歡每一個人。但我想在媒體離開後討論一下呃，昨晚代表了什麼，我們應該怎麼做，以及關於停擺的問題，以及這如何與昨晚相關。我認為呃，如果你讀民調，停擺是一個很大的因素。對共和黨來說是負面的，這是一個很大的因素，他們說我不在選票上是最大的因素，但我不太確定，但我很榮幸他們這麼說。呃，我只想感謝大家來到這裡，特別感謝副總統J Vance，他做得非常出色。JD，非常感謝。[掌聲] 還有參議院領導團隊，他們一直在非常努力地工作，真的，我告訴你，沒有人比他們更努力地代表美國人民，包括參議員John Thun。John，謝謝你。做得很好。[掌聲] 參議員John Baraso。John，非常感謝。參議員Tom Cotton，無論你在哪裡。Tom，謝謝你。謝謝你，Tom。謝謝。參議員Shelley Moore Capitol，她一直非常參與。謝謝你，Shelly。參議員James Langford，來自我最喜歡的州之一。77個中的77個。我總是說77個中的77個。里根是56。那是紀錄。我們得到了每一個。謝謝你，James。還有我一位非常棒的朋友，在一年前的選舉中是一位令人難以置信的倡導者，Tim Scott。謝謝你，Tim。[掌聲] 所以，如你所知，我們正處於一場災難性的民主黨創造的政府停擺中，而這是民主黨創造的，但我不認為他們真的得到了應有的責任。這現在正式成為美國歷史上最長的停擺。參議院的民主黨激進分子對重新開放政府毫無興趣，呃，我不認為他們會很快採取行動。很多人不同意。我在過去30天裡一直在說，我們有四或五個不同的觀點。是的，先生。他們現在就會解決。我們應該在一天內完成。我聽過大約四次這樣的說法。我在Kings之後聽過。他們說我是國王，我在Kings之後聽過。我在其他幾個時刻也聽過。我說：“不，我不這麼認為。”哦，現在我聽說是在選舉之後。我不這麼認為。我認為他們會。我認為他們是神風特攻隊。我剛從日本回來。我談到了神風特攻隊。我認為這些人是神風特攻隊。如果有必要，他們會摧毀這個國家。所以，我不這麼認為。數百萬美國人將失去SNAP福利。關於SNAP福利，我會說。所以，當我擔任總統時，我們有70億美元的SNAP。而現在他們有多倍的金額，因為這些福利是給任何要求的人，而我聽說現在多達470億。呃，這不是SNAP的目的。它是為那些真正有困難的人，失落的人而設的。但在拜登任內，他們把它給了任何想要的人。我認為這是你必須談論的事情，因為這些數字是驚人的。但無數的公務員現在沒有得到報酬，空中交通管制系統正承受越來越大的壓力。我們必須儘快重新開放政府，真的要立即重新開放。我們擁有有史以來最火熱的經濟，這現在對股市有些影響。但截至上週五，股市在過去九個月中創下了許多紀錄高點。很多。而且，呃，這將再次發生，這只是開始，因為當這些正在建設的工廠開始開放時。我們從未經歷過如此繁榮。現在有一個建設繁榮，但那將比這更大。這將是一場經濟繁榮，因為一旦它們開放，將會是特別的。我們有汽車公司進駐。呃，當我在日本時，豐田，豐田先生，我問：“你叫什麼名字？”豐田。我說：“哦，你很有錢。”他說：“你擁有公司多少？”92.1%。我說：“我很高興你說的是一。”他想成為。“我說，你是一個富有的人。”他說：“呃，我在美國投資了100億美元。”而且，呃，你知道我在說誰，對吧？你介紹我，參議員先生。呃，你最初在你擔任日本大使時介紹我。他仍然很好。他仍然強大，但他對在這個國家投資沒有興趣。現在他在一周前投資了100億美元建設新工廠。我們有汽車工廠進駐，真是不可思議。但我們還有人工智慧和所有這些。呃，我們不能被勒索去給1.5萬億美元給那些非法進入國家的人，許多人來自監獄，許多是毒販。很多人來自精神病院。呃，他們想給很多錢給那些非法進入的人。我們必須把他們趕出去。我們不能。沒有任何國家能夠承受這樣的情況。這就像對我們國家的攻擊，沒有任何國家。這些人不會成為生產性的人。他們將成為反生產性的人。我們都可以有大心臟。我比任何人都有更大的心臟。但我們不能讓這種情況發生。是時候讓共和黨人做他們必須做的事情，那就是終止阻撓。這是唯一的辦法。呃，如果你不終止阻撓，你會陷入困境。我們不會通過任何立法。在三年四個月內不會有任何立法通過。我們還有三年四個月。那是一段很長的時間。呃，但當他們無法進行擴展時，John，我認為他們每次被要求時都進行了擴展。這是他們第一次沒有進行擴展。擴展應該是簡單的。但如果他們不會進行擴展，他們不會通過任何法案，甚至是簡單的法案。我們應該自己提出法案。我們應該出去。我們應該自己提出法案。我們應該開放。我們應該今晚開始，讓國家開放。恭喜。然後我們應該通過選民身份法。我們應該通過禁止郵寄投票。我們應該通過所有我們想通過的
+                </div>
+        
+            </div>
+            
+            <div class="vote-cell">
+                
+            <div class="vote-section" data-post-id="21">
+                <!-- Stock Vote -->
+                <div class="vote-item">
+                    <div class="vote-question">
+                        你怎麼看這次的<span class="vote-keyword-stock">股票</span>推薦?
+                    </div>
+                    <div class="vote-options">
+                        <button class="vote-button vote-positive" data-post-id="21" data-vote-type="stock" data-vote-value="positive" onclick="handleVote(this)">
+                            <span class="vote-option-text">看好</span>
+                            <span class="vote-count" id="stock-positive-count-21">198票</span>
+                            <span class="vote-percentage" id="stock-positive-pct-21">57.9%</span>
+                        </button>
+                        <button class="vote-button vote-negative" data-post-id="21" data-vote-type="stock" data-vote-value="negative" onclick="handleVote(this)">
+                            <span class="vote-option-text">看淡</span>
+                            <span class="vote-count" id="stock-negative-count-21">144票</span>
+                            <span class="vote-percentage" id="stock-negative-pct-21">42.1%</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Options Vote -->
+                <div class="vote-item">
+                    <div class="vote-question">
+                        你怎麼看這次的<span class="vote-keyword-options">期權</span>推薦?
+                    </div>
+                    <div class="vote-options">
+                        <button class="vote-button vote-positive" data-post-id="21" data-vote-type="options" data-vote-value="positive" onclick="handleVote(this)">
+                            <span class="vote-option-text">看好</span>
+                            <span class="vote-count" id="options-positive-count-21">188票</span>
+                            <span class="vote-percentage" id="options-positive-pct-21">55.0%</span>
+                        </button>
+                        <button class="vote-button vote-negative" data-post-id="21" data-vote-type="options" data-vote-value="negative" onclick="handleVote(this)">
+                            <span class="vote-option-text">看淡</span>
+                            <span class="vote-count" id="options-negative-count-21">154票</span>
+                            <span class="vote-percentage" id="options-negative-pct-21">45.0%</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            </div>
+        </div>
+        
+        <div class="post-body">
+            <div class="analysis-section section-gray-1">
+                <h3>📈 股票建議</h3>
+                <div class="analysis-content">
+                    <p><strong>Top 1: XOM <span class="action-badge action-buy">BUY</span></strong></p>
+<ul>
+<li><strong>理由</strong>：ExxonMobil在特朗普談話中受惠於持續的能源需求增長和政策支持，尤其製造業回流和豐田10億美元投資確認能源需求穩健。XOM近期股價穩健，與油價和宏觀經濟條件相符，提供防守性與成長潛力。</li>
+<li><strong>信心水平</strong>：高</li>
+<li><strong>關鍵風險</strong>：油價短期波動、地緣政治緊張與能源政策變化的影響。</li>
+<li><strong>預期時間</strong>：中期（1-4週）</li>
+</ul>
+<br>
+<p><strong>Top 2: CAT <span class="action-badge action-buy">BUY</span></strong></p>
+<ul>
+<li><strong>理由</strong>：特朗普明確強調基建繁榮及經濟擴張，CAT作為重型設備製造龍頭直接受惠，股價近期大幅上升超過3%，市場對基建需求持續看好。政治不確定性雖存，但基建投資回暖是大趨勢。</li>
+<li><strong>信心水平</strong>：中高</li>
+<li><strong>關鍵風險</strong>：政治僵局導致基建政策實施延遲及宏觀經濟波動。</li>
+<li><strong>預期時間</strong>：短期（1-3天）</li>
+</ul>
+<br>
+<p><strong>Top 3: TGT <span class="action-badge action-buy">BUY</span></strong></p>
+<ul>
+<li><strong>理由</strong>：Target因成本下降及消費者負擔能力提升，股價有明顯反彈動能，符合特朗普所述經濟繁榮與負擔能力政策。短期內消費回暖可望延續，適合趨勢交易。</li>
+<li><strong>信心水平</strong>：中</li>
+<li><strong>關鍵風險</strong>：消費支出波動及通脹反覆影響消費信心。</li>
+<li><strong>預期時間</strong>：短期（1-2週）</li>
+</ul>
+                </div>
+            </div>
+            
+            <div class="analysis-section section-gray-2">
+                <h3>📊 期權建議</h3>
+                <div class="analysis-content">
+                    <p><strong>Top 1: XOM  <span class="action-badge action-call">CALL</span> <span class="strike-badge">$115</span> <span class="expiry-badge">exp 2026-01-31</span></strong></p>
+<ul>
+<li><strong>理由</strong>：能源需求穩定且政策支持明顯，認購期權放大中期收益潛力。行使價115美元合理，時間充分捕捉油價及股價上漲。</li>
+<li><strong>信心水平</strong>：中高</li>
+<li><strong>關鍵風險</strong>：油價劇烈波動與時間價值流失風險。</li>
+</ul>
+<br>
+<p><strong>Top 2: CAT  <span class="action-badge action-call">CALL</span> <span class="strike-badge">$580</span> <span class="expiry-badge">exp 2025-12-31</span></strong></p>
+<ul>
+<li><strong>理由</strong>：基建需求推動製造業股價上升，CAT期權適合捕捉短中期反彈，行使價580美元具合理上升空間。</li>
+<li><strong>信心水平</strong>：中</li>
+<li><strong>關鍵風險</strong>：基建政策落地延遲及宏觀經濟波動。</li>
+</ul>
+<br>
+<p><strong>Top 3: TGT  <span class="action-badge action-call">CALL</span> <span class="strike-badge">$90</span> <span class="expiry-badge">exp 2026-01-31</span></strong></p>
+<ul>
+<li><strong>理由</strong>：消費回暖短期明顯，認購期權適合捕捉股價反彈行情，1月到期時間充裕。</li>
+<li><strong>信心水平</strong>：中</li>
+<li><strong>關鍵風險</strong>：消費市場波動及季節性影響。</li>
+</ul>
+                </div>
+            </div>
+            
+            <div class="analysis-section section-gray-1">
+                <h3>🎯 總結</h3>
+                <div class="analysis-content">
+                    <p><strong>整體推薦優先度：</strong></p>
+<p>呢單特朗普講話核心重點係政府停擺政治僵局同時強調經濟繁榮與基建熱潮，佢話豐田投資同製造業回流，仲有能源需求穩定，呢啲係最有料嘅市場催化劑。XOM能源股穩健做底，CAT基建股因應大規模經濟擴張有強勁反彈，TGT則係消費負擔能力改善嘅短線贏家。三隻標的形成一個穩健嘅「能源+基建+消費」組合，適合現階段風險偏好中等嘅投資者。</p>
+<br>
+<p><strong>整體信心水平：</strong></p>
+<p>XOM信心水平最高，屬高信心級別，CAT中高，TGT中等。期權策略配合現貨，利用認購期權在控制風險同時擴大利潤，信心屬中高級別。</p>
+<br>
+<p><strong>關鍵風險須監控：</strong></p>
+<ul>
+<li>政治僵局持續，特別是政府停擺及filibuster爭議，可能拖慢政策推進，造成市場短期波動。</li>
+<li>油價波動與國際地緣政治風險，是能源股最大不確定因素。</li>
+<li>消費市場受通脹及經濟基本面影響波動，需密切關注消費數據。</li>
+<li>基建政策若因政治阻力延遲，將影響CAT等製造業股表現。</li>
+</ul>
+<br>
+<p><strong>市場展望：</strong></p>
+<p>你知唔知，特朗普呢次直播講話就好似一場大戲，政治上扯來扯去，但背後經濟訊號就真係有料到。政府停擺拖咗好耐，市場都係等住睇有冇轉機，特朗普講到基建熱潮同能源需求，好似話「我哋經濟火熱緊」，令投資者信心回升。XOM同CAT就係今波最大受惠者，尤其豐田大投資添埋呢啲，都係真金白銀嘅入場券。消費股短期回暖，Target反彈勁，唔使睇少。政治風險雖然仍喺度，但呢啲震盪反而係高手入場嘅好機會，唔好驚短期波動，穩紮穩打，撐住能源同基建，配合消費股短線爆發，做精選，呢啲就係今期最實用嘅秘密武器。江山易改，本性難移，政策支持嘅板塊仍然值得長期留意，今次要識揀，唔好邊隻都撈，精挑細選先係王道。記住，市場無捷徑，穩健先係贏家！</p>
+                </div>
+            </div>
+        </div>
+    </article>
+    
+
+    <article class="post-card " data-batch="1">
+        <div class="date-container">
+            <div class="time-ago-tag" data-analysis-date="2025-11-06T01:50:15.729728"></div>
+            <div class="dates-right">
+                <div class="analysis-date">分析日期: 2025-11-06 01:50:15</div>
+                <div class="current-date">現在日期: <span class="current-date-time"></span></div>
+            </div>
+        </div>
+        <div class="header-vote-wrapper">
+            <div class="post-header">
+                <div class="header-left">
+                    <h2 class="section-title">Stock 股票</h2>
+                    
+        <div class="summary-card">
+            <div class="card-ticker">XOM</div>
+            <div class="card-action card-action-buy">買入 (BUY)</div>
+        </div>
+        
+                </div>
+                
+                <div class="header-center">
+                    <h2 class="section-title">Options 期權</h2>
+                    
+        <div class="summary-card">
+            <div class="card-ticker">XOM</div>
+            <div class="card-action card-action-call">CALL</div>
+            
+            <div class="option-timeline" data-post-date="2025-11-05T03:58:00.216Z" data-expiry="2026-01-31">
+                <div class="timeline-bar">
+                    <div class="timeline-indicator">
+                        <div class="timeline-label timeline-current">最佳時機</div>
+                    </div>
+                </div>
+                <div class="timeline-labels">
+                    <div class="timeline-label timeline-target">目標: $120</div>
+                    <div class="timeline-label timeline-expiry">2026-01-31</div>
+                </div>
+            </div>
+            
+        </div>
+        
+                </div>
+            </div>
+            
+            <div class="meta-content-cell">
+                <div class="truth-logo">
+                    <img src="assets/truth_logo.png" alt="Truth Social" onerror="this.style.display='none'">
+                </div>
+                
+                <div class="post-meta">
+                    <img src="assets/trump_icon.jpg" alt="Trump" class="poster-icon" onerror="this.style.display='none'">
+                    <div class="meta-text">
+                        <div class="meta-date">
+                            Post Date: 2025-11-05 03:58:00
+                        </div>
+                        <div class="meta-name">Donald J. Trump</div>
+                        <div class="meta-id">@realDonaldTrump</div>
+                    </div>
+                </div>
+                
+                
+                <div class="post-language-tabs">
+                    <button class="lang-tab active" data-lang="eng" onclick="switchLanguage(this, 'eng')">Eng</button>
+                    <button class="lang-tab" data-lang="zh" onclick="switchLanguage(this, 'zh')">中</button>
+                </div>
+                <div class="post-content post-content-eng">
+                    Pass Voter Reform, Voter ID, No Mail-In Ballots. Save our Supreme Court from “Packing,” No Two State addition, etc. TERMINATE THE FILIBUSTER!!!
+                </div>
+                <div class="post-content post-content-zh" style="display: none;">
+                    通過選民改革、選民身份證、禁止郵寄投票。拯救我們的最高法院免受“填塞”，不增加兩個州等。終止阻撓議事！！！
+                </div>
+        
+            </div>
+            
+            <div class="vote-cell">
+                
+            <div class="vote-section" data-post-id="16">
+                <!-- Stock Vote -->
+                <div class="vote-item">
+                    <div class="vote-question">
+                        你怎麼看這次的<span class="vote-keyword-stock">股票</span>推薦?
+                    </div>
+                    <div class="vote-options">
+                        <button class="vote-button vote-positive" data-post-id="16" data-vote-type="stock" data-vote-value="positive" onclick="handleVote(this)">
+                            <span class="vote-option-text">看好</span>
+                            <span class="vote-count" id="stock-positive-count-16">249票</span>
+                            <span class="vote-percentage" id="stock-positive-pct-16">58.0%</span>
+                        </button>
+                        <button class="vote-button vote-negative" data-post-id="16" data-vote-type="stock" data-vote-value="negative" onclick="handleVote(this)">
+                            <span class="vote-option-text">看淡</span>
+                            <span class="vote-count" id="stock-negative-count-16">180票</span>
+                            <span class="vote-percentage" id="stock-negative-pct-16">42.0%</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Options Vote -->
+                <div class="vote-item">
+                    <div class="vote-question">
+                        你怎麼看這次的<span class="vote-keyword-options">期權</span>推薦?
+                    </div>
+                    <div class="vote-options">
+                        <button class="vote-button vote-positive" data-post-id="16" data-vote-type="options" data-vote-value="positive" onclick="handleVote(this)">
+                            <span class="vote-option-text">看好</span>
+                            <span class="vote-count" id="options-positive-count-16">236票</span>
+                            <span class="vote-percentage" id="options-positive-pct-16">55.0%</span>
+                        </button>
+                        <button class="vote-button vote-negative" data-post-id="16" data-vote-type="options" data-vote-value="negative" onclick="handleVote(this)">
+                            <span class="vote-option-text">看淡</span>
+                            <span class="vote-count" id="options-negative-count-16">193票</span>
+                            <span class="vote-percentage" id="options-negative-pct-16">45.0%</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            </div>
+        </div>
+        
+        <div class="post-body">
+            <div class="analysis-section section-gray-1">
+                <h3>📈 股票建議</h3>
+                <div class="analysis-content">
+                    <p><strong>Top 1: XOM <span class="action-badge action-buy">BUY</span></strong></p>
+<ul>
+<li>理由：特朗普呼籲強化選民身份驗證及廢除阻撓議事制度，政治環境有利能源政策快速推動，ExxonMobil憑藉穩健的盈利能力和油價中高位支撐，成為穩健防守標的。近期股價穩步上升，市場信心回暖，符合中期（1-4週）持續增長預期。</li>
+<li>信心水平：高</li>
+<li>主要風險：油價波動劇烈、地緣政治風險、政策執行不及預期</li>
+</ul>
+<br>
+<p><strong>Top 2: CAT <span class="action-badge action-buy">BUY</span></strong></p>
+<ul>
+<li>理由：基建投資受特朗普政策及經濟恢復推動，CAT作為重型設備龍頭直接受惠。近期股價強勢反彈3%以上，顯示市場對基建需求的肯定，短期（1-3天）內仍有較強上漲動能。</li>
+<li>信心水平：中高</li>
+<li>主要風險：宏觀經濟波動、政策落地延遲</li>
+</ul>
+<br>
+<p><strong>Top 3: TGT <span class="action-badge action-buy">BUY</span></strong></p>
+<ul>
+<li>理由：消費者信心回升及成本下降帶動Target股價短線反彈，政策支持消費負擔能力，短期（1-2週）內有明顯交易機會，適合捕捉快速反彈。</li>
+<li>信心水平：中</li>
+<li>主要風險：消費市場波動、通脹反覆影響消費支出</li>
+</ul>
+                </div>
+            </div>
+            
+            <div class="analysis-section section-gray-2">
+                <h3>📊 期權建議</h3>
+                <div class="analysis-content">
+                    <p><strong>Top 1: XOM  <span class="action-badge action-call">CALL</span> <span class="strike-badge">$120</span> <span class="expiry-badge">exp 2026-01-31</span></strong></p>
+<ul>
+<li>理由：能源政策推動持續，油價維持中高位，認購期權可放大中期股價上漲收益，行使價合理，適合1-3個月中期操作。</li>
+<li>信心水平：中高</li>
+<li>主要風險：油價波動、時間價值減損</li>
+</ul>
+<br>
+<p><strong>Top 2: CAT  <span class="action-badge action-call">CALL</span> <span class="strike-badge">$580</span> <span class="expiry-badge">exp 2025-12-31</span></strong></p>
+<ul>
+<li>理由：基建需求強勁，CAT股價短期反彈動能強，認購期權適合捕捉年底前上漲空間，風險可控。</li>
+<li>信心水平：中</li>
+<li>主要風險：宏觀經濟變化、政策執行風險</li>
+</ul>
+<br>
+<p><strong>Top 3: TGT  <span class="action-badge action-call">CALL</span> <span class="strike-badge">$90</span> <span class="expiry-badge">exp 2026-01-31</span></strong></p>
+<ul>
+<li>理由：受惠成本下降和消費回暖，Target短期反彈強勁，認購期權適合參與短線行情，具備較好風險回報比。</li>
+<li>信心水平：中</li>
+<li>主要風險：消費者信心波動、季節性因素</li>
+</ul>
+                </div>
+            </div>
+            
+            <div class="analysis-section section-gray-1">
+                <h3>🎯 總結</h3>
+                <div class="analysis-content">
+                    <p><strong>整體推薦優先度：</strong></p>
+<p>以ExxonMobil（XOM）為核心，結合基建製造業龍頭CAT和消費反彈強勁的Target，形成「能源+基建+消費」多元布局。三者均受政策支持及基本面改善推動，分別適合中期至短期操作。期權策略聚焦於這三隻標的，利用合理行使價與到期日放大收益，風險相對可控。</p>
+<br>
+<p><strong>整體信心水平：</strong></p>
+<p>XOM屬高信心級別，CAT及TGT則屬中高及中等信心。期權建議信心穩健，兼顧收益與風險平衡。</p>
+<br>
+<p><strong>關鍵風險須監控：</strong></p>
+<ul>
+<li>油價及地緣政治波動仍為最大不確定因素，可能影響XOM及能源板塊表現。</li>
+<li>政治改革及基建政策執行進度不明，可能拖累CAT與消費市場情緒。</li>
+<li>消費者信心及通脹波動對TGT短期表現具挑戰，需密切關注數據變化。</li>
+</ul>
+<br>
+<p><strong>市場展望：</strong></p>
+<p>你知唔知，特朗普今次又係用政治改革同政策推動嚟影響市場節奏，尤其係能源同基建股攞足戲份，XOM穩穩陣陣做核心，CAT跟住經濟基建熱度走，而Target就係消費回暖嘅短線爆點。政治話題雖然搞到市場有啲波動，但其實正正係高手入場嘅良機，唔好畀短期風浪嚇怕，重點係精選有料到嘅標的，唔好亂咁撈。期權配合使用，可以喺波動中放大收益，好似飲杯靚茶咁慢慢享受行情。江山易改，本性難移，能源同基建依然係政策核心，今次想贏就要穩紮穩打，唔好做蛇王，等轉眼捉住機會先係贏家。</p>
+                </div>
+            </div>
+        </div>
+    </article>
+    
+
+    <article class="post-card " data-batch="1">
+        <div class="date-container">
+            <div class="time-ago-tag" data-analysis-date="2025-11-04T01:23:42.281974"></div>
+            <div class="dates-right">
+                <div class="analysis-date">分析日期: 2025-11-04 01:23:42</div>
+                <div class="current-date">現在日期: <span class="current-date-time"></span></div>
+            </div>
+        </div>
+        <div class="header-vote-wrapper">
+            <div class="post-header">
+                <div class="header-left">
+                    <h2 class="section-title">Stock 股票</h2>
+                    
+        <div class="summary-card">
+            <div class="card-ticker">XOM</div>
+            <div class="card-action card-action-buy">買入 (BUY)</div>
+        </div>
+        
+                </div>
+                
+                <div class="header-center">
+                    <h2 class="section-title">Options 期權</h2>
+                    
+        <div class="summary-card">
+            <div class="card-ticker">XOM</div>
+            <div class="card-action card-action-call">CALL</div>
+            
+            <div class="option-timeline" data-post-date="2025-11-03T03:21:24.635Z" data-expiry="2026-01-31">
+                <div class="timeline-bar">
+                    <div class="timeline-indicator">
+                        <div class="timeline-label timeline-current">最佳時機</div>
+                    </div>
+                </div>
+                <div class="timeline-labels">
+                    <div class="timeline-label timeline-target">目標: $120</div>
+                    <div class="timeline-label timeline-expiry">2026-01-31</div>
+                </div>
+            </div>
+            
+        </div>
+        
+                </div>
+            </div>
+            
+            <div class="meta-content-cell">
+                <div class="truth-logo">
+                    <img src="assets/truth_logo.png" alt="Truth Social" onerror="this.style.display='none'">
+                </div>
+                
+                <div class="post-meta">
+                    <img src="assets/trump_icon.jpg" alt="Trump" class="poster-icon" onerror="this.style.display='none'">
+                    <div class="meta-text">
+                        <div class="meta-date">
+                            Post Date: 2025-11-03 03:21:24
+                        </div>
+                        <div class="meta-name">Donald J. Trump</div>
+                        <div class="meta-id">@realDonaldTrump</div>
+                    </div>
+                </div>
+                
+                
+                <div class="post-language-tabs">
+                    <button class="lang-tab active" data-lang="eng" onclick="switchLanguage(this, 'eng')">Eng</button>
+                    <button class="lang-tab" data-lang="zh" onclick="switchLanguage(this, 'zh')">中</button>
+                </div>
+                <div class="post-content post-content-eng">
+                    Congressman Mike Carey is a Fantastic Advocate for Ohio’s 15th Congressional District! As a Member of the POWERFUL House Ways &amp;amp; Means Committee, Mike understands the America First Policies required to Create GREAT Jobs, Cut Taxes and Regulations, Unleash American Energy DOMINANCE, Promote MADE IN THE U.S.A., and Champion our Nation’s Golden Age. A Brave U.S. Army Veteran, Mike knows the Wisdom and Courage required to Defend our Country, Support our Military/Veterans, and Ensure PEACE THROUGH STRENGTH. He is also working hard to Keep our now very Secure Border, SECURE, Stop Migrant Crime, and Protect our always under siege Second Amendment. Mike Carey has my Complete and Total Endorsement for Re-Election — HE WILL NEVER LET YOU DOWN!
+                </div>
+                <div class="post-content post-content-zh" style="display: none;">
+                    國會議員邁克·凱瑞是俄亥俄州第15國會選區的絕佳倡導者！作為強大的眾議院稅務委員會成員，邁克了解實現美國優先政策所需的條件，以創造偉大的工作機會、減稅和規範、釋放美國能源的主導地位、促進美國製造，並捍衛我們國家的黃金時代。作為一名勇敢的美國陸軍退伍軍人，邁克知道捍衛我們國家、支持我們的軍隊/退伍軍人以及確保通過力量維持和平所需的智慧和勇氣。他也在努力保持我們現在非常安全的邊界安全，制止移民犯罪，並保護我們始終受到攻擊的第二修正案。邁克·凱瑞獲得我對他連任的完全和全力支持——他絕對不會讓你失望！
+                </div>
+        
+            </div>
+            
+            <div class="vote-cell">
+                
+            <div class="vote-section" data-post-id="13">
+                <!-- Stock Vote -->
+                <div class="vote-item">
+                    <div class="vote-question">
+                        你怎麼看這次的<span class="vote-keyword-stock">股票</span>推薦?
+                    </div>
+                    <div class="vote-options">
+                        <button class="vote-button vote-positive" data-post-id="13" data-vote-type="stock" data-vote-value="positive" onclick="handleVote(this)">
+                            <span class="vote-option-text">看好</span>
+                            <span class="vote-count" id="stock-positive-count-13">0票</span>
+                            <span class="vote-percentage" id="stock-positive-pct-13">0.0%</span>
+                        </button>
+                        <button class="vote-button vote-negative" data-post-id="13" data-vote-type="stock" data-vote-value="negative" onclick="handleVote(this)">
+                            <span class="vote-option-text">看淡</span>
+                            <span class="vote-count" id="stock-negative-count-13">0票</span>
+                            <span class="vote-percentage" id="stock-negative-pct-13">0.0%</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Options Vote -->
+                <div class="vote-item">
+                    <div class="vote-question">
+                        你怎麼看這次的<span class="vote-keyword-options">期權</span>推薦?
+                    </div>
+                    <div class="vote-options">
+                        <button class="vote-button vote-positive" data-post-id="13" data-vote-type="options" data-vote-value="positive" onclick="handleVote(this)">
+                            <span class="vote-option-text">看好</span>
+                            <span class="vote-count" id="options-positive-count-13">0票</span>
+                            <span class="vote-percentage" id="options-positive-pct-13">0.0%</span>
+                        </button>
+                        <button class="vote-button vote-negative" data-post-id="13" data-vote-type="options" data-vote-value="negative" onclick="handleVote(this)">
+                            <span class="vote-option-text">看淡</span>
+                            <span class="vote-count" id="options-negative-count-13">0票</span>
+                            <span class="vote-percentage" id="options-negative-pct-13">0.0%</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            </div>
+        </div>
+        
+        <div class="post-body">
+            <div class="analysis-section section-gray-1">
+                <h3>📈 股票建議</h3>
+                <div class="analysis-content">
+                    <p><strong>Top 1: XOM <span class="action-badge action-buy">BUY</span></strong></p>
+<ul>
+<li><strong>理由：</strong> Mike Carey作為眾議院籌款委員會成員，獲特朗普強力支持推動「美國優先」能源自主政策，終止清潔能源抵免，傳統能源公司如ExxonMobil受益顯著。XOM股價穩健且估值合理，油價提供強勁支撐，短中期展望樂觀。</li>
+<li><strong>信心水平：</strong> 高</li>
+<li><strong>主要風險：</strong> 能源價格波動、地緣政治緊張影響油市、政策推行速度不及預期</li>
+</ul>
+<br>
+<p><strong>Top 2: RTX <span class="action-badge action-buy">BUY</span></strong></p>
+<ul>
+<li><strong>理由：</strong> 邊境安全和國防支出納入共和黨優先議程，RTX作為主要國防承包商直接受惠。政府停擺預計結束後，國防預算有望回升，訂單穩定，股價具支撐。</li>
+<li><strong>信心水平：</strong> 中</li>
+<li><strong>主要風險：</strong> 國防預算可能因政治僵局拖延，地緣政治突發事件引發不確定性</li>
+</ul>
+<br>
+<p><strong>Top 3: FTNT <span class="action-badge action-buy">BUY</span></strong></p>
+<ul>
+<li><strong>理由：</strong> 推動強硬邊境安全及選民身份驗證政策，加強網絡安全需求，Fortinet作為網絡安全領域領導企業，受政策催化具成長潛力。</li>
+<li><strong>信心水平：</strong> 中</li>
+<li><strong>主要風險：</strong> 科技股波動大、政策執行延遲、宏觀經濟不穩定影響企業IT支出</li>
+</ul>
+                </div>
+            </div>
+            
+            <div class="analysis-section section-gray-2">
+                <h3>📊 期權建議</h3>
+                <div class="analysis-content">
+                    <p><strong>Top 1: XOM  <span class="action-badge action-call">CALL</span> <span class="strike-badge">$120</span> <span class="expiry-badge">exp 2026-01-31</span></strong></p>
+<ul>
+<li><strong>理由：</strong> 傳統能源政策支持持續推動油價及股價走升，XOM看漲期權有利捕捉短中期股價突破。</li>
+<li><strong>信心水平：</strong> 中</li>
+<li><strong>主要風險：</strong> 能源市場波動及政策變數可能影響期權表現</li>
+</ul>
+<br>
+<p><strong>Top 2: RTX  <span class="action-badge action-call">CALL</span> <span class="strike-badge">$185</span> <span class="expiry-badge">exp 2026-01-31</span></strong></p>
+<ul>
+<li><strong>理由：</strong> 國防支出預期回升，RTX期權適合捕捉政策利好帶來的股價上漲空間。</li>
+<li><strong>信心水平：</strong> 中</li>
+<li><strong>主要風險：</strong> 政治僵局及國防預算執行不確定性</li>
+</ul>
+<br>
+<p><strong>Top 3: FTNT  <span class="action-badge action-call">CALL</span> <span class="strike-badge">$90</span> <span class="expiry-badge">exp 2026-01-31</span></strong></p>
+<ul>
+<li><strong>理由：</strong> 網絡安全需求增長驅動股價上行，期權配置可擴大收益潛力。</li>
+<li><strong>信心水平：</strong> 中</li>
+<li><strong>主要風險：</strong> 科技股波動及政策推進速度不確定</li>
+</ul>
+                </div>
+            </div>
+            
+            <div class="analysis-section section-gray-1">
+                <h3>🎯 總結</h3>
+                <div class="analysis-content">
+                    <p><strong>整體推薦優先度：</strong></p>
+<p>此次分析明顯聚焦於Mike Carey獲特朗普支持下的「美國優先」政策推進，能源、國防和安全板塊為最大受惠者。ExxonMobil（XOM）因能源政策轉向傳統能源且油價支撐，成為核心首選。雷神（RTX）和Fortinet（FTNT）則分別受益於國防和安全政策推動，屬中高信心增長股。</p>
+<br>
+<p><strong>整體信心水平：</strong></p>
+<p>以XOM為首的能源板塊信心最高，政策利好明顯且實際推進中。RTX與FTNT受益政策較為明確，但仍需關注市場與政治波動，信心屬中等水平。</p>
+<br>
+<p><strong>關鍵風險須監控：</strong></p>
+<ul>
+<li>美國國內政治僵局和政策推進速度，尤其眾議院籌款委員會相關立法是否順利落實。</li>
+<li>能源價格波動及國際地緣政治風險，可能帶來短期價格震盪。</li>
+<li>科技安全板塊受宏觀經濟及IT支出影響較大，政策執行不及預期亦是風險。</li>
+<li>政府停擺與SNAP福利危機對消費零售板塊短期負面影響，但本次貼文重點集中於能源與安全政策，故消費股不列為本輪首選。</li>
+</ul>
+<br>
+<p><strong>市場展望：</strong></p>
+<p>短期政治不確定性仍存，但共和黨鞏固內部支持、推動能源自主與國防安全政策，為相關板塊注入穩定增長動能。投資者應把握XOM、RTX及FTNT的政策催化機會，搭配看漲期權策略，靈活擴大利潤潛力並控制風險。政治與經濟局勢隨時變化，持續關注立法進展及市場反應為關鍵。</p>
+<br>
+<p>呢單嘢真係唔講得笑，政策大方向已定，大家不妨趁機密切留意入場時機，搶佔能源與安全板塊先機！</p>
+                </div>
+            </div>
+        </div>
+    </article>
+    
+
+    <article class="post-card " data-batch="1">
+        <div class="date-container">
+            <div class="time-ago-tag" data-analysis-date="2025-11-04T01:19:08.911310"></div>
+            <div class="dates-right">
+                <div class="analysis-date">分析日期: 2025-11-04 01:19:08</div>
+                <div class="current-date">現在日期: <span class="current-date-time"></span></div>
+            </div>
+        </div>
+        <div class="header-vote-wrapper">
+            <div class="post-header">
+                <div class="header-left">
+                    <h2 class="section-title">Stock 股票</h2>
+                    
+        <div class="summary-card">
+            <div class="card-ticker">XOM</div>
+            <div class="card-action card-action-buy">買入 (BUY)</div>
+        </div>
+        
+                </div>
+                
+                <div class="header-center">
+                    <h2 class="section-title">Options 期權</h2>
+                    
+        <div class="summary-card">
+            <div class="card-ticker">XOM</div>
+            <div class="card-action card-action-call">CALL</div>
+            
+            <div class="option-timeline" data-post-date="2025-11-03T02:37:36.632Z" data-expiry="2026-01-31">
+                <div class="timeline-bar">
+                    <div class="timeline-indicator">
+                        <div class="timeline-label timeline-current">最佳時機</div>
+                    </div>
+                </div>
+                <div class="timeline-labels">
+                    <div class="timeline-label timeline-target">目標: $120</div>
+                    <div class="timeline-label timeline-expiry">2026-01-31</div>
+                </div>
+            </div>
+            
+        </div>
+        
+                </div>
+            </div>
+            
+            <div class="meta-content-cell">
+                <div class="truth-logo">
+                    <img src="assets/truth_logo.png" alt="Truth Social" onerror="this.style.display='none'">
+                </div>
+                
+                <div class="post-meta">
+                    <img src="assets/trump_icon.jpg" alt="Trump" class="poster-icon" onerror="this.style.display='none'">
+                    <div class="meta-text">
+                        <div class="meta-date">
+                            Post Date: 2025-11-03 02:37:36
+                        </div>
+                        <div class="meta-name">Donald J. Trump</div>
+                        <div class="meta-id">@realDonaldTrump</div>
+                    </div>
+                </div>
+                
+                
+                <div class="post-language-tabs">
+                    <button class="lang-tab active" data-lang="eng" onclick="switchLanguage(this, 'eng')">Eng</button>
+                    <button class="lang-tab" data-lang="zh" onclick="switchLanguage(this, 'zh')">中</button>
+                </div>
+                <div class="post-content post-content-eng">
+                    TERMINATE THE FILIBUSTER, NOT JUST FOR THE SHUTDOWN, BUT FOR EVERYTHING ELSE. WE WILL GET ALL OF OUR COMMON SENSE POLICIES APPROVED (VOTER ID, ANYONE?) AND MAKE AMERICA GREAT AGAIN! REMEMBER, THE DEMOCRATS WILL DO IT IMMEDIATELY, AS SOON AS THEY GET THE CHANCE. OUR DOING IT WILL NOT GIVE THEM THE CHANCE. REPUBLICANS, BE TOUGH AND SMART! THE DEMS ARE CRAZED LUNATICS, THEY WILL NOT OPEN UP OUR COUNTRY NO MATTER HOW MANY PEOPLE ARE IRREPARABLY HARMED!
+                </div>
+                <div class="post-content post-content-zh" style="display: none;">
+                    終止阻撓議事，不僅僅是為了關閉政府，而是為了所有其他事情。我們將獲得所有的常識政策批准（選民身份證，還有人嗎？）並讓美國再次偉大！記住，民主黨人會在他們有機會的時候立即這樣做。我們這樣做不會給他們機會。共和黨人，要堅強和聰明！民主黨人是瘋狂的瘋子，無論有多少人受到不可逆轉的傷害，他們都不會讓我們的國家重新開放！
+                </div>
+        
+            </div>
+            
+            <div class="vote-cell">
+                
+            <div class="vote-section" data-post-id="14">
+                <!-- Stock Vote -->
+                <div class="vote-item">
+                    <div class="vote-question">
+                        你怎麼看這次的<span class="vote-keyword-stock">股票</span>推薦?
+                    </div>
+                    <div class="vote-options">
+                        <button class="vote-button vote-positive" data-post-id="14" data-vote-type="stock" data-vote-value="positive" onclick="handleVote(this)">
+                            <span class="vote-option-text">看好</span>
+                            <span class="vote-count" id="stock-positive-count-14">0票</span>
+                            <span class="vote-percentage" id="stock-positive-pct-14">0.0%</span>
+                        </button>
+                        <button class="vote-button vote-negative" data-post-id="14" data-vote-type="stock" data-vote-value="negative" onclick="handleVote(this)">
+                            <span class="vote-option-text">看淡</span>
+                            <span class="vote-count" id="stock-negative-count-14">0票</span>
+                            <span class="vote-percentage" id="stock-negative-pct-14">0.0%</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Options Vote -->
+                <div class="vote-item">
+                    <div class="vote-question">
+                        你怎麼看這次的<span class="vote-keyword-options">期權</span>推薦?
+                    </div>
+                    <div class="vote-options">
+                        <button class="vote-button vote-positive" data-post-id="14" data-vote-type="options" data-vote-value="positive" onclick="handleVote(this)">
+                            <span class="vote-option-text">看好</span>
+                            <span class="vote-count" id="options-positive-count-14">0票</span>
+                            <span class="vote-percentage" id="options-positive-pct-14">0.0%</span>
+                        </button>
+                        <button class="vote-button vote-negative" data-post-id="14" data-vote-type="options" data-vote-value="negative" onclick="handleVote(this)">
+                            <span class="vote-option-text">看淡</span>
+                            <span class="vote-count" id="options-negative-count-14">0票</span>
+                            <span class="vote-percentage" id="options-negative-pct-14">0.0%</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            </div>
+        </div>
+        
+        <div class="post-body">
+            <div class="analysis-section section-gray-1">
+                <h3>📈 股票建議</h3>
+                <div class="analysis-content">
+                    <p><strong>Top 1: XOM <span class="action-badge action-buy">BUY</span></strong></p>
+<ul>
+<li><strong>理由：</strong> 美國共和黨強推終止阻撓議事制度，加速能源主導政策落地，ExxonMobil受政策及油價支持，有穩定增長潛力。Mike Carey支持能源獨立政策，令XOM具長線防守優勢。</li>
+<li><strong>信心水平：</strong> 高</li>
+<li><strong>主要風險：</strong> 能源價格波動、政策推行不及預期、地緣政治緊張影響油市</li>
+</ul>
+<br>
+<p><strong>Top 2: RTX <span class="action-badge action-buy">BUY</span></strong></p>
+<ul>
+<li><strong>理由：</strong> 共和黨強硬邊境及國防政策推動國防開支增加，RTX作為主要承包商受益明顯。政府停擺結束後國防預算有望回升，政策環境利好國防板塊。</li>
+<li><strong>信心水平：</strong> 中</li>
+<li><strong>主要風險：</strong> 政治僵局拖延國防預算，全球軍事衝突升溫帶來不確定性</li>
+</ul>
+<br>
+<p><strong>Top 3: FTNT <span class="action-badge action-buy">BUY</span></strong></p>
+<ul>
+<li><strong>理由：</strong> 選民身份驗證及安全政策強化，Fortinet在網絡安全領域處於領先地位，有望受益政府及企業安全需求持續上升。</li>
+<li><strong>信心水平：</strong> 中</li>
+<li><strong>主要風險：</strong> 科技股波動、政策執行滯後、整體經濟不穩定影響企業IT支出</li>
+</ul>
+                </div>
+            </div>
+            
+            <div class="analysis-section section-gray-2">
+                <h3>📊 期權建議</h3>
+                <div class="analysis-content">
+                    <p><strong>Top 1: XOM  <span class="action-badge action-call">CALL</span> <span class="strike-badge">$120</span> <span class="expiry-badge">exp 2026-01-31</span></strong></p>
+<ul>
+<li><strong>理由：</strong> 能源政策加速推進，油價具支撐，XOM股價短中期看漲，CALL期權能放大收益並控制風險。</li>
+<li><strong>信心水平：</strong> 中</li>
+<li><strong>主要風險：</strong> 能源市場波動、政策變動風險</li>
+</ul>
+<br>
+<p><strong>Top 2: RTX  <span class="action-badge action-call">CALL</span> <span class="strike-badge">$185</span> <span class="expiry-badge">exp 2026-01-31</span></strong></p>
+<ul>
+<li><strong>理由：</strong> 國防預算增加預期支持RTX股價上行，CALL期權適合捕捉政策利好帶來的價格突破。</li>
+<li><strong>信心水平：</strong> 中</li>
+<li><strong>主要風險：</strong> 政治不確定性和國防預算執行風險</li>
+</ul>
+<br>
+<p><strong>Top 3: FTNT  <span class="action-badge action-call">CALL</span> <span class="strike-badge">$90</span> <span class="expiry-badge">exp 2026-01-31</span></strong></p>
+<ul>
+<li><strong>理由：</strong> 安全政策推動強勁，FTNT股價有望突破阻力位，看漲期權適合積極布局。</li>
+<li><strong>信心水平：</strong> 中</li>
+<li><strong>主要風險：</strong> 科技股市場波動，政策推進速度不及預期</li>
+</ul>
+                </div>
+            </div>
+            
+            <div class="analysis-section section-gray-1">
+                <h3>🎯 總結</h3>
+                <div class="analysis-content">
+                    <p><strong>整體推薦優先度：</strong></p>
+<p>本輪最強勢佈局首選ExxonMobil（XOM），因其能源政策催化和油價支撐，具備高信心買入價值。其次為雷神（RTX）和Fortinet（FTNT），分別受益於國防及安全政策推動，具中等信心。三者形成政策受惠核心板塊，布局價值明顯。</p>
+<br>
+<p><strong>整體信心水平：</strong></p>
+<p>整體維持中高，XOM信心最高，RTX及FTNT因政治及市場波動風險稍低於XOM，但均為政策明確支持且具增長潛力的標的。</p>
+<br>
+<p><strong>關鍵風險須監控：</strong></p>
+<ul>
+<li>政治僵局與共和黨內部意見分歧，可能拖慢阻撓議事終止及政策推行節奏。</li>
+<li>能源價格及地緣政治緊張可能帶來波動。</li>
+<li>科技安全板塊受宏觀經濟及市場情緒影響較大。</li>
+<li>國防預算執行進度不明，需留意政府決策動向。</li>
+</ul>
+<br>
+<p><strong>市場展望：</strong></p>
+<p>特朗普呼籲終止阻撓議事制度，市場短期或見政治風險增加，但長遠看政策推動力度加強，能源、國防及安全監控板塊將成為資金追捧焦點。建議積極布局XOM、RTX及FTNT股票，並配合相應看漲期權策略，靈活控制風險、擴大利潤。政治節奏與政策進展將是未來關鍵，務必密切關注局勢變化。</p>
+<br>
+<p>呢單嘢真係唔講得笑，大家準備好迎接政策大變局帶來的市場機會啦！</p>
+                </div>
+            </div>
+        </div>
+    </article>
+    
+
+    <article class="post-card hidden-post" data-batch="2">
+        <div class="date-container">
+            <div class="time-ago-tag" data-analysis-date="2025-11-01T21:08:31.115630"></div>
+            <div class="dates-right">
+                <div class="analysis-date">分析日期: 2025-11-01 21:08:31</div>
+                <div class="current-date">現在日期: <span class="current-date-time"></span></div>
+            </div>
+        </div>
+        <div class="header-vote-wrapper">
+            <div class="post-header">
+                <div class="header-left">
+                    <h2 class="section-title">Stock 股票</h2>
+                    
         <div class="summary-card">
             <div class="card-ticker">WMT</div>
             <div class="card-action card-action-sell">賣出 (SELL)</div>
         </div>
         
-            </div>
-            
-            <div class="header-center">
-                <h2 class="section-title">Options 期權</h2>
+                </div>
                 
+                <div class="header-center">
+                    <h2 class="section-title">Options 期權</h2>
+                    
         <div class="summary-card">
             <div class="card-ticker">WMT</div>
             <div class="card-action card-action-put">PUT</div>
@@ -48,23 +1048,74 @@
             
         </div>
         
+                </div>
             </div>
             
-            <div class="header-right">
+            <div class="meta-content-cell">
                 <div class="truth-logo">
                     <img src="assets/truth_logo.png" alt="Truth Social" onerror="this.style.display='none'">
                 </div>
+                
                 <div class="post-meta">
                     <img src="assets/trump_icon.jpg" alt="Trump" class="poster-icon" onerror="this.style.display='none'">
                     <div class="meta-text">
-                        <div class="meta-date">Post Date: 2025-10-31 22:10:37</div>
+                        <div class="meta-date">
+                            Post Date: 2025-10-31 22:10:37
+                        </div>
                         <div class="meta-name">Donald J. Trump</div>
                         <div class="meta-id">@realDonaldTrump</div>
                     </div>
                 </div>
+                
+                
                 <div class="post-content">
                     Our Government lawyers do not think we have the legal authority to pay SNAP with certain monies we have available, and now two Courts have issued conflicting opinions on what we can and cannot do. I do NOT want Americans to go hungry just because the Radical Democrats refuse to do the right thing and REOPEN THE GOVERNMENT. Therefore, I have instructed our lawyers to ask the Court to clarify how we can legally fund SNAP as soon as possible. It is already delayed enough due to the Democrats keeping the Government closed through the monthly payment date and, even if we get immediate guidance, it will unfortunately be delayed while States get the money out. If we are given the appropriate legal direction by the Court, it will BE MY HONOR to provide the funding, just like I did with Military and Law Enforcement Pay. The Democrats should quit this charade where they hurt people for their own political reasons, and immediately REOPEN THE GOVERNMENT. If you use SNAP benefits, call the Senate Democrats, and tell them to reopen the Government, NOW! Here is Cryin’ Chuck Schumer’s Office Number: (202) 224-6542
                 </div>
+        
+            </div>
+            
+            <div class="vote-cell">
+                
+            <div class="vote-section" data-post-id="11">
+                <!-- Stock Vote -->
+                <div class="vote-item">
+                    <div class="vote-question">
+                        你怎麼看這次的<span class="vote-keyword-stock">股票</span>推薦?
+                    </div>
+                    <div class="vote-options">
+                        <button class="vote-button vote-positive" data-post-id="11" data-vote-type="stock" data-vote-value="positive" onclick="handleVote(this)">
+                            <span class="vote-option-text">看好</span>
+                            <span class="vote-count" id="stock-positive-count-11">0票</span>
+                            <span class="vote-percentage" id="stock-positive-pct-11">0.0%</span>
+                        </button>
+                        <button class="vote-button vote-negative" data-post-id="11" data-vote-type="stock" data-vote-value="negative" onclick="handleVote(this)">
+                            <span class="vote-option-text">看淡</span>
+                            <span class="vote-count" id="stock-negative-count-11">0票</span>
+                            <span class="vote-percentage" id="stock-negative-pct-11">0.0%</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Options Vote -->
+                <div class="vote-item">
+                    <div class="vote-question">
+                        你怎麼看這次的<span class="vote-keyword-options">期權</span>推薦?
+                    </div>
+                    <div class="vote-options">
+                        <button class="vote-button vote-positive" data-post-id="11" data-vote-type="options" data-vote-value="positive" onclick="handleVote(this)">
+                            <span class="vote-option-text">看好</span>
+                            <span class="vote-count" id="options-positive-count-11">0票</span>
+                            <span class="vote-percentage" id="options-positive-pct-11">0.0%</span>
+                        </button>
+                        <button class="vote-button vote-negative" data-post-id="11" data-vote-type="options" data-vote-value="negative" onclick="handleVote(this)">
+                            <span class="vote-option-text">看淡</span>
+                            <span class="vote-count" id="options-negative-count-11">0票</span>
+                            <span class="vote-percentage" id="options-negative-pct-11">0.0%</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
             </div>
         </div>
         
@@ -96,14 +1147,14 @@
             <div class="analysis-section section-gray-2">
                 <h3>📊 期權建議</h3>
                 <div class="analysis-content">
-                    <p><strong>Top 1: WMT PUT</strong> at $95 <span class="expiry-badge">exp 2026-01-31</span></p>
+                    <p><strong>Top 1: WMT  <span class="action-badge action-put">PUT</span></strong> <span class="strike-badge">$95</span> <span class="expiry-badge">exp 2026-01-31</span></p>
 <ul>
 <li>理由：短期因SNAP支付法律爭議及政府停擺，WMT股價承壓，看跌期權適合避險及投機。</li>
 <li>信心水平：中</li>
 <li>主要風險：政治及法律局勢快速解決導致股價反彈。</li>
 </ul>
 <br>
-<p><strong>Top 2: KR PUT</strong> at $60 <span class="expiry-badge">exp 2026-01-31</span></p>
+<p><strong>Top 2: KR  <span class="action-badge action-put">PUT</span></strong> <span class="strike-badge">$60</span> <span class="expiry-badge">exp 2026-01-31</span></p>
 <ul>
 <li>理由：Kroger同樣面臨SNAP支付中斷風險，PUT期權可捕捉股價回調機會或作風險對沖。</li>
 <li>信心水平：中</li>
@@ -131,22 +1182,29 @@
     </article>
     
 
-    <article class="post-card " data-batch="1">
-        <div class="analysis-date" style="text-align: left;">分析日期: 2025-10-31 22:38:48</div>
-        <div class="post-header">
-            <div class="header-left">
-                <h2 class="section-title">Stock 股票</h2>
-                
+    <article class="post-card hidden-post" data-batch="2">
+        <div class="date-container">
+            <div class="time-ago-tag" data-analysis-date="2025-10-31T22:38:48.852592"></div>
+            <div class="dates-right">
+                <div class="analysis-date">分析日期: 2025-10-31 22:38:48</div>
+                <div class="current-date">現在日期: <span class="current-date-time"></span></div>
+            </div>
+        </div>
+        <div class="header-vote-wrapper">
+            <div class="post-header">
+                <div class="header-left">
+                    <h2 class="section-title">Stock 股票</h2>
+                    
         <div class="summary-card">
             <div class="card-ticker">XOM</div>
             <div class="card-action card-action-buy">買入 (BUY)</div>
         </div>
         
-            </div>
-            
-            <div class="header-center">
-                <h2 class="section-title">Options 期權</h2>
+                </div>
                 
+                <div class="header-center">
+                    <h2 class="section-title">Options 期權</h2>
+                    
         <div class="summary-card">
             <div class="card-ticker">AXON</div>
             <div class="card-action card-action-call">CALL</div>
@@ -165,23 +1223,74 @@
             
         </div>
         
+                </div>
             </div>
             
-            <div class="header-right">
+            <div class="meta-content-cell">
                 <div class="truth-logo">
                     <img src="assets/truth_logo.png" alt="Truth Social" onerror="this.style.display='none'">
                 </div>
+                
                 <div class="post-meta">
                     <img src="assets/trump_icon.jpg" alt="Trump" class="poster-icon" onerror="this.style.display='none'">
                     <div class="meta-text">
-                        <div class="meta-date">Post Date: 2025-10-31 02:36:51</div>
+                        <div class="meta-date">
+                            Post Date: 2025-10-31 02:36:51
+                        </div>
                         <div class="meta-name">Donald J. Trump</div>
                         <div class="meta-id">@realDonaldTrump</div>
                     </div>
                 </div>
+                
+                
                 <div class="post-content">
                     I just got back from Asia where I met the Leaders of many Countries, including China, Japan, South Korea, Malaysia, Australia, Canada, New Zealand, Singapore, Thailand, Cambodia, Vietnam, and others. It was a Great Honor to meet them but, more particularly, to see that America is respected again — RESPECTED LIKE NEVER BEFORE! Great Trade Deals were made, Long Term relationships now exist, and money is pouring into our Country because of Tariffs and, frankly, the Landslide Results of the 2024 Presidential Election. The one question that kept coming up, however, was how did the Democrats SHUT DOWN the United States of America, and why did the powerful Republicans allow them to do it? The fact is, in flying back, I thought a great deal about that question, WHY? Majority Leader John Thune, and Speaker of the House Mike Johnson, are doing a GREAT job, but the Democrats are Crazed Lunatics that have lost all sense of WISDOM and REALITY. It is a sick form of the now “legendary” Trump Derangement Syndrome (TDS) that only comes from losing too much. They want Trillions of Dollars to be taken from our Healthcare System and given to others, who are not deserving — People who have come into our Country illegally, many from prisons and mental institutions. This will hurt American citizens, and Republicans will not let it happen. It is now time for the Republicans to play their “TRUMP CARD,” and go for what is called the Nuclear Option — Get rid of the Filibuster, and get rid of it, NOW! Just a short while ago, the Democrats, while in power, fought for three years to do this, but were unable to pull it off because of Senators Joe Manchin of West Virginia and Kyrsten Sinema of Arizona. Never have the Democrats fought so hard to do something because they knew the tremendous strength that terminating the Filibuster would give them. They want to substantially expand (PACK!) the United States Supreme Court, make Washington, D.C. and Puerto Rico States (Thereby automatically picking up 4 Senate seats, many House seats, and at least 8 Electoral Votes!), and many other highly destructive things. Well, now WE are in power, and if we did what we should be doing, it would IMMEDIATELY end this ridiculous, Country destroying “SHUT DOWN.” If the Democrats ever came back into power, which would be made easier for them if the Republicans are not using the Great Strength and Policies made available to us by ending the Filibuster, the Democrats will exercise their rights, and it will be done in the first day they take office, regardless of whether or not we do it. In addition to all of the other things we would get, such as the best Judges, the best U.S. Attorneys, the best of everything, this was a concept from years ago of then President Barack Hussein Obama and former Majority Leader Harry Reid in order to take advantage of the Republicans. Now I want to do it in order to take advantage of the Democrats….
                 </div>
+        
+            </div>
+            
+            <div class="vote-cell">
+                
+            <div class="vote-section" data-post-id="10">
+                <!-- Stock Vote -->
+                <div class="vote-item">
+                    <div class="vote-question">
+                        你怎麼看這次的<span class="vote-keyword-stock">股票</span>推薦?
+                    </div>
+                    <div class="vote-options">
+                        <button class="vote-button vote-positive" data-post-id="10" data-vote-type="stock" data-vote-value="positive" onclick="handleVote(this)">
+                            <span class="vote-option-text">看好</span>
+                            <span class="vote-count" id="stock-positive-count-10">0票</span>
+                            <span class="vote-percentage" id="stock-positive-pct-10">0.0%</span>
+                        </button>
+                        <button class="vote-button vote-negative" data-post-id="10" data-vote-type="stock" data-vote-value="negative" onclick="handleVote(this)">
+                            <span class="vote-option-text">看淡</span>
+                            <span class="vote-count" id="stock-negative-count-10">0票</span>
+                            <span class="vote-percentage" id="stock-negative-pct-10">0.0%</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Options Vote -->
+                <div class="vote-item">
+                    <div class="vote-question">
+                        你怎麼看這次的<span class="vote-keyword-options">期權</span>推薦?
+                    </div>
+                    <div class="vote-options">
+                        <button class="vote-button vote-positive" data-post-id="10" data-vote-type="options" data-vote-value="positive" onclick="handleVote(this)">
+                            <span class="vote-option-text">看好</span>
+                            <span class="vote-count" id="options-positive-count-10">0票</span>
+                            <span class="vote-percentage" id="options-positive-pct-10">0.0%</span>
+                        </button>
+                        <button class="vote-button vote-negative" data-post-id="10" data-vote-type="options" data-vote-value="negative" onclick="handleVote(this)">
+                            <span class="vote-option-text">看淡</span>
+                            <span class="vote-count" id="options-negative-count-10">0票</span>
+                            <span class="vote-percentage" id="options-negative-pct-10">0.0%</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
             </div>
         </div>
         
@@ -215,21 +1324,21 @@
             <div class="analysis-section section-gray-2">
                 <h3>📊 期權建議</h3>
                 <div class="analysis-content">
-                    <p><strong>Top 1: AXON CALL</strong> at $800 <span class="expiry-badge">exp Feb-Mar 2026</span></p>
+                    <p><strong>Top 1: AXON  <span class="action-badge action-call">CALL</span></strong> <span class="strike-badge">$800</span> <span class="expiry-badge">exp Feb-Mar 2026</span></p>
 <ul>
 <li>Reasoning: DeepSeek建議AXON受益於執法記錄儀及雲端服務壟斷地位，政府合約穩定增長，且執法隊伍擴編帶動需求爆發，期權槓桿效應明顯。OpenAI雖未推薦AXON，但其分析亦支持執法科技板塊。此期權到期日為未來日期，合規有效。</li>
 <li>Confidence: 高</li>
 <li>Key Risks: 政策執行不及預期、股價波動劇烈、政府預算調整。</li>
 </ul>
 <br>
-<p><strong>Top 2: FTNT CALL</strong> at $90 <span class="expiry-badge">exp Jan 2026</span> (or within 3 months)</p>
+<p><strong>Top 2: FTNT  <span class="action-badge action-call">CALL</span></strong> <span class="strike-badge">$90</span> <span class="expiry-badge">exp Jan 2026</span> (or within 3 months)</p>
 <ul>
 <li>Reasoning: 兩位分析均看好FTNT因政策及政府安全需求提升，股價有短中期上升空間。期權到期日均在未來三個月內，有效且風險可控。</li>
 <li>Confidence: 中</li>
 <li>Key Risks: 科技股波動、宏觀經濟不確定性、政策實施節奏。</li>
 </ul>
 <br>
-<p><strong>Top 3: PLTR PUT</strong> at $180 <span class="expiry-badge">exp Feb 2026</span></p>
+<p><strong>Top 3: PLTR  <span class="action-badge action-put">PUT</span></strong> <span class="strike-badge">$180</span> <span class="expiry-badge">exp Feb 2026</span></p>
 <br>
 <ul>
 <li>Confidence: 中</li>
@@ -260,51 +1369,109 @@
 <br>
 <p>市場前景短中期偏向樂觀，因外交和國內政策均釋出積極信號，但仍需密切留意政治及宏觀經濟風險。</p>
 <br>
-<p>總括：建議以【買入 XOM、SOYB、FTNT】為核心股票配置，配合【AXON CALL、FTNT CALL、PLTR PUT】期權策略，謹慎把握政策驅動下的成長機會與風險管理。</p>
+<p>總括：建議以【買入 XOM、SOYB、FTNT】為核心股票配置，配合【AXON  <span class="action-badge action-call">CALL</span>、FTNT  <span class="action-badge action-call">CALL</span>、PLTR  <span class="action-badge action-put">PUT</span>】期權策略，謹慎把握政策驅動下的成長機會與風險管理。</p>
                 </div>
             </div>
         </div>
     </article>
     
 
-    <article class="post-card " data-batch="1">
-        <div class="analysis-date" style="text-align: left;">分析日期: 2025-10-31 02:49:05</div>
-        <div class="post-header">
-            <div class="header-left">
-                <h2 class="section-title">Stock 股票</h2>
-                
+    <article class="post-card hidden-post" data-batch="2">
+        <div class="date-container">
+            <div class="time-ago-tag" data-analysis-date="2025-10-31T02:49:05.620778"></div>
+            <div class="dates-right">
+                <div class="analysis-date">分析日期: 2025-10-31 02:49:05</div>
+                <div class="current-date">現在日期: <span class="current-date-time"></span></div>
+            </div>
+        </div>
+        <div class="header-vote-wrapper">
+            <div class="post-header">
+                <div class="header-left">
+                    <h2 class="section-title">Stock 股票</h2>
+                    
         <div class="summary-card empty">
             <div class="card-empty">無</div>
         </div>
         
-            </div>
-            
-            <div class="header-center">
-                <h2 class="section-title">Options 期權</h2>
+                </div>
                 
+                <div class="header-center">
+                    <h2 class="section-title">Options 期權</h2>
+                    
         <div class="summary-card">
             <div class="card-ticker">AXON</div>
             <div class="card-action card-action-call">CALL</div>
             
         </div>
         
+                </div>
             </div>
             
-            <div class="header-right">
+            <div class="meta-content-cell">
                 <div class="truth-logo">
                     <img src="assets/truth_logo.png" alt="Truth Social" onerror="this.style.display='none'">
                 </div>
+                
                 <div class="post-meta">
                     <img src="assets/trump_icon.jpg" alt="Trump" class="poster-icon" onerror="this.style.display='none'">
                     <div class="meta-text">
-                        <div class="meta-date">Post Date: 2025-10-30 17:57:51</div>
+                        <div class="meta-date">
+                            Post Date: 2025-10-30 17:57:51
+                        </div>
                         <div class="meta-name">Donald J. Trump</div>
                         <div class="meta-id">@realDonaldTrump</div>
                     </div>
                 </div>
+                
+                
                 <div class="post-content">
                     For all Great Law Enforcement Patriots who would like to join the World’s Premier Law Enforcement Task Force, where Police Officers are fully allowed and empowered to do their job and battle crime, apply today to join the Make D.C. Safe Task Force! You will be at the cutting edge of defending our Nation’s Capital City from all dangers and threats, and will be able to join the elite Agency of your choice. If you have strong experience, you can begin on the Task Force, IMMEDIATELY! https://safedc.gov/
                 </div>
+        
+            </div>
+            
+            <div class="vote-cell">
+                
+            <div class="vote-section" data-post-id="2">
+                <!-- Stock Vote -->
+                <div class="vote-item">
+                    <div class="vote-question">
+                        你怎麼看這次的<span class="vote-keyword-stock">股票</span>推薦?
+                    </div>
+                    <div class="vote-options">
+                        <button class="vote-button vote-positive" data-post-id="2" data-vote-type="stock" data-vote-value="positive" onclick="handleVote(this)">
+                            <span class="vote-option-text">看好</span>
+                            <span class="vote-count" id="stock-positive-count-2">0票</span>
+                            <span class="vote-percentage" id="stock-positive-pct-2">0.0%</span>
+                        </button>
+                        <button class="vote-button vote-negative" data-post-id="2" data-vote-type="stock" data-vote-value="negative" onclick="handleVote(this)">
+                            <span class="vote-option-text">看淡</span>
+                            <span class="vote-count" id="stock-negative-count-2">0票</span>
+                            <span class="vote-percentage" id="stock-negative-pct-2">0.0%</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Options Vote -->
+                <div class="vote-item">
+                    <div class="vote-question">
+                        你怎麼看這次的<span class="vote-keyword-options">期權</span>推薦?
+                    </div>
+                    <div class="vote-options">
+                        <button class="vote-button vote-positive" data-post-id="2" data-vote-type="options" data-vote-value="positive" onclick="handleVote(this)">
+                            <span class="vote-option-text">看好</span>
+                            <span class="vote-count" id="options-positive-count-2">0票</span>
+                            <span class="vote-percentage" id="options-positive-pct-2">0.0%</span>
+                        </button>
+                        <button class="vote-button vote-negative" data-post-id="2" data-vote-type="options" data-vote-value="negative" onclick="handleVote(this)">
+                            <span class="vote-option-text">看淡</span>
+                            <span class="vote-count" id="options-negative-count-2">0票</span>
+                            <span class="vote-percentage" id="options-negative-pct-2">0.0%</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
             </div>
         </div>
         
@@ -341,7 +1508,7 @@
             <div class="analysis-section section-gray-2">
                 <h3>📊 期權建議</h3>
                 <div class="analysis-content">
-                    <p>1. <strong>AXON CALL</strong></p>
+                    <p>1. <strong>AXON  <span class="action-badge action-call">CALL</span></strong></p>
 <ul>
 <li>標的：AXON</li>
 <li>類型：CALL</li>
@@ -351,7 +1518,7 @@
 <li>風險：股價波動加劇、政策執行延遲。</li>
 </ul>
 <br>
-<p>2. <strong>FTNT CALL</strong></p>
+<p>2. <strong>FTNT  <span class="action-badge action-call">CALL</span></strong></p>
 <ul>
 <li>標的：Fortinet (FTNT)</li>
 <li>類型：CALL</li>
@@ -361,7 +1528,7 @@
 <li>風險：科技股估值波動、政策落實進度。</li>
 </ul>
 <br>
-<p>3. <strong>PLTR PUT（對沖用）</strong></p>
+<p>3. <strong>PLTR  <span class="action-badge action-put">PUT</span>（對沖用）</strong></p>
 <ul>
 <li>標的：Palantir (PLTR)</li>
 <li>類型：PUT</li>
@@ -378,9 +1545,9 @@
                 <div class="analysis-content">
                     <p>總結而言，特朗普推動的「Make D.C. Safe Task Force」反映美國政府對華盛頓特區及執法安全的高度重視，將帶動執法科技、防護裝備及國防安全領域大幅需求增長。OpenAI與DeepSeek兩方分析均指向執法科技與網絡安全板塊的長期利好，但DeepSeek擴展視角納入國防承包商及裝備供應商，令投資機會更為多元。</p>
 <br>
-<p>綜合考慮，優先推薦 AXON、RTX 與 FTNT 三隻股票，因其基本面穩健、合約穩定且技術領先，且三者涵蓋執法科技、國防安全及網絡安全三大關鍵領域，風險分散且成長潛力明確。期權策略則以 AXON CALL 為主力，輔以 FTNT CALL 把握中短期政策利好，及 PLTR PUT 以控制高估值風險。</p>
+<p>綜合考慮，優先推薦 AXON、RTX 與 FTNT 三隻股票，因其基本面穩健、合約穩定且技術領先，且三者涵蓋執法科技、國防安全及網絡安全三大關鍵領域，風險分散且成長潛力明確。期權策略則以 AXON  <span class="action-badge action-call">CALL</span> 為主力，輔以 FTNT  <span class="action-badge action-call">CALL</span> 把握中短期政策利好，及 PLTR  <span class="action-badge action-put">PUT</span> 以控制高估值風險。</p>
 <br>
-<p><strong>建議優先配置 AXON 與 RTX 股票，搭配 AXON CALL 期權，強化風險管理及收益槓桿。FTNT 為必備核心持倉，期權可視風險承受度適度配置。</strong></p>
+<p><strong>建議優先配置 AXON 與 RTX 股票，搭配 AXON  <span class="action-badge action-call">CALL</span> 期權，強化風險管理及收益槓桿。FTNT 為必備核心持倉，期權可視風險承受度適度配置。</strong></p>
 <br>
 <p><strong>關鍵風險需密切監控：</strong></p>
 <ul>
@@ -401,42 +1568,94 @@
     </article>
     
 
-    <article class="post-card " data-batch="1">
+    <article class="post-card hidden-post" data-batch="2">
         
-        <div class="post-header">
-            <div class="header-left">
-                <h2 class="section-title">Stock 股票</h2>
-                
+        <div class="header-vote-wrapper">
+            <div class="post-header">
+                <div class="header-left">
+                    <h2 class="section-title">Stock 股票</h2>
+                    
         <div class="summary-card empty">
             <div class="card-empty">NIL</div>
         </div>
         
-            </div>
-            
-            <div class="header-center">
-                <h2 class="section-title">Options 期權</h2>
+                </div>
                 
+                <div class="header-center">
+                    <h2 class="section-title">Options 期權</h2>
+                    
         <div class="summary-card empty">
             <div class="card-empty">NIL</div>
         </div>
         
+                </div>
             </div>
             
-            <div class="header-right">
+            <div class="meta-content-cell">
                 <div class="truth-logo">
                     <img src="assets/truth_logo.png" alt="Truth Social" onerror="this.style.display='none'">
                 </div>
+                
                 <div class="post-meta">
                     <img src="assets/trump_icon.jpg" alt="Trump" class="poster-icon" onerror="this.style.display='none'">
                     <div class="meta-text">
-                        <div class="meta-date">Post Date: 2025-10-30 08:09:59</div>
+                        <div class="meta-date">
+                            Post Date: 2025-10-30 08:09:59
+                        </div>
                         <div class="meta-name">Donald J. Trump</div>
                         <div class="meta-id">@realDonaldTrump</div>
                     </div>
                 </div>
+                
+                
                 <div class="post-content">
                     I had a truly great meeting with President Xi of China. There is enormous respect between our two Countries, and that will only be enhanced with what just took place. We agreed on many things, with others, even of high importance, being very close to resolved. I was extremely honored by the fact that President Xi authorized China to begin the purchase of massive amounts of Soybeans, Sorghum, and other Farm products. Our Farmers will be very happy! In fact, as I said once before during my first Administration, Farmers should immediately go out and buy more land and larger tractors. I would like to thank President Xi for this! Additionally, China has agreed to continue the flow of Rare Earth, Critical Minerals, Magnets, etc., openly and freely. Very significantly, China has strongly stated that they will work diligently with us to stop the flow of Fentanyl into our Country. They will help us end the Fentanyl Crisis. China also agreed that they will begin the process of purchasing American Energy. In fact, a very large scale transaction may take place concerning the purchase of Oil and Gas from the Great State of Alaska. Chris Wright, Doug Burgum, and our respective Energy teams will be meeting to see if such an Energy Deal can be worked out. The agreements reached today will deliver Prosperity and Security to millions of Americans. After this Historic trip to Asia, I am now heading back to Washington, D.C. I want to thank the Great Countries of Malaysia, Japan, and South Korea for being so generous, gracious, and hospitable — Also, Australia, Canada, New Zealand, Singapore, Thailand, and Vietnam, who were at the Dinner last night hosted by His Excellency Lee Jae Myung. Hundreds of Billions of Dollars are being brought into our Country because of them. Our Nation is Strong, Respected, and Admired Again and, THE BEST IS YET TO COME
                 </div>
+        
+            </div>
+            
+            <div class="vote-cell">
+                
+            <div class="vote-section" data-post-id="1">
+                <!-- Stock Vote -->
+                <div class="vote-item">
+                    <div class="vote-question">
+                        你怎麼看這次的<span class="vote-keyword-stock">股票</span>推薦?
+                    </div>
+                    <div class="vote-options">
+                        <button class="vote-button vote-positive" data-post-id="1" data-vote-type="stock" data-vote-value="positive" onclick="handleVote(this)">
+                            <span class="vote-option-text">看好</span>
+                            <span class="vote-count" id="stock-positive-count-1">0票</span>
+                            <span class="vote-percentage" id="stock-positive-pct-1">0.0%</span>
+                        </button>
+                        <button class="vote-button vote-negative" data-post-id="1" data-vote-type="stock" data-vote-value="negative" onclick="handleVote(this)">
+                            <span class="vote-option-text">看淡</span>
+                            <span class="vote-count" id="stock-negative-count-1">0票</span>
+                            <span class="vote-percentage" id="stock-negative-pct-1">0.0%</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Options Vote -->
+                <div class="vote-item">
+                    <div class="vote-question">
+                        你怎麼看這次的<span class="vote-keyword-options">期權</span>推薦?
+                    </div>
+                    <div class="vote-options">
+                        <button class="vote-button vote-positive" data-post-id="1" data-vote-type="options" data-vote-value="positive" onclick="handleVote(this)">
+                            <span class="vote-option-text">看好</span>
+                            <span class="vote-count" id="options-positive-count-1">0票</span>
+                            <span class="vote-percentage" id="options-positive-pct-1">0.0%</span>
+                        </button>
+                        <button class="vote-button vote-negative" data-post-id="1" data-vote-type="options" data-vote-value="negative" onclick="handleVote(this)">
+                            <span class="vote-option-text">看淡</span>
+                            <span class="vote-count" id="options-negative-count-1">0票</span>
+                            <span class="vote-percentage" id="options-negative-pct-1">0.0%</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
             </div>
         </div>
         
@@ -472,18 +1691,426 @@
     </div>
     
     <div id="end-message" class="end-message hidden">
-        <p>✓ All analyses loaded</p>
+        <p>✓ All posts loaded</p>
     </div>
     
     <footer class="main-footer">
-        <p>Powered by TruthDock, all rights reserved.</p>
+        <div class="footer-disclaimer">
+            <div class="disclaimer-section">
+                <h3 class="disclaimer-title">⚠️ Risk Warning</h3>
+                <p class="disclaimer-text">
+                    <strong>Risk Warning:</strong> All stock suggestions and recommendations on this website carry inherent investment risks. Please carefully assess your risk tolerance and do not invest funds you cannot afford to lose. Consult a qualified financial advisor before making investment decisions. Past performance does not guarantee future results.
+                </p>
+            </div>
+            <div class="disclaimer-section">
+                <h3 class="disclaimer-title">⚠️ 風險警告</h3>
+                <p class="disclaimer-text">
+                    <strong>風險警告：</strong> 本網站提供的所有股票建議及推薦均存在固有投資風險。請仔細評估您的風險承受能力，切勿投資您無法承受損失的資金。在作出投資決定前，請諮詢合資格的財務顧問。過往表現並不保證未來結果。
+                </p>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>Powered by AlphaFrog, all rights reserved.</p>
+        </div>
     </footer>
     
     <script>
-        const TOTAL_BATCHES = 1;
+        const TOTAL_BATCHES = 2;
         const INITIAL_VISIBLE = 1;
+        
+        // Update current datetime
+        function updateCurrentDateTime() {
+            const elements = document.querySelectorAll('.current-date-time');
+            const now = new Date();
+            const year = now.getFullYear();
+            const month = String(now.getMonth() + 1).padStart(2, '0');
+            const day = String(now.getDate()).padStart(2, '0');
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            const formatted = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+            
+            elements.forEach(el => {
+                el.textContent = formatted;
+            });
+        }
+        
+        // Convert number to Arabic numerals (replacing Chinese characters)
+        function numberToChinese(num, isCompound = false) {
+            // Simply return Arabic numerals instead of Chinese characters
+            return num.toString();
+        }
+        
+        // Calculate and update time ago tags
+        function updateTimeAgoTags() {
+            const tags = document.querySelectorAll('.time-ago-tag');
+            const now = new Date();
+            
+            tags.forEach(tag => {
+                const analysisDateStr = tag.getAttribute('data-analysis-date');
+                if (!analysisDateStr) return;
+                
+                // Parse ISO datetime (handle both Z and +00:00 formats)
+                const analysisDate = new Date(analysisDateStr.replace('Z', '+00:00'));
+                const diffMs = now - analysisDate;
+                
+                // Less than 1 minute: no tag
+                if (diffMs < 60000) {
+                    tag.textContent = '';
+                    tag.style.display = 'none';
+                    return;
+                }
+                
+                // Less than 1 hour: show minutes
+                if (diffMs < 3600000) {
+                    const minutes = Math.floor(diffMs / 60000);
+                    const minutesText = numberToChinese(minutes);
+                    tag.textContent = `${minutesText}分鐘前`;
+                    tag.style.display = 'inline';
+                    return;
+                }
+                
+                // Less than 1 day: show hours
+                if (diffMs < 86400000) {
+                    const hours = Math.floor(diffMs / 3600000);
+                    const hoursText = numberToChinese(hours);
+                    tag.textContent = `${hoursText}小時前`;
+                    tag.style.display = 'inline';
+                    return;
+                }
+                
+                // 1 day or more: show days
+                const days = Math.floor(diffMs / 86400000);
+                const daysText = numberToChinese(days);
+                tag.textContent = `${daysText}日前`;
+                tag.style.display = 'inline';
+            });
+        }
+        
+        // Combined update function
+        function updateDateTimeAndTimeAgo() {
+            updateCurrentDateTime();
+            updateTimeAgoTags();
+        }
+        
+        // Update on page load
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', updateDateTimeAndTimeAgo);
+        } else {
+            updateDateTimeAndTimeAgo();
+        }
+        
+        // Update every second for real-time clock and time ago tags
+        setInterval(updateDateTimeAndTimeAgo, 1000);
+        
+        // Language tab switching function
+        function switchLanguage(button, lang) {
+            const tabs = button.parentElement;
+            const metaContentCell = tabs.closest('.meta-content-cell');
+            
+            // Update active tab
+            tabs.querySelectorAll('.lang-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            button.classList.add('active');
+            
+            // Show/hide content
+            const engContent = metaContentCell.querySelector('.post-content-eng');
+            const zhContent = metaContentCell.querySelector('.post-content-zh');
+            
+            if (lang === 'eng') {
+                if (engContent) {
+                    engContent.style.display = 'block';
+                }
+                if (zhContent) {
+                    zhContent.style.display = 'none';
+                }
+            } else if (lang === 'zh') {
+                if (engContent) {
+                    engContent.style.display = 'none';
+                }
+                if (zhContent) {
+                    zhContent.style.display = 'block';
+                }
+            }
+        }
+        
+        // Post navigation functionality
+        function initPostNavigation() {
+            const posts = Array.from(document.querySelectorAll('.post-card:not(.hidden-post)'));
+            const totalPosts = posts.length;
+            
+            if (totalPosts <= 1) {
+                // Hide navigation if only one or no posts
+                const navButtons = document.querySelectorAll('.post-nav-button');
+                navButtons.forEach(btn => btn.style.display = 'none');
+                return;
+            }
+            
+            let currentPostIndex = 0;
+            
+            // Find which post is currently in view
+            function findCurrentPostIndex() {
+                const viewportTop = window.scrollY + 100; // Offset for header
+                let closestIndex = 0;
+                let closestDistance = Infinity;
+                
+                posts.forEach((post, index) => {
+                    const rect = post.getBoundingClientRect();
+                    const postTop = rect.top + window.scrollY;
+                    const distance = Math.abs(postTop - viewportTop);
+                    
+                    if (distance < closestDistance) {
+                        closestDistance = distance;
+                        closestIndex = index;
+                    }
+                });
+                
+                return closestIndex;
+            }
+            
+            // Update active post based on scroll position
+            function updateActivePost() {
+                const newIndex = findCurrentPostIndex();
+                if (newIndex !== currentPostIndex) {
+                    currentPostIndex = newIndex;
+                    posts.forEach(post => post.classList.remove('active-post'));
+                    if (posts[currentPostIndex]) {
+                        posts[currentPostIndex].classList.add('active-post');
+                    }
+                    updateNavigation();
+                }
+            }
+            
+            // Update navigation button states
+            function updateNavigation() {
+                const prevBtn = document.getElementById('nav-prev');
+                const nextBtn = document.getElementById('nav-next');
+                
+                // Show/hide Previous button
+                if (prevBtn) {
+                    prevBtn.style.display = currentPostIndex === 0 ? 'none' : 'flex';
+                    prevBtn.classList.toggle('disabled', currentPostIndex === 0);
+                }
+                
+                // Show/hide Next button
+                if (nextBtn) {
+                    nextBtn.style.display = currentPostIndex >= totalPosts - 1 ? 'none' : 'flex';
+                    nextBtn.classList.toggle('disabled', currentPostIndex >= totalPosts - 1);
+                }
+            }
+            
+            // Navigate to a specific post
+            function navigateToPost(index) {
+                if (index < 0 || index >= totalPosts) return;
+                
+                // Remove active class from all posts
+                posts.forEach(post => post.classList.remove('active-post'));
+                
+                // Set current post as active
+                posts[index].classList.add('active-post');
+                
+                // Scroll to post with smooth behavior
+                const headerOffset = 120;
+                const elementPosition = posts[index].getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                
+                window.scrollTo({ behavior: 'smooth', top: offsetPosition });
+                
+                currentPostIndex = index;
+                updateNavigation();
+            }
+            
+            // Previous button handler
+            const prevBtn = document.getElementById('nav-prev');
+            if (prevBtn) {
+                prevBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    if (currentPostIndex > 0) {
+                        navigateToPost(currentPostIndex - 1);
+                    }
+                });
+            }
+            
+            // Next button handler
+            const nextBtn = document.getElementById('nav-next');
+            if (nextBtn) {
+                nextBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    if (currentPostIndex < totalPosts - 1) {
+                        navigateToPost(currentPostIndex + 1);
+                    }
+                });
+            }
+            
+            // Initialize: set first post as active
+            if (posts.length > 0) {
+                updateActivePost();
+                updateNavigation();
+            }
+            
+            // Update active post on scroll (throttled)
+            let scrollTimeout;
+            window.addEventListener('scroll', () => {
+                clearTimeout(scrollTimeout);
+                scrollTimeout = setTimeout(updateActivePost, 100);
+            }, { passive: true });
+            
+            // Keyboard navigation support
+            document.addEventListener('keydown', (e) => {
+                // Don't intercept if user is typing in an input/textarea
+                if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
+                    return;
+                }
+                if (e.key === 'ArrowLeft' && currentPostIndex > 0) {
+                    e.preventDefault();
+                    navigateToPost(currentPostIndex - 1);
+                } else if (e.key === 'ArrowRight' && currentPostIndex < totalPosts - 1) {
+                    e.preventDefault();
+                    navigateToPost(currentPostIndex + 1);
+                }
+            });
+        }
+        
+        // Initialize navigation when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initPostNavigation);
+        } else {
+            initPostNavigation();
+        }
+        
+        // Vote handling functions
+        const VOTE_API_URL = 'http://localhost:5000/api/vote';  // Default vote API URL
+        
+        // Generate or get vote session cookie
+        function getVoteSessionId() {
+            let sessionId = document.cookie.split('; ').find(row => row.startsWith('vote_session_id='));
+            if (!sessionId) {
+                sessionId = 'vote_' + Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+                document.cookie = 'vote_session_id=' + sessionId + '; path=/; max-age=31536000'; // 1 year
+            } else {
+                sessionId = sessionId.split('=')[1];
+            }
+            return sessionId;
+        }
+        
+        // Handle vote button click
+        function handleVote(button) {
+            const postId = parseInt(button.getAttribute('data-post-id'));
+            const voteType = button.getAttribute('data-vote-type');
+            const voteValue = button.getAttribute('data-vote-value');
+            
+            // Disable button temporarily
+            button.disabled = true;
+            button.style.opacity = '0.6';
+            
+            // Send vote to API
+            fetch(VOTE_API_URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    post_id: postId,
+                    vote_type: voteType,
+                    vote_value: voteValue,
+                    voter_cookie: getVoteSessionId()
+                })
+            })
+            .then(response => {
+                if (response.status === 409) {
+                    alert('您已經投過票了！');
+                    button.disabled = false;
+                    button.style.opacity = '1';
+                    return null;
+                }
+                
+                if (!response.ok) {
+                    // Try to get error message from response
+                    return response.json().then(data => {
+                        throw new Error(data.error || `HTTP ${response.status}: ${response.statusText}`);
+                    }).catch(() => {
+                        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                    });
+                }
+                
+                return response.json();
+            })
+            .then(data => {
+                if (!data) return; // Already handled (409 case)
+                
+                if (data.success && data.stats) {
+                    updateVoteDisplay(postId, voteType, data.stats);
+                    // Disable all vote buttons for this vote type
+                    const voteSection = button.closest('.vote-section');
+                    const buttons = voteSection.querySelectorAll(`[data-vote-type="${voteType}"]`);
+                    buttons.forEach(btn => {
+                        btn.disabled = true;
+                        btn.style.opacity = '0.6';
+                    });
+                } else {
+                    alert('投票失敗，請稍後再試');
+                    button.disabled = false;
+                    button.style.opacity = '1';
+                }
+            })
+            .catch(error => {
+                console.error('Vote error:', error);
+                console.error('Error details:', {
+                    message: error.message,
+                    stack: error.stack,
+                    name: error.name
+                });
+                
+                let errorMessage = '投票失敗，請稍後再試';
+                
+                // Provide more specific error messages
+                if (error.message && error.message.includes('Failed to fetch')) {
+                    errorMessage = '無法連接到投票伺服器。請確認投票伺服器是否正在運行（執行 uv run python/vote_server_local.py）。\n\n提示：如果使用 file:// 打開網頁，請改用 HTTP 伺服器（例如：uv run python -m http.server 8000）';
+                } else if (error.message && error.message.includes('HTTP')) {
+                    errorMessage = `投票失敗：${error.message}`;
+                } else if (error.message) {
+                    errorMessage = `投票失敗：${error.message}`;
+                }
+                
+                alert(errorMessage);
+                button.disabled = false;
+                button.style.opacity = '1';
+            });
+        }
+        
+        // Update vote display with new statistics
+        function updateVoteDisplay(postId, voteType, stats) {
+            const typeStats = stats[voteType];
+            const total = typeStats.total;
+            const positive = typeStats.positive;
+            const negative = typeStats.negative;
+            
+            const positivePct = total > 0 ? (positive / total * 100).toFixed(1) : 0;
+            const negativePct = total > 0 ? (negative / total * 100).toFixed(1) : 0;
+            
+            // Update counts and percentages
+            document.getElementById(`${voteType}-positive-count-${postId}`).textContent = positive + '票';
+            document.getElementById(`${voteType}-positive-pct-${postId}`).textContent = positivePct + '%';
+            document.getElementById(`${voteType}-negative-count-${postId}`).textContent = negative + '票';
+            document.getElementById(`${voteType}-negative-pct-${postId}`).textContent = negativePct + '%';
+        }
     </script>
     <script src="infinite-scroll.js"></script>
     <script src="timeline-indicator.js"></script>
+    
+    <!-- Post Navigation Buttons -->
+    <div class="post-navigation">
+        <button id="nav-prev" class="post-nav-button post-nav-prev" aria-label="Previous Post">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <button id="nav-next" class="post-nav-button post-nav-next" aria-label="Next Post">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+    </div>
 </body>
 </html>
