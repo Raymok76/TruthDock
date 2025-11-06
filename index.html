@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AlphaFrog -- Financial News and Analysis</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Hide vote stats initially */
+        .vote-stats-hidden {
+            display: none !important;
+        }
+    </style>
 </head>
 <body>
     <header class="main-header">
@@ -98,13 +104,13 @@
                     <div class="vote-options">
                         <button class="vote-button vote-positive" data-post-id="19" data-vote-type="stock" data-vote-value="positive" onclick="handleVote(this)">
                             <span class="vote-option-text">看好</span>
-                            <span class="vote-count" id="stock-positive-count-19">211票</span>
-                            <span class="vote-percentage" id="stock-positive-pct-19">58.1%</span>
+                            <span class="vote-count vote-stats-hidden" id="stock-positive-count-19">211票</span>
+                            <span class="vote-percentage vote-stats-hidden" id="stock-positive-pct-19">58.1%</span>
                         </button>
                         <button class="vote-button vote-negative" data-post-id="19" data-vote-type="stock" data-vote-value="negative" onclick="handleVote(this)">
                             <span class="vote-option-text">看淡</span>
-                            <span class="vote-count" id="stock-negative-count-19">152票</span>
-                            <span class="vote-percentage" id="stock-negative-pct-19">41.9%</span>
+                            <span class="vote-count vote-stats-hidden" id="stock-negative-count-19">152票</span>
+                            <span class="vote-percentage vote-stats-hidden" id="stock-negative-pct-19">41.9%</span>
                         </button>
                     </div>
                 </div>
@@ -117,13 +123,13 @@
                     <div class="vote-options">
                         <button class="vote-button vote-positive" data-post-id="19" data-vote-type="options" data-vote-value="positive" onclick="handleVote(this)">
                             <span class="vote-option-text">看好</span>
-                            <span class="vote-count" id="options-positive-count-19">200票</span>
-                            <span class="vote-percentage" id="options-positive-pct-19">55.1%</span>
+                            <span class="vote-count vote-stats-hidden" id="options-positive-count-19">200票</span>
+                            <span class="vote-percentage vote-stats-hidden" id="options-positive-pct-19">55.1%</span>
                         </button>
                         <button class="vote-button vote-negative" data-post-id="19" data-vote-type="options" data-vote-value="negative" onclick="handleVote(this)">
                             <span class="vote-option-text">看淡</span>
-                            <span class="vote-count" id="options-negative-count-19">163票</span>
-                            <span class="vote-percentage" id="options-negative-pct-19">44.9%</span>
+                            <span class="vote-count vote-stats-hidden" id="options-negative-count-19">163票</span>
+                            <span class="vote-percentage vote-stats-hidden" id="options-negative-pct-19">44.9%</span>
                         </button>
                     </div>
                 </div>
@@ -298,13 +304,13 @@
                     <div class="vote-options">
                         <button class="vote-button vote-positive" data-post-id="21" data-vote-type="stock" data-vote-value="positive" onclick="handleVote(this)">
                             <span class="vote-option-text">看好</span>
-                            <span class="vote-count" id="stock-positive-count-21">198票</span>
-                            <span class="vote-percentage" id="stock-positive-pct-21">57.9%</span>
+                            <span class="vote-count vote-stats-hidden" id="stock-positive-count-21">198票</span>
+                            <span class="vote-percentage vote-stats-hidden" id="stock-positive-pct-21">57.9%</span>
                         </button>
                         <button class="vote-button vote-negative" data-post-id="21" data-vote-type="stock" data-vote-value="negative" onclick="handleVote(this)">
                             <span class="vote-option-text">看淡</span>
-                            <span class="vote-count" id="stock-negative-count-21">144票</span>
-                            <span class="vote-percentage" id="stock-negative-pct-21">42.1%</span>
+                            <span class="vote-count vote-stats-hidden" id="stock-negative-count-21">144票</span>
+                            <span class="vote-percentage vote-stats-hidden" id="stock-negative-pct-21">42.1%</span>
                         </button>
                     </div>
                 </div>
@@ -317,13 +323,13 @@
                     <div class="vote-options">
                         <button class="vote-button vote-positive" data-post-id="21" data-vote-type="options" data-vote-value="positive" onclick="handleVote(this)">
                             <span class="vote-option-text">看好</span>
-                            <span class="vote-count" id="options-positive-count-21">188票</span>
-                            <span class="vote-percentage" id="options-positive-pct-21">55.0%</span>
+                            <span class="vote-count vote-stats-hidden" id="options-positive-count-21">188票</span>
+                            <span class="vote-percentage vote-stats-hidden" id="options-positive-pct-21">55.0%</span>
                         </button>
                         <button class="vote-button vote-negative" data-post-id="21" data-vote-type="options" data-vote-value="negative" onclick="handleVote(this)">
                             <span class="vote-option-text">看淡</span>
-                            <span class="vote-count" id="options-negative-count-21">154票</span>
-                            <span class="vote-percentage" id="options-negative-pct-21">45.0%</span>
+                            <span class="vote-count vote-stats-hidden" id="options-negative-count-21">154票</span>
+                            <span class="vote-percentage vote-stats-hidden" id="options-negative-pct-21">45.0%</span>
                         </button>
                     </div>
                 </div>
@@ -498,13 +504,13 @@
                     <div class="vote-options">
                         <button class="vote-button vote-positive" data-post-id="16" data-vote-type="stock" data-vote-value="positive" onclick="handleVote(this)">
                             <span class="vote-option-text">看好</span>
-                            <span class="vote-count" id="stock-positive-count-16">249票</span>
-                            <span class="vote-percentage" id="stock-positive-pct-16">58.0%</span>
+                            <span class="vote-count vote-stats-hidden" id="stock-positive-count-16">249票</span>
+                            <span class="vote-percentage vote-stats-hidden" id="stock-positive-pct-16">58.0%</span>
                         </button>
                         <button class="vote-button vote-negative" data-post-id="16" data-vote-type="stock" data-vote-value="negative" onclick="handleVote(this)">
                             <span class="vote-option-text">看淡</span>
-                            <span class="vote-count" id="stock-negative-count-16">180票</span>
-                            <span class="vote-percentage" id="stock-negative-pct-16">42.0%</span>
+                            <span class="vote-count vote-stats-hidden" id="stock-negative-count-16">180票</span>
+                            <span class="vote-percentage vote-stats-hidden" id="stock-negative-pct-16">42.0%</span>
                         </button>
                     </div>
                 </div>
@@ -517,13 +523,13 @@
                     <div class="vote-options">
                         <button class="vote-button vote-positive" data-post-id="16" data-vote-type="options" data-vote-value="positive" onclick="handleVote(this)">
                             <span class="vote-option-text">看好</span>
-                            <span class="vote-count" id="options-positive-count-16">236票</span>
-                            <span class="vote-percentage" id="options-positive-pct-16">55.0%</span>
+                            <span class="vote-count vote-stats-hidden" id="options-positive-count-16">236票</span>
+                            <span class="vote-percentage vote-stats-hidden" id="options-positive-pct-16">55.0%</span>
                         </button>
                         <button class="vote-button vote-negative" data-post-id="16" data-vote-type="options" data-vote-value="negative" onclick="handleVote(this)">
                             <span class="vote-option-text">看淡</span>
-                            <span class="vote-count" id="options-negative-count-16">193票</span>
-                            <span class="vote-percentage" id="options-negative-pct-16">45.0%</span>
+                            <span class="vote-count vote-stats-hidden" id="options-negative-count-16">193票</span>
+                            <span class="vote-percentage vote-stats-hidden" id="options-negative-pct-16">45.0%</span>
                         </button>
                     </div>
                 </div>
@@ -694,13 +700,13 @@
                     <div class="vote-options">
                         <button class="vote-button vote-positive" data-post-id="13" data-vote-type="stock" data-vote-value="positive" onclick="handleVote(this)">
                             <span class="vote-option-text">看好</span>
-                            <span class="vote-count" id="stock-positive-count-13">0票</span>
-                            <span class="vote-percentage" id="stock-positive-pct-13">0.0%</span>
+                            <span class="vote-count vote-stats-hidden" id="stock-positive-count-13">0票</span>
+                            <span class="vote-percentage vote-stats-hidden" id="stock-positive-pct-13">0.0%</span>
                         </button>
                         <button class="vote-button vote-negative" data-post-id="13" data-vote-type="stock" data-vote-value="negative" onclick="handleVote(this)">
                             <span class="vote-option-text">看淡</span>
-                            <span class="vote-count" id="stock-negative-count-13">0票</span>
-                            <span class="vote-percentage" id="stock-negative-pct-13">0.0%</span>
+                            <span class="vote-count vote-stats-hidden" id="stock-negative-count-13">0票</span>
+                            <span class="vote-percentage vote-stats-hidden" id="stock-negative-pct-13">0.0%</span>
                         </button>
                     </div>
                 </div>
@@ -713,13 +719,13 @@
                     <div class="vote-options">
                         <button class="vote-button vote-positive" data-post-id="13" data-vote-type="options" data-vote-value="positive" onclick="handleVote(this)">
                             <span class="vote-option-text">看好</span>
-                            <span class="vote-count" id="options-positive-count-13">0票</span>
-                            <span class="vote-percentage" id="options-positive-pct-13">0.0%</span>
+                            <span class="vote-count vote-stats-hidden" id="options-positive-count-13">0票</span>
+                            <span class="vote-percentage vote-stats-hidden" id="options-positive-pct-13">0.0%</span>
                         </button>
                         <button class="vote-button vote-negative" data-post-id="13" data-vote-type="options" data-vote-value="negative" onclick="handleVote(this)">
                             <span class="vote-option-text">看淡</span>
-                            <span class="vote-count" id="options-negative-count-13">0票</span>
-                            <span class="vote-percentage" id="options-negative-pct-13">0.0%</span>
+                            <span class="vote-count vote-stats-hidden" id="options-negative-count-13">0票</span>
+                            <span class="vote-percentage vote-stats-hidden" id="options-negative-pct-13">0.0%</span>
                         </button>
                     </div>
                 </div>
@@ -893,13 +899,13 @@
                     <div class="vote-options">
                         <button class="vote-button vote-positive" data-post-id="14" data-vote-type="stock" data-vote-value="positive" onclick="handleVote(this)">
                             <span class="vote-option-text">看好</span>
-                            <span class="vote-count" id="stock-positive-count-14">0票</span>
-                            <span class="vote-percentage" id="stock-positive-pct-14">0.0%</span>
+                            <span class="vote-count vote-stats-hidden" id="stock-positive-count-14">0票</span>
+                            <span class="vote-percentage vote-stats-hidden" id="stock-positive-pct-14">0.0%</span>
                         </button>
                         <button class="vote-button vote-negative" data-post-id="14" data-vote-type="stock" data-vote-value="negative" onclick="handleVote(this)">
                             <span class="vote-option-text">看淡</span>
-                            <span class="vote-count" id="stock-negative-count-14">0票</span>
-                            <span class="vote-percentage" id="stock-negative-pct-14">0.0%</span>
+                            <span class="vote-count vote-stats-hidden" id="stock-negative-count-14">0票</span>
+                            <span class="vote-percentage vote-stats-hidden" id="stock-negative-pct-14">0.0%</span>
                         </button>
                     </div>
                 </div>
@@ -912,13 +918,13 @@
                     <div class="vote-options">
                         <button class="vote-button vote-positive" data-post-id="14" data-vote-type="options" data-vote-value="positive" onclick="handleVote(this)">
                             <span class="vote-option-text">看好</span>
-                            <span class="vote-count" id="options-positive-count-14">0票</span>
-                            <span class="vote-percentage" id="options-positive-pct-14">0.0%</span>
+                            <span class="vote-count vote-stats-hidden" id="options-positive-count-14">0票</span>
+                            <span class="vote-percentage vote-stats-hidden" id="options-positive-pct-14">0.0%</span>
                         </button>
                         <button class="vote-button vote-negative" data-post-id="14" data-vote-type="options" data-vote-value="negative" onclick="handleVote(this)">
                             <span class="vote-option-text">看淡</span>
-                            <span class="vote-count" id="options-negative-count-14">0票</span>
-                            <span class="vote-percentage" id="options-negative-pct-14">0.0%</span>
+                            <span class="vote-count vote-stats-hidden" id="options-negative-count-14">0票</span>
+                            <span class="vote-percentage vote-stats-hidden" id="options-negative-pct-14">0.0%</span>
                         </button>
                     </div>
                 </div>
@@ -1085,13 +1091,13 @@
                     <div class="vote-options">
                         <button class="vote-button vote-positive" data-post-id="11" data-vote-type="stock" data-vote-value="positive" onclick="handleVote(this)">
                             <span class="vote-option-text">看好</span>
-                            <span class="vote-count" id="stock-positive-count-11">0票</span>
-                            <span class="vote-percentage" id="stock-positive-pct-11">0.0%</span>
+                            <span class="vote-count vote-stats-hidden" id="stock-positive-count-11">0票</span>
+                            <span class="vote-percentage vote-stats-hidden" id="stock-positive-pct-11">0.0%</span>
                         </button>
                         <button class="vote-button vote-negative" data-post-id="11" data-vote-type="stock" data-vote-value="negative" onclick="handleVote(this)">
                             <span class="vote-option-text">看淡</span>
-                            <span class="vote-count" id="stock-negative-count-11">0票</span>
-                            <span class="vote-percentage" id="stock-negative-pct-11">0.0%</span>
+                            <span class="vote-count vote-stats-hidden" id="stock-negative-count-11">0票</span>
+                            <span class="vote-percentage vote-stats-hidden" id="stock-negative-pct-11">0.0%</span>
                         </button>
                     </div>
                 </div>
@@ -1104,13 +1110,13 @@
                     <div class="vote-options">
                         <button class="vote-button vote-positive" data-post-id="11" data-vote-type="options" data-vote-value="positive" onclick="handleVote(this)">
                             <span class="vote-option-text">看好</span>
-                            <span class="vote-count" id="options-positive-count-11">0票</span>
-                            <span class="vote-percentage" id="options-positive-pct-11">0.0%</span>
+                            <span class="vote-count vote-stats-hidden" id="options-positive-count-11">0票</span>
+                            <span class="vote-percentage vote-stats-hidden" id="options-positive-pct-11">0.0%</span>
                         </button>
                         <button class="vote-button vote-negative" data-post-id="11" data-vote-type="options" data-vote-value="negative" onclick="handleVote(this)">
                             <span class="vote-option-text">看淡</span>
-                            <span class="vote-count" id="options-negative-count-11">0票</span>
-                            <span class="vote-percentage" id="options-negative-pct-11">0.0%</span>
+                            <span class="vote-count vote-stats-hidden" id="options-negative-count-11">0票</span>
+                            <span class="vote-percentage vote-stats-hidden" id="options-negative-pct-11">0.0%</span>
                         </button>
                     </div>
                 </div>
@@ -1260,13 +1266,13 @@
                     <div class="vote-options">
                         <button class="vote-button vote-positive" data-post-id="10" data-vote-type="stock" data-vote-value="positive" onclick="handleVote(this)">
                             <span class="vote-option-text">看好</span>
-                            <span class="vote-count" id="stock-positive-count-10">0票</span>
-                            <span class="vote-percentage" id="stock-positive-pct-10">0.0%</span>
+                            <span class="vote-count vote-stats-hidden" id="stock-positive-count-10">0票</span>
+                            <span class="vote-percentage vote-stats-hidden" id="stock-positive-pct-10">0.0%</span>
                         </button>
                         <button class="vote-button vote-negative" data-post-id="10" data-vote-type="stock" data-vote-value="negative" onclick="handleVote(this)">
                             <span class="vote-option-text">看淡</span>
-                            <span class="vote-count" id="stock-negative-count-10">0票</span>
-                            <span class="vote-percentage" id="stock-negative-pct-10">0.0%</span>
+                            <span class="vote-count vote-stats-hidden" id="stock-negative-count-10">0票</span>
+                            <span class="vote-percentage vote-stats-hidden" id="stock-negative-pct-10">0.0%</span>
                         </button>
                     </div>
                 </div>
@@ -1279,13 +1285,13 @@
                     <div class="vote-options">
                         <button class="vote-button vote-positive" data-post-id="10" data-vote-type="options" data-vote-value="positive" onclick="handleVote(this)">
                             <span class="vote-option-text">看好</span>
-                            <span class="vote-count" id="options-positive-count-10">0票</span>
-                            <span class="vote-percentage" id="options-positive-pct-10">0.0%</span>
+                            <span class="vote-count vote-stats-hidden" id="options-positive-count-10">0票</span>
+                            <span class="vote-percentage vote-stats-hidden" id="options-positive-pct-10">0.0%</span>
                         </button>
                         <button class="vote-button vote-negative" data-post-id="10" data-vote-type="options" data-vote-value="negative" onclick="handleVote(this)">
                             <span class="vote-option-text">看淡</span>
-                            <span class="vote-count" id="options-negative-count-10">0票</span>
-                            <span class="vote-percentage" id="options-negative-pct-10">0.0%</span>
+                            <span class="vote-count vote-stats-hidden" id="options-negative-count-10">0票</span>
+                            <span class="vote-percentage vote-stats-hidden" id="options-negative-pct-10">0.0%</span>
                         </button>
                     </div>
                 </div>
@@ -1441,13 +1447,13 @@
                     <div class="vote-options">
                         <button class="vote-button vote-positive" data-post-id="2" data-vote-type="stock" data-vote-value="positive" onclick="handleVote(this)">
                             <span class="vote-option-text">看好</span>
-                            <span class="vote-count" id="stock-positive-count-2">0票</span>
-                            <span class="vote-percentage" id="stock-positive-pct-2">0.0%</span>
+                            <span class="vote-count vote-stats-hidden" id="stock-positive-count-2">0票</span>
+                            <span class="vote-percentage vote-stats-hidden" id="stock-positive-pct-2">0.0%</span>
                         </button>
                         <button class="vote-button vote-negative" data-post-id="2" data-vote-type="stock" data-vote-value="negative" onclick="handleVote(this)">
                             <span class="vote-option-text">看淡</span>
-                            <span class="vote-count" id="stock-negative-count-2">0票</span>
-                            <span class="vote-percentage" id="stock-negative-pct-2">0.0%</span>
+                            <span class="vote-count vote-stats-hidden" id="stock-negative-count-2">0票</span>
+                            <span class="vote-percentage vote-stats-hidden" id="stock-negative-pct-2">0.0%</span>
                         </button>
                     </div>
                 </div>
@@ -1460,13 +1466,13 @@
                     <div class="vote-options">
                         <button class="vote-button vote-positive" data-post-id="2" data-vote-type="options" data-vote-value="positive" onclick="handleVote(this)">
                             <span class="vote-option-text">看好</span>
-                            <span class="vote-count" id="options-positive-count-2">0票</span>
-                            <span class="vote-percentage" id="options-positive-pct-2">0.0%</span>
+                            <span class="vote-count vote-stats-hidden" id="options-positive-count-2">0票</span>
+                            <span class="vote-percentage vote-stats-hidden" id="options-positive-pct-2">0.0%</span>
                         </button>
                         <button class="vote-button vote-negative" data-post-id="2" data-vote-type="options" data-vote-value="negative" onclick="handleVote(this)">
                             <span class="vote-option-text">看淡</span>
-                            <span class="vote-count" id="options-negative-count-2">0票</span>
-                            <span class="vote-percentage" id="options-negative-pct-2">0.0%</span>
+                            <span class="vote-count vote-stats-hidden" id="options-negative-count-2">0票</span>
+                            <span class="vote-percentage vote-stats-hidden" id="options-negative-pct-2">0.0%</span>
                         </button>
                     </div>
                 </div>
@@ -1625,13 +1631,13 @@
                     <div class="vote-options">
                         <button class="vote-button vote-positive" data-post-id="1" data-vote-type="stock" data-vote-value="positive" onclick="handleVote(this)">
                             <span class="vote-option-text">看好</span>
-                            <span class="vote-count" id="stock-positive-count-1">0票</span>
-                            <span class="vote-percentage" id="stock-positive-pct-1">0.0%</span>
+                            <span class="vote-count vote-stats-hidden" id="stock-positive-count-1">0票</span>
+                            <span class="vote-percentage vote-stats-hidden" id="stock-positive-pct-1">0.0%</span>
                         </button>
                         <button class="vote-button vote-negative" data-post-id="1" data-vote-type="stock" data-vote-value="negative" onclick="handleVote(this)">
                             <span class="vote-option-text">看淡</span>
-                            <span class="vote-count" id="stock-negative-count-1">0票</span>
-                            <span class="vote-percentage" id="stock-negative-pct-1">0.0%</span>
+                            <span class="vote-count vote-stats-hidden" id="stock-negative-count-1">0票</span>
+                            <span class="vote-percentage vote-stats-hidden" id="stock-negative-pct-1">0.0%</span>
                         </button>
                     </div>
                 </div>
@@ -1644,13 +1650,13 @@
                     <div class="vote-options">
                         <button class="vote-button vote-positive" data-post-id="1" data-vote-type="options" data-vote-value="positive" onclick="handleVote(this)">
                             <span class="vote-option-text">看好</span>
-                            <span class="vote-count" id="options-positive-count-1">0票</span>
-                            <span class="vote-percentage" id="options-positive-pct-1">0.0%</span>
+                            <span class="vote-count vote-stats-hidden" id="options-positive-count-1">0票</span>
+                            <span class="vote-percentage vote-stats-hidden" id="options-positive-pct-1">0.0%</span>
                         </button>
                         <button class="vote-button vote-negative" data-post-id="1" data-vote-type="options" data-vote-value="negative" onclick="handleVote(this)">
                             <span class="vote-option-text">看淡</span>
-                            <span class="vote-count" id="options-negative-count-1">0票</span>
-                            <span class="vote-percentage" id="options-negative-pct-1">0.0%</span>
+                            <span class="vote-count vote-stats-hidden" id="options-negative-count-1">0票</span>
+                            <span class="vote-percentage vote-stats-hidden" id="options-negative-pct-1">0.0%</span>
                         </button>
                     </div>
                 </div>
@@ -2027,6 +2033,19 @@
             return true;
         }
         
+        // Show vote stats for a specific vote type
+        function showVoteStats(postId, voteType) {
+            const voteSection = document.querySelector(`.vote-section[data-post-id="${postId}"]`);
+            if (!voteSection) return;
+            
+            // Show all vote counts and percentages for this vote type
+            const counts = voteSection.querySelectorAll(`#${voteType}-positive-count-${postId}, #${voteType}-negative-count-${postId}`);
+            const percentages = voteSection.querySelectorAll(`#${voteType}-positive-pct-${postId}, #${voteType}-negative-pct-${postId}`);
+            
+            counts.forEach(el => el.classList.remove('vote-stats-hidden'));
+            percentages.forEach(el => el.classList.remove('vote-stats-hidden'));
+        }
+        
         // Update vote counts optimistically (for GitHub Pages)
         function updateVoteCountOptimistic(postId, voteType, voteValue) {
             // Get current counts
@@ -2054,6 +2073,9 @@
                 document.getElementById(`${voteType}-positive-pct-${postId}`).textContent = positivePct + '%';
                 negativeEl.textContent = negativeCount + '票';
                 document.getElementById(`${voteType}-negative-pct-${postId}`).textContent = negativePct + '%';
+                
+                // Show stats after voting
+                showVoteStats(postId, voteType);
             }
         }
         
@@ -2082,7 +2104,7 @@
             // If on GitHub Pages, use localStorage
             if (isGitHubPages) {
                 if (saveVoteToLocal(postId, voteType, voteValue, voterCookie)) {
-                    // Update UI optimistically
+                    // Update UI optimistically (this also shows stats)
                     updateVoteCountOptimistic(postId, voteType, voteValue);
                     
                     // Disable all vote buttons for this vote type
@@ -2139,6 +2161,8 @@
                 
                 if (data.success && data.stats) {
                     updateVoteDisplay(postId, voteType, data.stats);
+                    // Show vote stats after voting
+                    showVoteStats(postId, voteType);
                     // Disable all vote buttons for this vote type
                     const voteSection = button.closest('.vote-section');
                     const buttons = voteSection.querySelectorAll(`[data-vote-type="${voteType}"]`);
@@ -2186,6 +2210,59 @@
             document.getElementById(`${voteType}-positive-pct-${postId}`).textContent = positivePct + '%';
             document.getElementById(`${voteType}-negative-count-${postId}`).textContent = negative + '票';
             document.getElementById(`${voteType}-negative-pct-${postId}`).textContent = negativePct + '%';
+        }
+        
+        // Check vote status for all posts on page load
+        function checkVoteStatusOnLoad() {
+            const voteSections = document.querySelectorAll('.vote-section');
+            const voterCookie = getVoteSessionId();
+            
+            voteSections.forEach(section => {
+                const postId = parseInt(section.getAttribute('data-post-id'));
+                if (!postId) return;
+                
+                // For GitHub Pages, check localStorage
+                if (isGitHubPages) {
+                    const votes = getLocalVotes();
+                    const stockVoted = votes.some(v => v.post_id === postId && v.vote_type === 'stock' && v.voter_cookie === voterCookie);
+                    const optionsVoted = votes.some(v => v.post_id === postId && v.vote_type === 'options' && v.voter_cookie === voterCookie);
+                    
+                    if (stockVoted) {
+                        showVoteStats(postId, 'stock');
+                    }
+                    if (optionsVoted) {
+                        showVoteStats(postId, 'options');
+                    }
+                } else {
+                    // For localhost, check via API
+                    const CHECK_API_URL = 'http://localhost:5000/api/vote/check/';
+                    fetch(CHECK_API_URL + postId)
+                        .then(response => {
+                            if (!response.ok) return;
+                            return response.json();
+                        })
+                        .then(data => {
+                            if (!data) return;
+                            if (data.stock_voted) {
+                                showVoteStats(postId, 'stock');
+                            }
+                            if (data.options_voted) {
+                                showVoteStats(postId, 'options');
+                            }
+                        })
+                        .catch(error => {
+                            // Silently fail - API might not be running
+                            console.debug('Could not check vote status:', error);
+                        });
+                }
+            });
+        }
+        
+        // Initialize vote status check on page load
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', checkVoteStatusOnLoad);
+        } else {
+            checkVoteStatusOnLoad();
         }
     </script>
     <script src="infinite-scroll.js"></script>
