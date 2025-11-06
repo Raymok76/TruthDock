@@ -67,7 +67,7 @@ body {
     border-radius: 12px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.04);
     margin-bottom: var(--spacing-lg);
-    overflow: hidden;
+    overflow: visible;
     transition: all 0.3s ease;
 }
 
@@ -168,6 +168,7 @@ body {
     gap: var(--spacing-md);
     padding: var(--spacing-lg);
     align-items: stretch;
+    overflow: visible;
 }
 
 /* ===== Post Header (Stock/Options Section) ===== */
@@ -431,6 +432,8 @@ body {
     grid-column: 2;
     align-self: start;
     min-height: 0;
+    height: auto;
+    max-height: 700px !important;
 }
 
 .meta-content-cell .truth-logo {
@@ -499,7 +502,7 @@ body {
     flex: 0 1 auto;
     overflow-y: auto;
     min-height: 20px;
-    max-height: 200px;
+    max-height: 400px;
     padding: var(--spacing-sm);
 }
 
@@ -722,7 +725,7 @@ body {
 
 /* ===== Vote Section ===== */
 .vote-cell {
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 2;
     background-color: var(--card-bg);
     border: 1px solid var(--border-color);
@@ -856,6 +859,23 @@ body {
     margin-top: var(--spacing-xs);
 }
 
+/* Vote success indicator */
+.vote-success-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-left: 0.5rem;
+    font-size: 0.7rem;
+    color: #9ca3af;
+    white-space: nowrap;
+}
+
+.vote-success-indicator svg {
+    width: 12px;
+    height: 12px;
+    flex-shrink: 0;
+}
+
 /* ===== No Posts Message ===== */
 .no-posts {
     text-align: center;
@@ -982,6 +1002,7 @@ body {
     .meta-content-cell {
         grid-row: 2;
         grid-column: 1;
+        max-height: none;
     }
     
     .meta-content-cell .post-content {

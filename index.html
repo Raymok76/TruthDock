@@ -2046,6 +2046,33 @@
             percentages.forEach(el => el.classList.remove('vote-stats-hidden'));
         }
         
+        // Show vote success indicator (tick icon + "投票成功")
+        function showVoteSuccessIndicator(button) {
+            // Check if indicator already exists
+            if (button.querySelector('.vote-success-indicator')) {
+                return;
+            }
+            
+            // Create success indicator element
+            const indicator = document.createElement('span');
+            indicator.className = 'vote-success-indicator';
+            indicator.innerHTML = `
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 3L4.5 8.5L2 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>投票成功</span>
+            `;
+            
+            // Insert right after the vote option text
+            const optionText = button.querySelector('.vote-option-text');
+            if (optionText) {
+                optionText.insertAdjacentElement('afterend', indicator);
+            } else {
+                // Fallback: insert at the beginning if option text not found
+                button.insertBefore(indicator, button.firstChild);
+            }
+        }
+        
         // Update vote counts optimistically (for GitHub Pages)
         function updateVoteCountOptimistic(postId, voteType, voteValue) {
             // Get current counts
@@ -2115,6 +2142,9 @@
                         btn.style.opacity = '0.6';
                     });
                     
+                    // Show success indicator on the voted button
+                    showVoteSuccessIndicator(button);
+                    
                     // Show success message
                     console.log('✅ Vote saved locally. It will be processed by GitHub Actions.');
                 } else {
@@ -2170,6 +2200,9 @@
                         btn.disabled = true;
                         btn.style.opacity = '0.6';
                     });
+                    
+                    // Show success indicator on the voted button
+                    showVoteSuccessIndicator(button);
                 } else {
                     alert('投票失敗，請稍後再試');
                     button.disabled = false;
@@ -2224,14 +2257,36 @@
                 // For GitHub Pages, check localStorage
                 if (isGitHubPages) {
                     const votes = getLocalVotes();
-                    const stockVoted = votes.some(v => v.post_id === postId && v.vote_type === 'stock' && v.voter_cookie === voterCookie);
-                    const optionsVoted = votes.some(v => v.post_id === postId && v.vote_type === 'options' && v.voter_cookie === voterCookie);
+                    const stockVote = votes.find(v => v.post_id === postId && v.vote_type === 'stock' && v.voter_cookie === voterCookie);
+                    const optionsVote = votes.find(v => v.post_id === postId && v.vote_type === 'options' && v.voter_cookie === voterCookie);
                     
-                    if (stockVoted) {
+                    if (stockVote) {
                         showVoteStats(postId, 'stock');
+                        // Show success indicator on the voted button
+                        const votedButton = section.querySelector(`[data-vote-type="stock"][data-vote-value="${stockVote.vote_value}"]`);
+                        if (votedButton) {
+                            showVoteSuccessIndicator(votedButton);
+                            // Disable all stock vote buttons
+                            const buttons = section.querySelectorAll(`[data-vote-type="stock"]`);
+                            buttons.forEach(btn => {
+                                btn.disabled = true;
+                                btn.style.opacity = '0.6';
+                            });
+                        }
                     }
-                    if (optionsVoted) {
+                    if (optionsVote) {
                         showVoteStats(postId, 'options');
+                        // Show success indicator on the voted button
+                        const votedButton = section.querySelector(`[data-vote-type="options"][data-vote-value="${optionsVote.vote_value}"]`);
+                        if (votedButton) {
+                            showVoteSuccessIndicator(votedButton);
+                            // Disable all options vote buttons
+                            const buttons = section.querySelectorAll(`[data-vote-type="options"]`);
+                            buttons.forEach(btn => {
+                                btn.disabled = true;
+                                btn.style.opacity = '0.6';
+                            });
+                        }
                     }
                 } else {
                     // For localhost, check via API
@@ -2245,9 +2300,31 @@
                             if (!data) return;
                             if (data.stock_voted) {
                                 showVoteStats(postId, 'stock');
+                                // Show success indicator on the voted button
+                                const votedButton = section.querySelector(`[data-vote-type="stock"][data-vote-value="${data.stock_vote_value}"]`);
+                                if (votedButton) {
+                                    showVoteSuccessIndicator(votedButton);
+                                    // Disable all stock vote buttons
+                                    const buttons = section.querySelectorAll(`[data-vote-type="stock"]`);
+                                    buttons.forEach(btn => {
+                                        btn.disabled = true;
+                                        btn.style.opacity = '0.6';
+                                    });
+                                }
                             }
                             if (data.options_voted) {
                                 showVoteStats(postId, 'options');
+                                // Show success indicator on the voted button
+                                const votedButton = section.querySelector(`[data-vote-type="options"][data-vote-value="${data.options_vote_value}"]`);
+                                if (votedButton) {
+                                    showVoteSuccessIndicator(votedButton);
+                                    // Disable all options vote buttons
+                                    const buttons = section.querySelectorAll(`[data-vote-type="options"]`);
+                                    buttons.forEach(btn => {
+                                        btn.disabled = true;
+                                        btn.style.opacity = '0.6';
+                                    });
+                                }
                             }
                         })
                         .catch(error => {
