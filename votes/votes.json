@@ -2145,11 +2145,6 @@
         "vote_value": "negative",
         "voter_cookie": "vote_279499",
         "created_at": "2025-11-05T14:49:48.661152"
-      },
-      {
-        "vote_value": "positive",
-        "voter_cookie": "vote_uhd1is8m0avetgz323r6",
-        "created_at": "2025-11-05T20:59:50.237302"
       }
     ],
     "options": [
@@ -6116,11 +6111,6 @@
         "vote_value": "negative",
         "voter_cookie": "vote_486588",
         "created_at": "2025-11-05T23:34:56.554536"
-      },
-      {
-        "vote_value": "positive",
-        "voter_cookie": "vote_uhd1is8m0avetgz323r6",
-        "created_at": "2025-11-06T00:05:58.182573"
       }
     ],
     "options": [
@@ -7938,11 +7928,6 @@
         "vote_value": "negative",
         "voter_cookie": "vote_122507",
         "created_at": "2025-11-05T23:31:44.554536"
-      },
-      {
-        "vote_value": "positive",
-        "voter_cookie": "vote_uhd1is8m0avetgz323r6",
-        "created_at": "2025-11-06T00:06:06.035009"
       }
     ]
   },
