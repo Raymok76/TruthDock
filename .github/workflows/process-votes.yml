@@ -52,56 +52,31 @@ jobs:
             uv run process_votes.py
           else
             echo "⚠️  Python directory not found. Processing votes manually..."
-            # Install minimal dependencies if python directory doesn't exist
             uv pip install --system python-dotenv || true
-            # Create temporary script file
-            cat > process_votes_temp.py << 'EOF'
-import json
-import os
-
-pending_file = 'votes/pending_votes.json'
-votes_file = 'votes/votes.json'
-
-if os.path.exists(pending_file):
-    with open(pending_file, 'r') as f:
-        pending = json.load(f)
-    
-    votes = {}
-    if os.path.exists(votes_file):
-        with open(votes_file, 'r') as f:
-            votes = json.load(f)
-    
-    processed = 0
-    for vote in pending:
-        post_id = str(vote['post_id'])
-        vote_type = vote['vote_type']
-        vote_value = vote['vote_value']
-        voter_cookie = vote.get('voter_cookie')
-        
-        if post_id not in votes:
-            votes[post_id] = {'stock': [], 'options': []}
-        
-        existing = votes[post_id][vote_type]
-        if not any(v.get('voter_cookie') == voter_cookie for v in existing if voter_cookie):
-            votes[post_id][vote_type].append({
-                'vote_value': vote_value,
-                'voter_cookie': voter_cookie,
-                'created_at': vote.get('created_at', '')
-            })
-            processed += 1
-    
-    with open(votes_file, 'w') as f:
-        json.dump(votes, f, indent=2, ensure_ascii=False)
-    
-    with open(pending_file, 'w') as f:
-        json.dump([], f)
-    
-    print(f'✅ Processed {processed} vote(s)')
-else:
-    print('ℹ️  No pending votes to process')
-EOF
-            python3 process_votes_temp.py
-            rm -f process_votes_temp.py
+            python3 -c "import json, os; \
+              pf = 'votes/pending_votes.json'; \
+              vf = 'votes/votes.json'; \
+              votes = {}; \
+              if os.path.exists(vf): \
+                with open(vf, 'r') as f: votes = json.load(f); \
+              processed = 0; \
+              if os.path.exists(pf): \
+                with open(pf, 'r') as f: pending = json.load(f); \
+                for vote in pending: \
+                  pid = str(vote['post_id']); \
+                  vtype = vote['vote_type']; \
+                  vval = vote['vote_value']; \
+                  vcookie = vote.get('voter_cookie'); \
+                  if pid not in votes: votes[pid] = {'stock': [], 'options': []}; \
+                  existing = votes[pid][vtype]; \
+                  if not any(v.get('voter_cookie') == vcookie for v in existing if vcookie): \
+                    votes[pid][vtype].append({'vote_value': vval, 'voter_cookie': vcookie, 'created_at': vote.get('created_at', '')}); \
+                    processed += 1; \
+                with open(vf, 'w') as f: json.dump(votes, f, indent=2, ensure_ascii=False); \
+                with open(pf, 'w') as f: json.dump([], f); \
+                print(f'✅ Processed {processed} vote(s)'); \
+              else: \
+                print('ℹ️  No pending votes to process')"
           fi
       
       - name: Commit and push changes
