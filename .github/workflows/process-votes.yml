@@ -38,13 +38,75 @@ jobs:
       
       - name: Sync votes from SQLite to JSON
         run: |
-          cd python
-          uv run sync_votes.py || echo "No SQLite votes to sync"
+          if [ -d "python" ]; then
+            cd python
+            uv run sync_votes.py || echo "No SQLite votes to sync"
+          else
+            echo "⚠️  Python directory not found, skipping SQLite sync (no database on GitHub)"
+          fi
       
       - name: Process pending votes
         run: |
-          cd python
-          uv run process_votes.py
+          if [ -d "python" ]; then
+            cd python
+            uv run process_votes.py
+          else
+            echo "⚠️  Python directory not found. Processing votes manually..."
+            # Install minimal dependencies if python directory doesn't exist
+            uv pip install --system python-dotenv || true
+            # Create minimal vote processing script inline
+            python3 << 'PYTHON_SCRIPT'
+            import json
+            import os
+            
+            # Process pending votes
+            pending_file = 'votes/pending_votes.json'
+            votes_file = 'votes/votes.json'
+            
+            if os.path.exists(pending_file):
+                with open(pending_file, 'r') as f:
+                    pending = json.load(f)
+                
+                # Load existing votes
+                votes = {}
+                if os.path.exists(votes_file):
+                    with open(votes_file, 'r') as f:
+                        votes = json.load(f)
+                
+                # Process pending votes
+                processed = 0
+                for vote in pending:
+                    post_id = str(vote['post_id'])
+                    vote_type = vote['vote_type']
+                    vote_value = vote['vote_value']
+                    voter_cookie = vote.get('voter_cookie')
+                    
+                    if post_id not in votes:
+                        votes[post_id] = {'stock': [], 'options': []}
+                    
+                    # Check for duplicates
+                    existing = votes[post_id][vote_type]
+                    if not any(v.get('voter_cookie') == voter_cookie for v in existing if voter_cookie):
+                        votes[post_id][vote_type].append({
+                            'vote_value': vote_value,
+                            'voter_cookie': voter_cookie,
+                            'created_at': vote.get('created_at', '')
+                        })
+                        processed += 1
+                
+                # Save votes
+                with open(votes_file, 'w') as f:
+                    json.dump(votes, f, indent=2, ensure_ascii=False)
+                
+                # Clear pending
+                with open(pending_file, 'w') as f:
+                    json.dump([], f)
+                
+                print(f"✅ Processed {processed} vote(s)")
+            else:
+                print("ℹ️  No pending votes to process")
+            PYTHON_SCRIPT
+          fi
       
       - name: Commit and push changes
         env:
@@ -52,6 +114,14 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add votes/votes.json index.html
-          git diff --staged --quiet || git commit -m "Auto-update: Process votes and regenerate HTML [skip ci]"
-          git push
+          git add votes/votes.json
+          # Only add index.html if python directory exists (it was regenerated)
+          if [ -d "python" ]; then
+            git add index.html
+          fi
+          if ! git diff --staged --quiet; then
+            git commit -m "Auto-update: Process votes and regenerate HTML [skip ci]"
+            git push
+          else
+            echo "ℹ️  No changes to commit"
+          fi
