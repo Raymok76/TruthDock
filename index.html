@@ -1981,6 +1981,7 @@
         
         // Vote handling functions
         const VOTE_API_URL = 'http://localhost:5000/api/vote';  // Default vote API URL
+        const isGitHubPages = window.location.hostname.includes('github.io');
         
         // Generate or get vote session cookie
         function getVoteSessionId() {
@@ -1994,17 +1995,115 @@
             return sessionId;
         }
         
+        // Get votes from localStorage
+        function getLocalVotes() {
+            try {
+                const stored = localStorage.getItem('pending_votes');
+                return stored ? JSON.parse(stored) : [];
+            } catch (e) {
+                return [];
+            }
+        }
+        
+        // Save vote to localStorage
+        function saveVoteToLocal(postId, voteType, voteValue, voterCookie) {
+            const votes = getLocalVotes();
+            const voteKey = `${postId}_${voteType}`;
+            
+            // Check if already voted
+            if (votes.some(v => v.post_id === postId && v.vote_type === voteType && v.voter_cookie === voterCookie)) {
+                return false;
+            }
+            
+            votes.push({
+                post_id: postId,
+                vote_type: voteType,
+                vote_value: voteValue,
+                voter_cookie: voterCookie,
+                created_at: new Date().toISOString()
+            });
+            
+            localStorage.setItem('pending_votes', JSON.stringify(votes));
+            return true;
+        }
+        
+        // Update vote counts optimistically (for GitHub Pages)
+        function updateVoteCountOptimistic(postId, voteType, voteValue) {
+            // Get current counts
+            const positiveEl = document.getElementById(`${voteType}-positive-count-${postId}`);
+            const negativeEl = document.getElementById(`${voteType}-negative-count-${postId}`);
+            
+            if (positiveEl && negativeEl) {
+                // Parse counts, removing "票" suffix if present
+                let positiveCount = parseInt(positiveEl.textContent.replace('票', '').trim()) || 0;
+                let negativeCount = parseInt(negativeEl.textContent.replace('票', '').trim()) || 0;
+                
+                // Increment the voted option
+                if (voteValue === 'positive') {
+                    positiveCount++;
+                } else {
+                    negativeCount++;
+                }
+                
+                const total = positiveCount + negativeCount;
+                const positivePct = total > 0 ? (positiveCount / total * 100).toFixed(1) : 0;
+                const negativePct = total > 0 ? (negativeCount / total * 100).toFixed(1) : 0;
+                
+                // Update display
+                positiveEl.textContent = positiveCount + '票';
+                document.getElementById(`${voteType}-positive-pct-${postId}`).textContent = positivePct + '%';
+                negativeEl.textContent = negativeCount + '票';
+                document.getElementById(`${voteType}-negative-pct-${postId}`).textContent = negativePct + '%';
+            }
+        }
+        
         // Handle vote button click
         function handleVote(button) {
             const postId = parseInt(button.getAttribute('data-post-id'));
             const voteType = button.getAttribute('data-vote-type');
             const voteValue = button.getAttribute('data-vote-value');
+            const voterCookie = getVoteSessionId();
             
             // Disable button temporarily
             button.disabled = true;
             button.style.opacity = '0.6';
             
-            // Send vote to API
+            // Check if already voted (check localStorage for GitHub Pages)
+            if (isGitHubPages) {
+                const votes = getLocalVotes();
+                if (votes.some(v => v.post_id === postId && v.vote_type === voteType && v.voter_cookie === voterCookie)) {
+                    alert('您已經投過票了！');
+                    button.disabled = false;
+                    button.style.opacity = '1';
+                    return;
+                }
+            }
+            
+            // If on GitHub Pages, use localStorage
+            if (isGitHubPages) {
+                if (saveVoteToLocal(postId, voteType, voteValue, voterCookie)) {
+                    // Update UI optimistically
+                    updateVoteCountOptimistic(postId, voteType, voteValue);
+                    
+                    // Disable all vote buttons for this vote type
+                    const voteSection = button.closest('.vote-section');
+                    const buttons = voteSection.querySelectorAll(`[data-vote-type="${voteType}"]`);
+                    buttons.forEach(btn => {
+                        btn.disabled = true;
+                        btn.style.opacity = '0.6';
+                    });
+                    
+                    // Show success message
+                    console.log('✅ Vote saved locally. It will be processed by GitHub Actions.');
+                } else {
+                    alert('您已經投過票了！');
+                    button.disabled = false;
+                    button.style.opacity = '1';
+                }
+                return;
+            }
+            
+            // For localhost, use API
             fetch(VOTE_API_URL, {
                 method: 'POST',
                 headers: {
@@ -2014,7 +2113,7 @@
                     post_id: postId,
                     vote_type: voteType,
                     vote_value: voteValue,
-                    voter_cookie: getVoteSessionId()
+                    voter_cookie: voterCookie
                 })
             })
             .then(response => {
@@ -2026,7 +2125,6 @@
                 }
                 
                 if (!response.ok) {
-                    // Try to get error message from response
                     return response.json().then(data => {
                         throw new Error(data.error || `HTTP ${response.status}: ${response.statusText}`);
                     }).catch(() => {
@@ -2056,15 +2154,9 @@
             })
             .catch(error => {
                 console.error('Vote error:', error);
-                console.error('Error details:', {
-                    message: error.message,
-                    stack: error.stack,
-                    name: error.name
-                });
                 
                 let errorMessage = '投票失敗，請稍後再試';
                 
-                // Provide more specific error messages
                 if (error.message && error.message.includes('Failed to fetch')) {
                     errorMessage = '無法連接到投票伺服器。請確認投票伺服器是否正在運行（執行 uv run python/vote_server_local.py）。\n\n提示：如果使用 file:// 打開網頁，請改用 HTTP 伺服器（例如：uv run python -m http.server 8000）';
                 } else if (error.message && error.message.includes('HTTP')) {
