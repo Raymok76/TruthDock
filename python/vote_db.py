@@ -10,8 +10,7 @@ from typing import Dict, Optional, Tuple
 
 # Get the memory database path (same as truthsocial_memory_db.py)
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-PARENT_DIR = os.path.dirname(SCRIPT_DIR)
-VOTE_DB = os.path.join(PARENT_DIR, "truthsocial_memory.db")
+VOTE_DB = os.path.join(SCRIPT_DIR, "truthsocial_memory.db")
 
 
 def init_vote_tables():

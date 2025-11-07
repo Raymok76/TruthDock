@@ -22,7 +22,7 @@ if os.path.exists(env_path):
     load_dotenv(dotenv_path=env_path, override=True)
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
+CORS(app, resources={r"/api/*": {"origins": "*"}})  # Enable CORS for all API routes with explicit origins
 
 # Initialize database tables
 init_vote_tables()

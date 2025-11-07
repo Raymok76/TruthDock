@@ -6,22 +6,18 @@ __pycache__/
 .Python
 env/
 venv/
+ENV/
 .venv
-.uv/
 
-# Python scripts (don't push to GitHub Pages)
-*.py
+# Environment variables
+.env
+.env.local
 
-# Database files (don't push to GitHub Pages)
+# Database files (optional - you may want to commit empty DB)
 *.db
+*.db-journal
 *.sqlite
 *.sqlite3
-
-# Shell scripts (don't push to GitHub Pages)
-*.sh
-
-# Documentation files (don't push to GitHub Pages)
-*.md
 
 # IDE
 .vscode/
@@ -33,20 +29,16 @@ venv/
 # OS
 .DS_Store
 Thumbs.db
-*.log
 
-# Windows metadata files
-*:Zone.Identifier
-*:mshield
+# Logs
+*.log
 
 # Temporary files
 *.tmp
 *.bak
-.cache/
 
-# Don't ignore the generated HTML (we want to commit it)
-# index.html is intentionally tracked
+# Votes (will be synced via GitHub Actions)
+# votes/pending_votes.json  # Keep this commented - we'll sync it
 
-# Local testing
-test_*.html
-
+# Assets - exclude README.txt
+assets/README.txt

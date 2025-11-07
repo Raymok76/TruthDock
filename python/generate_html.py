@@ -18,12 +18,13 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspa
 
 import sqlite3
 
-# Get the correct database path
-# SCRIPT_DIR is python/, PARENT_DIR is AITrader/, PARENT_PARENT_DIR is 6_mcp/
+# Get the correct database path - use the same DB path as truthsocial_memory_db.py
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-PARENT_DIR = os.path.dirname(SCRIPT_DIR)
-PARENT_PARENT_DIR = os.path.dirname(PARENT_DIR)
-MEMORY_DB = os.path.join(SCRIPT_DIR, "truthsocial_memory.db")
+try:
+    from truthsocial_memory_db import DB as MEMORY_DB
+except ImportError:
+    # Fallback to default location
+    MEMORY_DB = os.path.join(SCRIPT_DIR, "truthsocial_memory.db")
 
 # Import vote database functions
 # We're already in python/, so use SCRIPT_DIR
@@ -123,7 +124,8 @@ def get_all_analyses(limit: int = MAX_POSTS_ON_MAIN_PAGE) -> List[Dict]:
             
             # Assign outputs based on AI name, keeping only the most recent one
             # Since we ORDER BY created_at DESC, the first one we encounter is the newest
-            if ai_name == 'OpenAI_Advisor' and posts_dict[post_id]['openai_output'] is None:
+            # Note: Grok_Advisor is used in truthsocial1.py (not OpenAI_Advisor)
+            if ai_name in ['Grok_Advisor', 'OpenAI_Advisor'] and posts_dict[post_id]['openai_output'] is None:
                 posts_dict[post_id]['openai_output'] = output_content
                 posts_dict[post_id]['openai_date'] = analysis_date
             elif ai_name == 'DeepSeek_Advisor' and posts_dict[post_id]['deepseek_output'] is None:
@@ -173,16 +175,16 @@ def parse_stock_picks(text: str, is_chinese: bool = False) -> List[Dict]:
         return []
 
     # Extract "Top 1", "Top 2", "Top 3" picks
-    # Pattern: **Top 1: TICKER (optional name)** - BUY/SELL/PASS
-    # Also handle Chinese: **Top 1: TICKER** - 買入/賣出
+    # Pattern: **Top 1: TICKER (optional name)** - BUY/SELL/HOLD/PASS
+    # Also handle Chinese: **Top 1: TICKER** - 買入/賣出/持有
     # Note: Format can be **Top 1: XOM - BUY** or **Top 1: XOM** - BUY
     top_patterns = [
-        r'\*\*Top\s*(\d+)[:\s]+([A-Z]{2,5})(?:\s*\([^)]+\))?\*\*\s*[-–]\s*(BUY|SELL|PASS|買入|賣出)',
-        r'\*\*Top\s*(\d+)[:\s]+([A-Z]{2,5})(?:\s*\([^)]+\))?\*\*\s*[-–]?\s*(BUY|SELL|PASS|買入|賣出)',
-        r'\*\*Top\s*(\d+)[:\s]+([A-Z]{2,5})\s*[-–]\s*(BUY|SELL|PASS|買入|賣出)\*\*',
-        r'(?:^|\n)(\d+)\.\s*\*\*([A-Z]{2,5})(?:\s*\([^)]+\))?\*\*\s*[-–]\s*(BUY|SELL|PASS|買入|賣出)',
+        r'\*\*Top\s*(\d+)[:\s]+([A-Z]{2,5})(?:\s*\([^)]+\))?\*\*\s*[-–]\s*(BUY|SELL|HOLD|PASS|買入|賣出|持有)',
+        r'\*\*Top\s*(\d+)[:\s]+([A-Z]{2,5})(?:\s*\([^)]+\))?\*\*\s*[-–]?\s*(BUY|SELL|HOLD|PASS|買入|賣出|持有)',
+        r'\*\*Top\s*(\d+)[:\s]+([A-Z]{2,5})\s*[-–]\s*(BUY|SELL|HOLD|PASS|買入|賣出|持有)\*\*',
+        r'(?:^|\n)(\d+)\.\s*\*\*([A-Z]{2,5})(?:\s*\([^)]+\))?\*\*\s*[-–]\s*(BUY|SELL|HOLD|PASS|買入|賣出|持有)',
         # Handle Chinese format: **Top 1: TICKER** - 買入 (without **)
-        r'\*\*Top\s*(\d+)[:\s]+([A-Z]{2,5})\*\*\s*[-–]\s*(買入|賣出)',
+        r'\*\*Top\s*(\d+)[:\s]+([A-Z]{2,5})\*\*\s*[-–]\s*(買入|賣出|持有)',
     ]
     
     for pattern in top_patterns:
@@ -201,6 +203,8 @@ def parse_stock_picks(text: str, is_chinese: bool = False) -> List[Dict]:
                 action = 'BUY'
             elif action == '賣出':
                 action = 'SELL'
+            elif action == '持有':
+                action = 'HOLD'
 
             # Check if already added
             if not any(s['ticker'] == ticker for s in stocks):
@@ -409,7 +413,7 @@ def detect_language(text: str) -> str:
 def simple_markdown_to_html(text: str) -> str:
     """
     Convert simple markdown to HTML
-    Handles: **bold**, bullet lists, line breaks, BUY/SELL badges, exp dates
+    Handles: **bold**, bullet lists, line breaks, BUY/SELL/HOLD badges, exp dates
     """
     if not text:
         return ""
@@ -437,7 +441,7 @@ def simple_markdown_to_html(text: str) -> str:
                 html_lines.append('</ul>')
                 in_list = False
             if stripped:
-                # Style BUY/SELL in stock picks (pattern: " - BUY" or " - SELL")
+                # Style BUY/SELL/HOLD in stock picks (pattern: " - BUY" or " - SELL" or " - HOLD")
                 stripped = re.sub(
                     r'\s*[-–]\s*(BUY)\b', 
                     r' <span class="action-badge action-buy">BUY</span>', 
@@ -447,6 +451,12 @@ def simple_markdown_to_html(text: str) -> str:
                 stripped = re.sub(
                     r'\s*[-–]\s*(SELL)\b', 
                     r' <span class="action-badge action-sell">SELL</span>', 
+                    stripped, 
+                    flags=re.IGNORECASE
+                )
+                stripped = re.sub(
+                    r'\s*[-–]\s*(HOLD)\b', 
+                    r' <span class="action-badge action-hold">HOLD</span>', 
                     stripped, 
                     flags=re.IGNORECASE
                 )
@@ -750,9 +760,15 @@ def generate_post_card_html(post: Dict, batch_num: int, is_visible: bool = False
         if action == 'BUY':
             action_text = '買入 (BUY)' if is_chinese == 'zh' else 'BUY'
             action_class = 'card-action-buy'
-        else:  # SELL
+        elif action == 'SELL':
             action_text = '賣出 (SELL)' if is_chinese == 'zh' else 'SELL'
             action_class = 'card-action-sell'
+        elif action == 'HOLD':
+            action_text = '持有 (HOLD)' if is_chinese == 'zh' else 'HOLD'
+            action_class = 'card-action-hold'
+        else:  # Default to BUY for unknown actions
+            action_text = '買入 (BUY)' if is_chinese == 'zh' else 'BUY'
+            action_class = 'card-action-buy'
         
         stock_card_html = f'''
         <div class="summary-card">
@@ -1305,26 +1321,52 @@ def generate_html_page(posts: List[Dict]) -> str:
         // Show vote stats for a specific vote type
         function showVoteStats(postId, voteType) {{
             const voteSection = document.querySelector(`.vote-section[data-post-id="${{postId}}"]`);
-            if (!voteSection) return;
+            if (!voteSection) {{
+                console.warn('Could not find vote-section for post', postId);
+                return;
+            }}
             
             // Show all vote counts and percentages for this vote type
             const counts = voteSection.querySelectorAll(`#${{voteType}}-positive-count-${{postId}}, #${{voteType}}-negative-count-${{postId}}`);
             const percentages = voteSection.querySelectorAll(`#${{voteType}}-positive-pct-${{postId}}, #${{voteType}}-negative-pct-${{postId}}`);
             
-            counts.forEach(el => el.classList.remove('vote-stats-hidden'));
-            percentages.forEach(el => el.classList.remove('vote-stats-hidden'));
+            console.log('Showing vote stats for', voteType, 'post', postId, 'counts:', counts.length, 'percentages:', percentages.length);
+            
+            counts.forEach(el => {{
+                if (el) {{
+                    el.classList.remove('vote-stats-hidden');
+                    el.style.display = ''; // Reset display to ensure visibility
+                    console.log('Showing count element:', el.id, el.textContent);
+                }}
+            }});
+            percentages.forEach(el => {{
+                if (el) {{
+                    el.classList.remove('vote-stats-hidden');
+                    el.style.display = ''; // Reset display to ensure visibility
+                    console.log('Showing percentage element:', el.id, el.textContent);
+                }}
+            }});
         }}
         
         // Show vote success indicator (tick icon + "投票成功")
         function showVoteSuccessIndicator(button) {{
-            // Check if indicator already exists
-            if (button.querySelector('.vote-success-indicator')) {{
+            // Find the vote-item container (parent of vote-options)
+            const voteItem = button.closest('.vote-item');
+            if (!voteItem) {{
+                console.warn('Could not find vote-item container');
+                return;
+            }}
+            
+            // Check if indicator already exists for this button
+            const existingIndicator = voteItem.querySelector(`.vote-success-indicator[data-button-id="${{button.id || button.getAttribute('data-vote-value')}}"]`);
+            if (existingIndicator) {{
                 return;
             }}
             
             // Create success indicator element
             const indicator = document.createElement('span');
             indicator.className = 'vote-success-indicator';
+            indicator.setAttribute('data-button-id', button.id || button.getAttribute('data-vote-value'));
             indicator.innerHTML = `
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10 3L4.5 8.5L2 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1332,14 +1374,14 @@ def generate_html_page(posts: List[Dict]) -> str:
                 <span>投票成功</span>
             `;
             
-            // Insert right after the vote option text
-            const optionText = button.querySelector('.vote-option-text');
-            if (optionText) {{
-                optionText.insertAdjacentElement('afterend', indicator);
-            }} else {{
-                // Fallback: insert at the beginning if option text not found
-                button.insertBefore(indicator, button.firstChild);
-            }}
+            // Append to vote-item (will be positioned absolutely relative to vote-item)
+            voteItem.appendChild(indicator);
+            
+            // Position it vertically centered relative to the specific button
+            const buttonRect = button.getBoundingClientRect();
+            const itemRect = voteItem.getBoundingClientRect();
+            const relativeTop = buttonRect.top - itemRect.top + (buttonRect.height / 2);
+            indicator.style.top = relativeTop + 'px';
         }}
         
         // Update vote counts optimistically (for GitHub Pages)
@@ -1514,12 +1556,63 @@ def generate_html_page(posts: List[Dict]) -> str:
             document.getElementById(`${{voteType}}-negative-pct-${{postId}}`).textContent = negativePct + '%';
         }}
         
+        // Load vote stats from JSON file (for GitHub Pages) or API (for localhost)
+        function loadVoteStats(postId, voteType) {{
+            return new Promise((resolve) => {{
+                if (isGitHubPages) {{
+                    // For GitHub Pages, try to load from votes.json
+                    fetch('votes/votes.json')
+                        .then(response => {{
+                            if (!response.ok) {{
+                                resolve(null);
+                                return;
+                            }}
+                            return response.json();
+                        }})
+                        .then(data => {{
+                            if (!data) {{
+                                resolve(null);
+                                return;
+                            }}
+                            const postKey = String(postId);
+                            if (data[postKey] && data[postKey][voteType]) {{
+                                const votes = data[postKey][voteType];
+                                const stats = {{
+                                    positive: votes.filter(v => v.vote_value === 'positive').length,
+                                    negative: votes.filter(v => v.vote_value === 'negative').length
+                                }};
+                                stats.total = stats.positive + stats.negative;
+                                resolve({{ [voteType]: stats }});
+                            }} else {{
+                                resolve(null);
+                            }}
+                        }})
+                        .catch(() => resolve(null));
+                }} else {{
+                    // For localhost, use API
+                    fetch(`http://localhost:5000/api/vote/stats/${{postId}}`)
+                        .then(response => {{
+                            if (!response.ok) {{
+                                resolve(null);
+                                return;
+                            }}
+                            return response.json();
+                        }})
+                        .then(data => {{
+                            resolve(data);
+                        }})
+                        .catch(() => resolve(null));
+                }}
+            }});
+        }}
+        
         // Check vote status for all posts on page load
-        function checkVoteStatusOnLoad() {{
+        async function checkVoteStatusOnLoad() {{
             const voteSections = document.querySelectorAll('.vote-section');
             const voterCookie = getVoteSessionId();
             
-            voteSections.forEach(section => {{
+            // Use Promise.all to wait for all async operations
+            const promises = Array.from(voteSections).map(async section => {{
                 const postId = parseInt(section.getAttribute('data-post-id'));
                 if (!postId) return;
                 
@@ -1529,10 +1622,40 @@ def generate_html_page(posts: List[Dict]) -> str:
                     const stockVote = votes.find(v => v.post_id === postId && v.vote_type === 'stock' && v.voter_cookie === voterCookie);
                     const optionsVote = votes.find(v => v.post_id === postId && v.vote_type === 'options' && v.voter_cookie === voterCookie);
                     
+                    // Load and display stock vote stats if voted
                     if (stockVote) {{
+                        console.log('Found stock vote for post', postId, 'value:', stockVote.vote_value);
+                        
+                        // Try to load stats from votes.json first
+                        let stats = await loadVoteStats(postId, 'stock');
+                        console.log('Loaded stats from votes.json:', stats);
+                        
+                        // If no stats found, calculate from localStorage pending votes
+                        if (!stats || !stats.stock) {{
+                            const pendingVotes = votes.filter(v => v.post_id === postId && v.vote_type === 'stock');
+                            const positiveCount = pendingVotes.filter(v => v.vote_value === 'positive').length;
+                            const negativeCount = pendingVotes.filter(v => v.vote_value === 'negative').length;
+                            const total = positiveCount + negativeCount;
+                            if (total > 0) {{
+                                stats = {{
+                                    stock: {{
+                                        positive: positiveCount,
+                                        negative: negativeCount,
+                                        total: total
+                                    }}
+                                }};
+                                console.log('Calculated stats from localStorage:', stats);
+                            }}
+                        }}
+                        
+                        if (stats && stats.stock) {{
+                            updateVoteDisplay(postId, 'stock', stats);
+                        }}
                         showVoteStats(postId, 'stock');
+                        
                         // Show success indicator on the voted button
                         const votedButton = section.querySelector(`[data-vote-type="stock"][data-vote-value="${{stockVote.vote_value}}"]`);
+                        console.log('Found voted button:', votedButton);
                         if (votedButton) {{
                             showVoteSuccessIndicator(votedButton);
                             // Disable all stock vote buttons
@@ -1543,10 +1666,41 @@ def generate_html_page(posts: List[Dict]) -> str:
                             }});
                         }}
                     }}
+                    
+                    // Load and display options vote stats if voted
                     if (optionsVote) {{
+                        console.log('Found options vote for post', postId, 'value:', optionsVote.vote_value);
+                        
+                        // Try to load stats from votes.json first
+                        let stats = await loadVoteStats(postId, 'options');
+                        console.log('Loaded stats from votes.json:', stats);
+                        
+                        // If no stats found, calculate from localStorage pending votes
+                        if (!stats || !stats.options) {{
+                            const pendingVotes = votes.filter(v => v.post_id === postId && v.vote_type === 'options');
+                            const positiveCount = pendingVotes.filter(v => v.vote_value === 'positive').length;
+                            const negativeCount = pendingVotes.filter(v => v.vote_value === 'negative').length;
+                            const total = positiveCount + negativeCount;
+                            if (total > 0) {{
+                                stats = {{
+                                    options: {{
+                                        positive: positiveCount,
+                                        negative: negativeCount,
+                                        total: total
+                                    }}
+                                }};
+                                console.log('Calculated stats from localStorage:', stats);
+                            }}
+                        }}
+                        
+                        if (stats && stats.options) {{
+                            updateVoteDisplay(postId, 'options', stats);
+                        }}
                         showVoteStats(postId, 'options');
+                        
                         // Show success indicator on the voted button
                         const votedButton = section.querySelector(`[data-vote-type="options"][data-vote-value="${{optionsVote.vote_value}}"]`);
+                        console.log('Found voted button:', votedButton);
                         if (votedButton) {{
                             showVoteSuccessIndicator(votedButton);
                             // Disable all options vote buttons
@@ -1558,16 +1712,101 @@ def generate_html_page(posts: List[Dict]) -> str:
                         }}
                     }}
                 }} else {{
-                    // For localhost, check via API
-                    const CHECK_API_URL = 'http://localhost:5000/api/vote/check/';
-                    fetch(CHECK_API_URL + postId)
-                        .then(response => {{
+                    // For localhost, check localStorage first (fallback), then try API
+                    const votes = getLocalVotes();
+                    const stockVote = votes.find(v => v.post_id === postId && v.vote_type === 'stock' && v.voter_cookie === voterCookie);
+                    const optionsVote = votes.find(v => v.post_id === postId && v.vote_type === 'options' && v.voter_cookie === voterCookie);
+                    
+                    // If found in localStorage, use that (for when API is not running)
+                    if (stockVote || optionsVote) {{
+                        if (stockVote) {{
+                            // Try to load stats from API first
+                            let stats = await loadVoteStats(postId, 'stock');
+                            
+                            // If no stats from API, calculate from localStorage
+                            if (!stats || !stats.stock) {{
+                                const pendingVotes = votes.filter(v => v.post_id === postId && v.vote_type === 'stock');
+                                const positiveCount = pendingVotes.filter(v => v.vote_value === 'positive').length;
+                                const negativeCount = pendingVotes.filter(v => v.vote_value === 'negative').length;
+                                const total = positiveCount + negativeCount;
+                                if (total > 0) {{
+                                    stats = {{
+                                        stock: {{
+                                            positive: positiveCount,
+                                            negative: negativeCount,
+                                            total: total
+                                        }}
+                                    }};
+                                }}
+                            }}
+                            
+                            if (stats && stats.stock) {{
+                                updateVoteDisplay(postId, 'stock', stats);
+                            }}
+                            showVoteStats(postId, 'stock');
+                            
+                            const votedButton = section.querySelector(`[data-vote-type="stock"][data-vote-value="${{stockVote.vote_value}}"]`);
+                            if (votedButton) {{
+                                showVoteSuccessIndicator(votedButton);
+                                const buttons = section.querySelectorAll(`[data-vote-type="stock"]`);
+                                buttons.forEach(btn => {{
+                                    btn.disabled = true;
+                                    btn.style.opacity = '0.6';
+                                }});
+                            }}
+                        }}
+                        
+                        if (optionsVote) {{
+                            // Try to load stats from API first
+                            let stats = await loadVoteStats(postId, 'options');
+                            
+                            // If no stats from API, calculate from localStorage
+                            if (!stats || !stats.options) {{
+                                const pendingVotes = votes.filter(v => v.post_id === postId && v.vote_type === 'options');
+                                const positiveCount = pendingVotes.filter(v => v.vote_value === 'positive').length;
+                                const negativeCount = pendingVotes.filter(v => v.vote_value === 'negative').length;
+                                const total = positiveCount + negativeCount;
+                                if (total > 0) {{
+                                    stats = {{
+                                        options: {{
+                                            positive: positiveCount,
+                                            negative: negativeCount,
+                                            total: total
+                                        }}
+                                    }};
+                                }}
+                            }}
+                            
+                            if (stats && stats.options) {{
+                                updateVoteDisplay(postId, 'options', stats);
+                            }}
+                            showVoteStats(postId, 'options');
+                            
+                            const votedButton = section.querySelector(`[data-vote-type="options"][data-vote-value="${{optionsVote.vote_value}}"]`);
+                            if (votedButton) {{
+                                showVoteSuccessIndicator(votedButton);
+                                const buttons = section.querySelectorAll(`[data-vote-type="options"]`);
+                                buttons.forEach(btn => {{
+                                    btn.disabled = true;
+                                    btn.style.opacity = '0.6';
+                                }});
+                            }}
+                        }}
+                    }} else {{
+                        // If not in localStorage, try API (for votes stored in database)
+                        const CHECK_API_URL = 'http://localhost:5000/api/vote/check/';
+                        try {{
+                            const response = await fetch(CHECK_API_URL + postId);
                             if (!response.ok) return;
-                            return response.json();
-                        }})
-                        .then(data => {{
+                            const data = await response.json();
                             if (!data) return;
+                            
                             if (data.stock_voted) {{
+                                // Load stats and update display
+                                const stats = await loadVoteStats(postId, 'stock');
+                                if (stats && stats.stock) {{
+                                    updateVoteDisplay(postId, 'stock', stats);
+                                }}
                                 showVoteStats(postId, 'stock');
                                 // Show success indicator on the voted button
                                 const votedButton = section.querySelector(`[data-vote-type="stock"][data-vote-value="${{data.stock_vote_value}}"]`);
@@ -1582,6 +1821,11 @@ def generate_html_page(posts: List[Dict]) -> str:
                                 }}
                             }}
                             if (data.options_voted) {{
+                                // Load stats and update display
+                                const stats = await loadVoteStats(postId, 'options');
+                                if (stats && stats.options) {{
+                                    updateVoteDisplay(postId, 'options', stats);
+                                }}
                                 showVoteStats(postId, 'options');
                                 // Show success indicator on the voted button
                                 const votedButton = section.querySelector(`[data-vote-type="options"][data-vote-value="${{data.options_vote_value}}"]`);
@@ -1595,13 +1839,16 @@ def generate_html_page(posts: List[Dict]) -> str:
                                     }});
                                 }}
                             }}
-                        }})
-                        .catch(error => {{
+                        }} catch (error) {{
                             // Silently fail - API might not be running
-                            console.debug('Could not check vote status:', error);
-                        }});
+                            console.debug('Could not check vote status via API:', error);
+                        }}
+                    }}
                 }}
             }});
+            
+            // Wait for all checks to complete
+            await Promise.all(promises);
         }}
         
         // Initialize vote status check on page load
