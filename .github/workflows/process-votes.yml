@@ -35,12 +35,15 @@ jobs:
         run: |
           uv pip install --system -r requirements.txt || true
           uv pip install --system python-dotenv || true
+          if [ -f "python/requirements.txt" ]; then
+            uv pip install --system -r python/requirements.txt || true
+          fi
       
       - name: Sync votes from SQLite to JSON
         run: |
           if [ -d "python" ]; then
             cd python
-            uv run sync_votes.py || echo "No SQLite votes to sync"
+            uv run python sync_votes.py || echo "No SQLite votes to sync"
           else
             echo "⚠️  Python directory not found, skipping SQLite sync (no database on GitHub)"
           fi
@@ -49,7 +52,7 @@ jobs:
         run: |
           if [ -d "python" ]; then
             cd python
-            uv run process_votes.py
+            uv run python process_votes.py
           else
             echo "⚠️  Python directory not found. Processing votes manually..."
             python3 -c "
