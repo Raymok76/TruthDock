@@ -240,6 +240,12 @@ body {
     border-color: #fecaca;
 }
 
+.card-action-hold {
+    color: #92400e;
+    background-color: #fef3c7;
+    border-color: #fbbf24;
+}
+
 /* Options actions: CALL=green, PUT=red */
 .card-action-call {
     color: #2563eb;
@@ -591,6 +597,12 @@ body {
     background-color: #fee2e2;
     color: var(--sell-color);
     border: 1px solid #fecaca;
+}
+
+.action-badge.action-hold {
+    background-color: #fef3c7;
+    color: #92400e;
+    border: 1px solid #fbbf24;
 }
 
 /* Expiry date badge in Options Picks section */
