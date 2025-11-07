@@ -83714,5 +83714,3141 @@
         "created_at": "2025-11-07T17:28:56.338197"
       }
     ]
+  },
+  "25": {
+    "stock": [
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_785556",
+        "created_at": "2025-11-05T03:01:47.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_150246",
+        "created_at": "2025-11-05T03:15:41.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_375478",
+        "created_at": "2025-11-05T03:53:56.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_451197",
+        "created_at": "2025-11-05T04:02:54.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_172097",
+        "created_at": "2025-11-05T04:12:43.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_692631",
+        "created_at": "2025-11-05T04:13:40.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_989707",
+        "created_at": "2025-11-05T04:27:23.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_421968",
+        "created_at": "2025-11-05T04:34:02.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_956920",
+        "created_at": "2025-11-05T04:43:41.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_600435",
+        "created_at": "2025-11-05T04:51:34.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_444591",
+        "created_at": "2025-11-05T05:14:27.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_570078",
+        "created_at": "2025-11-05T05:25:43.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_974402",
+        "created_at": "2025-11-05T05:44:59.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_176785",
+        "created_at": "2025-11-05T05:47:44.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_903639",
+        "created_at": "2025-11-05T05:58:40.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_515216",
+        "created_at": "2025-11-05T06:05:36.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_875898",
+        "created_at": "2025-11-05T06:10:10.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_479643",
+        "created_at": "2025-11-05T06:13:27.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_656797",
+        "created_at": "2025-11-05T06:31:37.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_463902",
+        "created_at": "2025-11-05T06:33:17.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_937238",
+        "created_at": "2025-11-05T06:33:20.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_793056",
+        "created_at": "2025-11-05T06:36:48.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_470628",
+        "created_at": "2025-11-05T06:39:35.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_258421",
+        "created_at": "2025-11-05T06:58:47.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_520266",
+        "created_at": "2025-11-05T07:01:19.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_644057",
+        "created_at": "2025-11-05T07:21:52.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_467848",
+        "created_at": "2025-11-05T07:22:03.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_680986",
+        "created_at": "2025-11-05T07:43:09.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_374651",
+        "created_at": "2025-11-05T07:48:10.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_288837",
+        "created_at": "2025-11-05T07:48:11.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_101366",
+        "created_at": "2025-11-05T08:05:51.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_406313",
+        "created_at": "2025-11-05T08:26:01.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_632279",
+        "created_at": "2025-11-05T09:09:41.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_998955",
+        "created_at": "2025-11-05T09:14:53.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_421359",
+        "created_at": "2025-11-05T09:39:10.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_577878",
+        "created_at": "2025-11-05T10:16:52.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_194393",
+        "created_at": "2025-11-05T10:38:03.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_920906",
+        "created_at": "2025-11-05T10:46:47.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_324892",
+        "created_at": "2025-11-05T10:50:46.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_162595",
+        "created_at": "2025-11-05T10:53:31.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_112595",
+        "created_at": "2025-11-05T11:20:07.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_987835",
+        "created_at": "2025-11-05T11:22:49.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_354406",
+        "created_at": "2025-11-05T11:23:03.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_624443",
+        "created_at": "2025-11-05T11:50:33.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_428437",
+        "created_at": "2025-11-05T12:06:19.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_105210",
+        "created_at": "2025-11-05T12:19:30.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_863480",
+        "created_at": "2025-11-05T12:34:57.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_240745",
+        "created_at": "2025-11-05T12:40:06.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_390981",
+        "created_at": "2025-11-05T12:47:12.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_803059",
+        "created_at": "2025-11-05T12:58:22.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_903250",
+        "created_at": "2025-11-05T12:59:01.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_559044",
+        "created_at": "2025-11-05T13:06:15.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_401240",
+        "created_at": "2025-11-05T13:32:05.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_284885",
+        "created_at": "2025-11-05T13:45:19.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_298196",
+        "created_at": "2025-11-05T13:46:17.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_935132",
+        "created_at": "2025-11-05T13:49:33.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_490865",
+        "created_at": "2025-11-05T13:55:18.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_527665",
+        "created_at": "2025-11-05T14:40:45.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_179421",
+        "created_at": "2025-11-05T15:17:46.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_542193",
+        "created_at": "2025-11-05T15:20:56.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_460418",
+        "created_at": "2025-11-05T15:38:08.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_326147",
+        "created_at": "2025-11-05T16:06:36.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_648741",
+        "created_at": "2025-11-05T16:11:12.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_185481",
+        "created_at": "2025-11-05T16:14:46.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_918244",
+        "created_at": "2025-11-05T16:27:31.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_740577",
+        "created_at": "2025-11-05T16:31:47.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_400480",
+        "created_at": "2025-11-05T17:02:20.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_983715",
+        "created_at": "2025-11-05T17:07:11.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_314682",
+        "created_at": "2025-11-05T17:11:03.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_227884",
+        "created_at": "2025-11-05T17:38:22.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_990797",
+        "created_at": "2025-11-05T18:20:00.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_677579",
+        "created_at": "2025-11-05T18:47:01.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_174555",
+        "created_at": "2025-11-05T18:54:52.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_729540",
+        "created_at": "2025-11-05T19:51:11.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_167006",
+        "created_at": "2025-11-05T20:09:41.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_371954",
+        "created_at": "2025-11-05T20:15:54.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_505046",
+        "created_at": "2025-11-05T20:25:53.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_433520",
+        "created_at": "2025-11-05T20:36:58.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_712811",
+        "created_at": "2025-11-05T20:38:04.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_174896",
+        "created_at": "2025-11-05T21:09:31.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_472320",
+        "created_at": "2025-11-05T21:17:08.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_590723",
+        "created_at": "2025-11-05T21:18:52.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_212897",
+        "created_at": "2025-11-05T21:42:35.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_491244",
+        "created_at": "2025-11-05T23:21:30.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_877782",
+        "created_at": "2025-11-05T23:23:55.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_826875",
+        "created_at": "2025-11-05T23:25:48.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_335652",
+        "created_at": "2025-11-05T23:34:33.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_531333",
+        "created_at": "2025-11-05T23:59:15.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_813077",
+        "created_at": "2025-11-06T00:01:53.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_803442",
+        "created_at": "2025-11-06T00:11:25.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_966157",
+        "created_at": "2025-11-06T00:11:44.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_495518",
+        "created_at": "2025-11-06T00:29:31.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_282440",
+        "created_at": "2025-11-06T00:52:54.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_612707",
+        "created_at": "2025-11-06T00:55:38.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_156433",
+        "created_at": "2025-11-06T01:08:52.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_204225",
+        "created_at": "2025-11-06T01:11:22.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_222547",
+        "created_at": "2025-11-06T01:18:33.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_210478",
+        "created_at": "2025-11-06T01:33:15.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_156255",
+        "created_at": "2025-11-06T01:41:54.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_551573",
+        "created_at": "2025-11-06T02:05:12.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_925848",
+        "created_at": "2025-11-06T02:15:45.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_810345",
+        "created_at": "2025-11-06T02:24:13.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_919732",
+        "created_at": "2025-11-06T02:29:52.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_670063",
+        "created_at": "2025-11-06T02:50:14.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_369314",
+        "created_at": "2025-11-06T03:11:04.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_668209",
+        "created_at": "2025-11-06T03:18:26.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_876700",
+        "created_at": "2025-11-06T03:38:37.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_136054",
+        "created_at": "2025-11-06T04:11:37.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_937590",
+        "created_at": "2025-11-06T04:22:16.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_438073",
+        "created_at": "2025-11-06T04:22:29.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_560369",
+        "created_at": "2025-11-06T04:24:33.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_381989",
+        "created_at": "2025-11-06T04:26:12.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_214689",
+        "created_at": "2025-11-06T04:37:00.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_468604",
+        "created_at": "2025-11-06T04:50:19.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_100361",
+        "created_at": "2025-11-06T05:01:27.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_176521",
+        "created_at": "2025-11-06T05:04:11.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_982900",
+        "created_at": "2025-11-06T05:06:43.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_568597",
+        "created_at": "2025-11-06T05:07:14.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_645570",
+        "created_at": "2025-11-06T05:44:02.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_979002",
+        "created_at": "2025-11-06T05:44:10.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_150506",
+        "created_at": "2025-11-06T06:00:58.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_639807",
+        "created_at": "2025-11-06T06:05:54.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_623058",
+        "created_at": "2025-11-06T06:16:01.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_734627",
+        "created_at": "2025-11-06T06:56:48.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_935211",
+        "created_at": "2025-11-06T07:16:11.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_148794",
+        "created_at": "2025-11-06T07:19:40.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_476118",
+        "created_at": "2025-11-06T07:29:01.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_897509",
+        "created_at": "2025-11-06T07:34:20.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_889848",
+        "created_at": "2025-11-06T07:37:22.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_822923",
+        "created_at": "2025-11-06T07:39:16.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_139901",
+        "created_at": "2025-11-06T07:44:40.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_661157",
+        "created_at": "2025-11-06T07:51:32.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_991712",
+        "created_at": "2025-11-06T08:02:21.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_452184",
+        "created_at": "2025-11-06T08:23:36.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_535253",
+        "created_at": "2025-11-06T08:47:00.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_529194",
+        "created_at": "2025-11-06T09:15:29.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_161306",
+        "created_at": "2025-11-06T09:29:40.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_517358",
+        "created_at": "2025-11-06T09:54:57.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_984400",
+        "created_at": "2025-11-06T10:23:57.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_876637",
+        "created_at": "2025-11-06T11:16:07.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_526840",
+        "created_at": "2025-11-06T11:38:02.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_396982",
+        "created_at": "2025-11-06T11:42:52.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_432149",
+        "created_at": "2025-11-06T11:47:45.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_977546",
+        "created_at": "2025-11-06T12:04:37.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_862008",
+        "created_at": "2025-11-06T12:28:06.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_804994",
+        "created_at": "2025-11-06T12:52:17.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_469922",
+        "created_at": "2025-11-06T13:14:34.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_533464",
+        "created_at": "2025-11-06T13:18:01.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_899885",
+        "created_at": "2025-11-06T13:31:43.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_135531",
+        "created_at": "2025-11-06T13:44:51.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_954262",
+        "created_at": "2025-11-06T13:49:13.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_827372",
+        "created_at": "2025-11-06T13:50:24.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_247082",
+        "created_at": "2025-11-06T13:57:24.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_186173",
+        "created_at": "2025-11-06T14:03:58.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_246470",
+        "created_at": "2025-11-06T14:31:40.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_341721",
+        "created_at": "2025-11-06T14:35:48.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_252617",
+        "created_at": "2025-11-06T14:36:08.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_827607",
+        "created_at": "2025-11-06T14:51:05.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_487608",
+        "created_at": "2025-11-06T14:59:41.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_707557",
+        "created_at": "2025-11-06T15:06:04.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_278887",
+        "created_at": "2025-11-06T15:15:12.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_971797",
+        "created_at": "2025-11-06T15:30:27.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_603875",
+        "created_at": "2025-11-06T15:58:39.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_631396",
+        "created_at": "2025-11-06T16:12:15.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_805499",
+        "created_at": "2025-11-06T16:56:04.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_435840",
+        "created_at": "2025-11-06T17:05:29.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_435410",
+        "created_at": "2025-11-06T17:08:19.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_841212",
+        "created_at": "2025-11-06T17:09:26.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_621870",
+        "created_at": "2025-11-06T17:12:29.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_142162",
+        "created_at": "2025-11-06T17:46:20.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_146844",
+        "created_at": "2025-11-06T18:15:40.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_913546",
+        "created_at": "2025-11-06T18:21:15.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_226552",
+        "created_at": "2025-11-06T19:46:38.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_344037",
+        "created_at": "2025-11-06T19:51:54.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_445086",
+        "created_at": "2025-11-06T21:09:07.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_490432",
+        "created_at": "2025-11-06T21:17:15.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_973627",
+        "created_at": "2025-11-06T21:33:51.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_959880",
+        "created_at": "2025-11-06T22:08:20.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_659961",
+        "created_at": "2025-11-06T22:19:38.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_481242",
+        "created_at": "2025-11-06T22:33:02.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_502574",
+        "created_at": "2025-11-06T22:34:40.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_950129",
+        "created_at": "2025-11-06T23:16:47.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_704023",
+        "created_at": "2025-11-06T23:33:46.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_986273",
+        "created_at": "2025-11-06T23:42:18.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_267480",
+        "created_at": "2025-11-06T23:54:36.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_971814",
+        "created_at": "2025-11-06T23:58:56.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_241656",
+        "created_at": "2025-11-07T00:08:56.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_207401",
+        "created_at": "2025-11-07T00:11:18.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_508546",
+        "created_at": "2025-11-07T00:22:56.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_117026",
+        "created_at": "2025-11-07T00:25:24.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_615823",
+        "created_at": "2025-11-07T00:31:24.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_741552",
+        "created_at": "2025-11-07T00:31:46.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_628487",
+        "created_at": "2025-11-07T00:44:51.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_971539",
+        "created_at": "2025-11-07T00:54:12.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_372695",
+        "created_at": "2025-11-07T00:56:05.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_419743",
+        "created_at": "2025-11-07T01:05:17.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_805882",
+        "created_at": "2025-11-07T01:05:35.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_106722",
+        "created_at": "2025-11-07T01:18:45.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_186618",
+        "created_at": "2025-11-07T01:25:39.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_190217",
+        "created_at": "2025-11-07T01:36:57.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_427126",
+        "created_at": "2025-11-07T01:43:44.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_624021",
+        "created_at": "2025-11-07T02:34:13.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_749050",
+        "created_at": "2025-11-07T02:38:33.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_564547",
+        "created_at": "2025-11-07T02:41:00.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_275569",
+        "created_at": "2025-11-07T03:01:37.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_370393",
+        "created_at": "2025-11-07T03:03:47.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_169013",
+        "created_at": "2025-11-07T03:11:34.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_113344",
+        "created_at": "2025-11-07T03:59:54.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_949763",
+        "created_at": "2025-11-07T04:22:11.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_675269",
+        "created_at": "2025-11-07T04:28:41.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_229576",
+        "created_at": "2025-11-07T04:28:43.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_217525",
+        "created_at": "2025-11-07T04:52:46.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_348623",
+        "created_at": "2025-11-07T05:09:27.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_382968",
+        "created_at": "2025-11-07T05:43:57.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_568092",
+        "created_at": "2025-11-07T05:53:11.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_979020",
+        "created_at": "2025-11-07T06:04:50.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_941343",
+        "created_at": "2025-11-07T06:06:04.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_438527",
+        "created_at": "2025-11-07T06:07:04.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_561196",
+        "created_at": "2025-11-07T06:08:07.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_719837",
+        "created_at": "2025-11-07T06:08:59.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_985107",
+        "created_at": "2025-11-07T06:21:44.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_712043",
+        "created_at": "2025-11-07T06:37:03.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_764020",
+        "created_at": "2025-11-07T06:37:53.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_770030",
+        "created_at": "2025-11-07T06:53:14.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_404367",
+        "created_at": "2025-11-07T07:11:34.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_817085",
+        "created_at": "2025-11-07T07:11:55.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_926634",
+        "created_at": "2025-11-07T07:24:39.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_660061",
+        "created_at": "2025-11-07T07:31:47.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_340102",
+        "created_at": "2025-11-07T07:34:24.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_186364",
+        "created_at": "2025-11-07T08:04:25.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_471489",
+        "created_at": "2025-11-07T08:10:21.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_588809",
+        "created_at": "2025-11-07T08:21:53.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_334025",
+        "created_at": "2025-11-07T08:30:07.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_961089",
+        "created_at": "2025-11-07T08:32:13.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_483505",
+        "created_at": "2025-11-07T08:43:35.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_706392",
+        "created_at": "2025-11-07T08:46:01.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_763974",
+        "created_at": "2025-11-07T08:53:16.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_571596",
+        "created_at": "2025-11-07T09:04:04.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_766764",
+        "created_at": "2025-11-07T09:09:20.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_508743",
+        "created_at": "2025-11-07T09:25:37.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_916252",
+        "created_at": "2025-11-07T09:32:24.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_710360",
+        "created_at": "2025-11-07T09:51:09.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_998556",
+        "created_at": "2025-11-07T10:06:55.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_700596",
+        "created_at": "2025-11-07T10:18:33.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_586305",
+        "created_at": "2025-11-07T11:18:43.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_907902",
+        "created_at": "2025-11-07T11:19:16.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_744468",
+        "created_at": "2025-11-07T11:33:18.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_190468",
+        "created_at": "2025-11-07T11:43:05.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_519246",
+        "created_at": "2025-11-07T12:07:30.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_495695",
+        "created_at": "2025-11-07T12:27:25.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_393967",
+        "created_at": "2025-11-07T13:17:19.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_457309",
+        "created_at": "2025-11-07T13:39:35.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_833270",
+        "created_at": "2025-11-07T13:53:09.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_525485",
+        "created_at": "2025-11-07T14:21:19.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_242443",
+        "created_at": "2025-11-07T14:23:20.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_355341",
+        "created_at": "2025-11-07T14:25:01.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_180007",
+        "created_at": "2025-11-07T14:32:52.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_550310",
+        "created_at": "2025-11-07T14:34:04.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_262832",
+        "created_at": "2025-11-07T14:40:51.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_341967",
+        "created_at": "2025-11-07T15:00:51.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_873694",
+        "created_at": "2025-11-07T15:09:39.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_206262",
+        "created_at": "2025-11-07T15:37:38.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_492859",
+        "created_at": "2025-11-07T16:27:43.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_204462",
+        "created_at": "2025-11-07T16:40:15.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_610453",
+        "created_at": "2025-11-07T16:52:00.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_655601",
+        "created_at": "2025-11-07T16:58:15.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_409380",
+        "created_at": "2025-11-07T17:04:57.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_422279",
+        "created_at": "2025-11-07T17:09:22.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_592310",
+        "created_at": "2025-11-07T17:11:39.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_549900",
+        "created_at": "2025-11-07T17:19:46.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_701981",
+        "created_at": "2025-11-07T17:33:58.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_872663",
+        "created_at": "2025-11-07T17:37:18.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_292205",
+        "created_at": "2025-11-07T18:14:22.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_603673",
+        "created_at": "2025-11-07T18:24:07.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_726182",
+        "created_at": "2025-11-07T19:25:50.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_827663",
+        "created_at": "2025-11-07T19:47:26.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_690373",
+        "created_at": "2025-11-07T20:20:23.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_786292",
+        "created_at": "2025-11-07T20:29:45.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_543857",
+        "created_at": "2025-11-07T20:35:10.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_300398",
+        "created_at": "2025-11-07T20:48:12.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_416889",
+        "created_at": "2025-11-07T20:57:08.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_583330",
+        "created_at": "2025-11-07T21:03:02.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_282397",
+        "created_at": "2025-11-07T21:14:41.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_501428",
+        "created_at": "2025-11-07T21:25:17.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_223319",
+        "created_at": "2025-11-07T21:28:01.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_154183",
+        "created_at": "2025-11-07T21:59:24.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_949834",
+        "created_at": "2025-11-07T22:18:10.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_915740",
+        "created_at": "2025-11-07T22:30:56.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_967101",
+        "created_at": "2025-11-07T22:32:48.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_603807",
+        "created_at": "2025-11-07T22:36:40.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_641852",
+        "created_at": "2025-11-07T22:49:32.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_402473",
+        "created_at": "2025-11-07T23:07:38.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_309559",
+        "created_at": "2025-11-07T23:09:33.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_709286",
+        "created_at": "2025-11-07T23:38:39.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_678847",
+        "created_at": "2025-11-07T23:48:38.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_690776",
+        "created_at": "2025-11-07T23:50:36.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_787245",
+        "created_at": "2025-11-08T00:07:01.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_185032",
+        "created_at": "2025-11-08T00:14:00.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_249707",
+        "created_at": "2025-11-08T00:16:29.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_426153",
+        "created_at": "2025-11-08T00:24:39.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_219335",
+        "created_at": "2025-11-08T00:43:22.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_589892",
+        "created_at": "2025-11-08T00:48:21.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_933395",
+        "created_at": "2025-11-08T00:53:36.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_684757",
+        "created_at": "2025-11-08T01:38:16.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_362667",
+        "created_at": "2025-11-08T01:54:21.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_944123",
+        "created_at": "2025-11-08T01:55:17.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_995943",
+        "created_at": "2025-11-08T02:02:22.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_434147",
+        "created_at": "2025-11-08T02:09:00.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_582649",
+        "created_at": "2025-11-08T02:17:29.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_711603",
+        "created_at": "2025-11-08T02:25:17.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_574863",
+        "created_at": "2025-11-08T02:32:47.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_609299",
+        "created_at": "2025-11-08T02:40:26.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_271655",
+        "created_at": "2025-11-08T02:49:30.474597"
+      }
+    ],
+    "options": [
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_168538",
+        "created_at": "2025-11-05T03:12:10.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_966664",
+        "created_at": "2025-11-05T03:13:52.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_702406",
+        "created_at": "2025-11-05T03:47:59.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_637818",
+        "created_at": "2025-11-05T03:52:14.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_402656",
+        "created_at": "2025-11-05T04:39:32.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_279369",
+        "created_at": "2025-11-05T05:02:15.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_202553",
+        "created_at": "2025-11-05T05:12:41.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_113373",
+        "created_at": "2025-11-05T05:54:00.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_162404",
+        "created_at": "2025-11-05T05:58:24.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_324119",
+        "created_at": "2025-11-05T06:01:44.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_428154",
+        "created_at": "2025-11-05T06:42:09.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_339227",
+        "created_at": "2025-11-05T06:54:31.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_897488",
+        "created_at": "2025-11-05T06:56:17.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_874569",
+        "created_at": "2025-11-05T07:17:08.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_270003",
+        "created_at": "2025-11-05T07:39:34.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_342510",
+        "created_at": "2025-11-05T07:46:09.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_515110",
+        "created_at": "2025-11-05T08:01:58.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_325982",
+        "created_at": "2025-11-05T08:09:04.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_619323",
+        "created_at": "2025-11-05T08:11:38.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_179119",
+        "created_at": "2025-11-05T08:21:39.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_484455",
+        "created_at": "2025-11-05T08:22:56.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_348879",
+        "created_at": "2025-11-05T08:33:58.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_415371",
+        "created_at": "2025-11-05T08:44:51.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_710091",
+        "created_at": "2025-11-05T08:55:39.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_418250",
+        "created_at": "2025-11-05T08:56:43.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_954330",
+        "created_at": "2025-11-05T09:01:34.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_523390",
+        "created_at": "2025-11-05T09:13:36.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_309190",
+        "created_at": "2025-11-05T09:32:51.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_240762",
+        "created_at": "2025-11-05T09:38:41.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_654119",
+        "created_at": "2025-11-05T09:41:46.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_328742",
+        "created_at": "2025-11-05T09:45:51.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_306782",
+        "created_at": "2025-11-05T09:46:31.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_714517",
+        "created_at": "2025-11-05T09:48:13.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_974542",
+        "created_at": "2025-11-05T10:01:09.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_218313",
+        "created_at": "2025-11-05T10:25:35.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_792825",
+        "created_at": "2025-11-05T10:25:47.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_196549",
+        "created_at": "2025-11-05T10:33:14.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_816516",
+        "created_at": "2025-11-05T10:51:24.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_330401",
+        "created_at": "2025-11-05T11:50:55.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_950079",
+        "created_at": "2025-11-05T11:51:16.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_970458",
+        "created_at": "2025-11-05T12:17:30.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_156154",
+        "created_at": "2025-11-05T12:29:40.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_126117",
+        "created_at": "2025-11-05T12:33:03.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_163367",
+        "created_at": "2025-11-05T12:40:46.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_586337",
+        "created_at": "2025-11-05T12:46:23.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_982348",
+        "created_at": "2025-11-05T13:04:26.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_666631",
+        "created_at": "2025-11-05T13:07:03.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_519213",
+        "created_at": "2025-11-05T13:17:55.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_437501",
+        "created_at": "2025-11-05T13:29:06.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_918116",
+        "created_at": "2025-11-05T13:44:08.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_427340",
+        "created_at": "2025-11-05T13:57:52.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_722923",
+        "created_at": "2025-11-05T14:08:59.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_647229",
+        "created_at": "2025-11-05T14:09:12.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_954948",
+        "created_at": "2025-11-05T14:24:18.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_824357",
+        "created_at": "2025-11-05T14:36:12.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_150644",
+        "created_at": "2025-11-05T14:43:46.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_439970",
+        "created_at": "2025-11-05T14:57:20.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_986726",
+        "created_at": "2025-11-05T15:23:12.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_744309",
+        "created_at": "2025-11-05T15:24:02.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_146486",
+        "created_at": "2025-11-05T15:39:07.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_572794",
+        "created_at": "2025-11-05T15:52:33.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_453625",
+        "created_at": "2025-11-05T16:26:44.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_179210",
+        "created_at": "2025-11-05T16:48:43.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_483111",
+        "created_at": "2025-11-05T16:50:11.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_932174",
+        "created_at": "2025-11-05T17:03:06.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_454857",
+        "created_at": "2025-11-05T17:31:07.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_524237",
+        "created_at": "2025-11-05T17:53:56.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_958625",
+        "created_at": "2025-11-05T17:57:52.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_607840",
+        "created_at": "2025-11-05T17:58:12.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_239803",
+        "created_at": "2025-11-05T18:02:33.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_617804",
+        "created_at": "2025-11-05T18:44:43.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_255432",
+        "created_at": "2025-11-05T18:50:20.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_712088",
+        "created_at": "2025-11-05T19:03:45.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_504465",
+        "created_at": "2025-11-05T19:06:01.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_613650",
+        "created_at": "2025-11-05T19:10:14.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_794813",
+        "created_at": "2025-11-05T19:10:57.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_922258",
+        "created_at": "2025-11-05T19:19:15.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_776380",
+        "created_at": "2025-11-05T19:22:01.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_470286",
+        "created_at": "2025-11-05T19:40:52.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_450186",
+        "created_at": "2025-11-05T19:43:57.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_302090",
+        "created_at": "2025-11-05T20:12:59.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_533017",
+        "created_at": "2025-11-05T20:39:26.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_808919",
+        "created_at": "2025-11-05T20:41:09.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_179285",
+        "created_at": "2025-11-05T20:43:06.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_711495",
+        "created_at": "2025-11-05T21:19:22.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_624402",
+        "created_at": "2025-11-05T21:36:50.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_925372",
+        "created_at": "2025-11-05T21:47:02.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_775581",
+        "created_at": "2025-11-05T21:54:30.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_552940",
+        "created_at": "2025-11-05T21:59:20.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_879496",
+        "created_at": "2025-11-05T22:33:07.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_207248",
+        "created_at": "2025-11-05T22:33:43.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_815878",
+        "created_at": "2025-11-05T22:41:33.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_786555",
+        "created_at": "2025-11-05T22:48:11.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_896682",
+        "created_at": "2025-11-05T22:53:07.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_541360",
+        "created_at": "2025-11-05T22:53:42.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_646124",
+        "created_at": "2025-11-05T22:54:58.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_903388",
+        "created_at": "2025-11-05T23:25:07.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_799948",
+        "created_at": "2025-11-05T23:33:44.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_580850",
+        "created_at": "2025-11-05T23:42:51.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_717187",
+        "created_at": "2025-11-06T00:47:06.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_180889",
+        "created_at": "2025-11-06T00:52:09.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_399146",
+        "created_at": "2025-11-06T01:08:38.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_900322",
+        "created_at": "2025-11-06T01:23:48.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_329172",
+        "created_at": "2025-11-06T01:39:35.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_622721",
+        "created_at": "2025-11-06T02:27:14.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_706271",
+        "created_at": "2025-11-06T02:52:27.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_808751",
+        "created_at": "2025-11-06T02:56:27.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_765167",
+        "created_at": "2025-11-06T03:22:04.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_829428",
+        "created_at": "2025-11-06T03:28:09.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_727960",
+        "created_at": "2025-11-06T03:36:09.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_610118",
+        "created_at": "2025-11-06T03:36:24.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_347937",
+        "created_at": "2025-11-06T03:51:32.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_362703",
+        "created_at": "2025-11-06T03:58:27.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_389056",
+        "created_at": "2025-11-06T04:11:38.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_920163",
+        "created_at": "2025-11-06T04:28:15.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_291269",
+        "created_at": "2025-11-06T04:47:49.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_299053",
+        "created_at": "2025-11-06T04:49:24.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_867221",
+        "created_at": "2025-11-06T04:56:06.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_396491",
+        "created_at": "2025-11-06T05:09:48.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_571332",
+        "created_at": "2025-11-06T05:12:40.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_996157",
+        "created_at": "2025-11-06T05:13:08.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_889810",
+        "created_at": "2025-11-06T05:41:29.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_389938",
+        "created_at": "2025-11-06T05:48:55.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_552333",
+        "created_at": "2025-11-06T06:13:46.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_706051",
+        "created_at": "2025-11-06T06:14:25.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_706375",
+        "created_at": "2025-11-06T06:36:48.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_201591",
+        "created_at": "2025-11-06T06:40:21.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_626410",
+        "created_at": "2025-11-06T06:54:57.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_269412",
+        "created_at": "2025-11-06T07:07:27.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_350414",
+        "created_at": "2025-11-06T07:22:10.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_747228",
+        "created_at": "2025-11-06T07:29:22.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_156104",
+        "created_at": "2025-11-06T07:54:16.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_320159",
+        "created_at": "2025-11-06T08:02:26.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_719557",
+        "created_at": "2025-11-06T08:11:51.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_486072",
+        "created_at": "2025-11-06T08:14:54.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_972569",
+        "created_at": "2025-11-06T08:15:59.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_942132",
+        "created_at": "2025-11-06T09:08:25.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_376117",
+        "created_at": "2025-11-06T09:15:37.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_409174",
+        "created_at": "2025-11-06T09:26:18.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_699468",
+        "created_at": "2025-11-06T09:34:24.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_347140",
+        "created_at": "2025-11-06T09:51:18.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_890900",
+        "created_at": "2025-11-06T10:04:59.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_968659",
+        "created_at": "2025-11-06T10:16:37.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_832685",
+        "created_at": "2025-11-06T10:16:41.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_220059",
+        "created_at": "2025-11-06T10:37:27.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_835698",
+        "created_at": "2025-11-06T10:38:46.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_687977",
+        "created_at": "2025-11-06T12:24:59.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_330442",
+        "created_at": "2025-11-06T12:44:55.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_126492",
+        "created_at": "2025-11-06T13:13:54.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_663529",
+        "created_at": "2025-11-06T13:39:46.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_319152",
+        "created_at": "2025-11-06T13:48:44.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_210009",
+        "created_at": "2025-11-06T13:56:03.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_362083",
+        "created_at": "2025-11-06T14:12:23.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_715184",
+        "created_at": "2025-11-06T14:15:01.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_127800",
+        "created_at": "2025-11-06T14:18:49.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_555598",
+        "created_at": "2025-11-06T14:53:15.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_281461",
+        "created_at": "2025-11-06T14:56:52.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_668351",
+        "created_at": "2025-11-06T15:07:52.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_881208",
+        "created_at": "2025-11-06T15:18:50.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_127479",
+        "created_at": "2025-11-06T15:40:17.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_618332",
+        "created_at": "2025-11-06T15:42:25.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_184813",
+        "created_at": "2025-11-06T15:50:09.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_352019",
+        "created_at": "2025-11-06T15:55:14.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_843575",
+        "created_at": "2025-11-06T15:59:04.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_368573",
+        "created_at": "2025-11-06T16:05:26.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_864163",
+        "created_at": "2025-11-06T16:07:52.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_910628",
+        "created_at": "2025-11-06T16:26:56.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_571747",
+        "created_at": "2025-11-06T16:39:28.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_112227",
+        "created_at": "2025-11-06T16:56:11.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_746629",
+        "created_at": "2025-11-06T17:02:23.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_321574",
+        "created_at": "2025-11-06T17:05:02.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_940944",
+        "created_at": "2025-11-06T18:00:59.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_248128",
+        "created_at": "2025-11-06T19:48:08.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_868298",
+        "created_at": "2025-11-06T19:51:44.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_385825",
+        "created_at": "2025-11-06T20:03:07.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_355357",
+        "created_at": "2025-11-06T20:05:41.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_180755",
+        "created_at": "2025-11-06T20:07:52.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_621569",
+        "created_at": "2025-11-06T20:08:33.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_761208",
+        "created_at": "2025-11-06T20:26:36.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_727596",
+        "created_at": "2025-11-06T20:41:14.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_829008",
+        "created_at": "2025-11-06T21:11:27.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_657492",
+        "created_at": "2025-11-06T21:22:10.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_985000",
+        "created_at": "2025-11-06T21:23:36.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_844010",
+        "created_at": "2025-11-06T21:33:10.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_574205",
+        "created_at": "2025-11-06T21:41:15.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_548913",
+        "created_at": "2025-11-06T22:03:49.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_951599",
+        "created_at": "2025-11-06T22:08:10.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_654996",
+        "created_at": "2025-11-06T22:18:48.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_940120",
+        "created_at": "2025-11-06T22:39:16.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_858268",
+        "created_at": "2025-11-06T22:40:39.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_731359",
+        "created_at": "2025-11-06T22:45:43.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_640145",
+        "created_at": "2025-11-06T23:09:00.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_810948",
+        "created_at": "2025-11-06T23:12:17.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_400982",
+        "created_at": "2025-11-06T23:34:15.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_896084",
+        "created_at": "2025-11-06T23:35:38.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_757804",
+        "created_at": "2025-11-06T23:39:36.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_194657",
+        "created_at": "2025-11-07T00:25:46.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_105198",
+        "created_at": "2025-11-07T00:41:20.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_199844",
+        "created_at": "2025-11-07T00:43:12.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_731535",
+        "created_at": "2025-11-07T00:51:59.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_332516",
+        "created_at": "2025-11-07T01:20:39.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_556478",
+        "created_at": "2025-11-07T01:34:12.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_576613",
+        "created_at": "2025-11-07T02:27:29.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_666640",
+        "created_at": "2025-11-07T03:11:08.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_113936",
+        "created_at": "2025-11-07T03:16:39.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_183677",
+        "created_at": "2025-11-07T03:20:32.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_739210",
+        "created_at": "2025-11-07T03:32:54.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_322129",
+        "created_at": "2025-11-07T03:45:57.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_149167",
+        "created_at": "2025-11-07T03:53:34.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_413564",
+        "created_at": "2025-11-07T03:57:47.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_857390",
+        "created_at": "2025-11-07T04:08:33.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_923135",
+        "created_at": "2025-11-07T04:23:58.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_787003",
+        "created_at": "2025-11-07T04:33:00.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_274261",
+        "created_at": "2025-11-07T04:59:13.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_146482",
+        "created_at": "2025-11-07T05:08:04.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_888982",
+        "created_at": "2025-11-07T05:27:47.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_253579",
+        "created_at": "2025-11-07T05:37:33.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_688401",
+        "created_at": "2025-11-07T05:47:36.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_610182",
+        "created_at": "2025-11-07T06:18:21.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_266126",
+        "created_at": "2025-11-07T06:43:24.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_372921",
+        "created_at": "2025-11-07T06:49:51.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_498614",
+        "created_at": "2025-11-07T07:32:41.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_261690",
+        "created_at": "2025-11-07T07:43:49.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_977329",
+        "created_at": "2025-11-07T07:46:26.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_404241",
+        "created_at": "2025-11-07T08:09:47.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_253317",
+        "created_at": "2025-11-07T08:20:26.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_790393",
+        "created_at": "2025-11-07T08:27:01.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_567416",
+        "created_at": "2025-11-07T08:33:16.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_447811",
+        "created_at": "2025-11-07T08:34:51.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_990820",
+        "created_at": "2025-11-07T08:35:32.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_523910",
+        "created_at": "2025-11-07T08:47:21.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_698457",
+        "created_at": "2025-11-07T09:20:26.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_515467",
+        "created_at": "2025-11-07T09:21:23.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_911079",
+        "created_at": "2025-11-07T10:08:33.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_471175",
+        "created_at": "2025-11-07T10:26:43.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_102300",
+        "created_at": "2025-11-07T10:43:54.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_921945",
+        "created_at": "2025-11-07T10:50:34.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_957818",
+        "created_at": "2025-11-07T11:00:01.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_630304",
+        "created_at": "2025-11-07T11:28:28.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_159307",
+        "created_at": "2025-11-07T11:31:06.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_124821",
+        "created_at": "2025-11-07T11:42:36.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_357943",
+        "created_at": "2025-11-07T11:47:23.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_951407",
+        "created_at": "2025-11-07T12:05:06.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_377202",
+        "created_at": "2025-11-07T12:10:43.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_397870",
+        "created_at": "2025-11-07T12:31:41.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_698396",
+        "created_at": "2025-11-07T12:32:41.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_225072",
+        "created_at": "2025-11-07T12:37:43.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_273106",
+        "created_at": "2025-11-07T12:52:21.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_813097",
+        "created_at": "2025-11-07T13:38:49.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_754093",
+        "created_at": "2025-11-07T13:41:40.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_895694",
+        "created_at": "2025-11-07T14:05:00.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_749049",
+        "created_at": "2025-11-07T14:08:40.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_648580",
+        "created_at": "2025-11-07T14:19:58.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_130476",
+        "created_at": "2025-11-07T14:20:48.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_744032",
+        "created_at": "2025-11-07T14:23:47.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_270083",
+        "created_at": "2025-11-07T14:33:21.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_879463",
+        "created_at": "2025-11-07T14:46:36.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_444205",
+        "created_at": "2025-11-07T14:54:53.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_277714",
+        "created_at": "2025-11-07T14:56:13.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_455051",
+        "created_at": "2025-11-07T14:56:45.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_187167",
+        "created_at": "2025-11-07T15:08:08.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_136458",
+        "created_at": "2025-11-07T15:55:17.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_396173",
+        "created_at": "2025-11-07T16:03:52.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_378161",
+        "created_at": "2025-11-07T16:11:57.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_472065",
+        "created_at": "2025-11-07T17:13:25.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_444874",
+        "created_at": "2025-11-07T17:18:20.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_177768",
+        "created_at": "2025-11-07T18:20:56.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_728538",
+        "created_at": "2025-11-07T18:25:00.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_574022",
+        "created_at": "2025-11-07T18:27:00.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_728799",
+        "created_at": "2025-11-07T18:57:48.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_383884",
+        "created_at": "2025-11-07T19:14:53.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_613421",
+        "created_at": "2025-11-07T19:27:25.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_431998",
+        "created_at": "2025-11-07T19:30:20.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_224981",
+        "created_at": "2025-11-07T19:44:53.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_844749",
+        "created_at": "2025-11-07T19:52:57.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_953436",
+        "created_at": "2025-11-07T19:56:42.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_533851",
+        "created_at": "2025-11-07T20:29:29.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_428174",
+        "created_at": "2025-11-07T20:35:05.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_697218",
+        "created_at": "2025-11-07T20:40:28.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_608472",
+        "created_at": "2025-11-07T20:50:36.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_271219",
+        "created_at": "2025-11-07T21:08:53.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_602485",
+        "created_at": "2025-11-07T21:18:21.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_735557",
+        "created_at": "2025-11-07T21:29:18.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_646040",
+        "created_at": "2025-11-07T21:39:46.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_871016",
+        "created_at": "2025-11-07T21:52:26.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_910491",
+        "created_at": "2025-11-07T22:21:20.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_711160",
+        "created_at": "2025-11-07T22:23:06.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_761383",
+        "created_at": "2025-11-07T22:38:31.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_524784",
+        "created_at": "2025-11-07T22:50:12.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_182336",
+        "created_at": "2025-11-07T23:01:06.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_287303",
+        "created_at": "2025-11-07T23:04:42.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_315822",
+        "created_at": "2025-11-07T23:11:34.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_709757",
+        "created_at": "2025-11-07T23:32:52.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_132482",
+        "created_at": "2025-11-07T23:37:24.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_683756",
+        "created_at": "2025-11-07T23:45:03.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_923271",
+        "created_at": "2025-11-07T23:58:09.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_766262",
+        "created_at": "2025-11-08T00:05:34.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_938721",
+        "created_at": "2025-11-08T00:11:40.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_419666",
+        "created_at": "2025-11-08T00:11:48.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_378563",
+        "created_at": "2025-11-08T00:29:00.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_321688",
+        "created_at": "2025-11-08T01:02:59.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_916541",
+        "created_at": "2025-11-08T01:03:41.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_410242",
+        "created_at": "2025-11-08T01:05:12.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_710596",
+        "created_at": "2025-11-08T01:12:01.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_131149",
+        "created_at": "2025-11-08T01:19:17.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_446231",
+        "created_at": "2025-11-08T01:25:02.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_998470",
+        "created_at": "2025-11-08T01:59:40.474597"
+      },
+      {
+        "vote_value": "negative",
+        "voter_cookie": "vote_781383",
+        "created_at": "2025-11-08T02:03:30.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_462970",
+        "created_at": "2025-11-08T02:06:47.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_185073",
+        "created_at": "2025-11-08T02:16:04.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_222053",
+        "created_at": "2025-11-08T02:24:26.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_619947",
+        "created_at": "2025-11-08T02:25:37.474597"
+      },
+      {
+        "vote_value": "positive",
+        "voter_cookie": "vote_743936",
+        "created_at": "2025-11-08T02:47:26.474597"
+      }
+    ]
   }
 }
