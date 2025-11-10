@@ -1338,7 +1338,7 @@ body {
     background-color: #e5e7eb;
 }
 
-/* Menu Overlay (for mobile) */
+/* Menu Overlay (for mobile and desktop) */
 .menu-overlay {
     position: fixed;
     top: 0;
@@ -1463,15 +1463,14 @@ body {
 }
 
 @media (min-width: 769px) {
-    /* Desktop: menu open by default */
+    /* Desktop: menu hidden by default, overlays content when open */
     .sidebar-menu {
-        transform: translateX(0);
+        transform: translateX(-100%);
     }
     
-    /* Adjust main content to account for sidebar on desktop */
+    /* Menu overlays content, no margin adjustment needed */
     .landing-main {
-        margin-left: 250px;
-        transition: margin-left 0.3s ease;
+        margin-left: 0;
     }
 }
 

@@ -115,16 +115,7 @@
             sidebarMenu.classList.toggle('menu-open');
             menuOverlay.classList.toggle('overlay-active');
             hamburgerMenu.classList.toggle('menu-active');
-            
-            // Update main content margin on desktop
-            if (window.innerWidth >= 769) {
-                const landingMain = document.querySelector('.landing-main');
-                if (sidebarMenu.classList.contains('menu-open')) {
-                    landingMain.style.marginLeft = '250px';
-                } else {
-                    landingMain.style.marginLeft = '0';
-                }
-            }
+            // Menu overlays content, no margin adjustment needed
         }
         
         hamburgerMenu.addEventListener('click', toggleMenu);
@@ -133,19 +124,11 @@
         // Set default menu state based on screen size
         function setDefaultMenuState() {
             const landingMain = document.querySelector('.landing-main');
-            if (window.innerWidth >= 769) {
-                // Desktop: menu open by default
-                sidebarMenu.classList.add('menu-open');
-                menuOverlay.classList.remove('overlay-active');
-                hamburgerMenu.classList.remove('menu-active');
-                landingMain.style.marginLeft = '250px';
-            } else {
-                // Mobile: menu closed by default
-                sidebarMenu.classList.remove('menu-open');
-                menuOverlay.classList.remove('overlay-active');
-                hamburgerMenu.classList.remove('menu-active');
-                landingMain.style.marginLeft = '0';
-            }
+            // Both desktop and mobile: menu closed by default
+            sidebarMenu.classList.remove('menu-open');
+            menuOverlay.classList.remove('overlay-active');
+            hamburgerMenu.classList.remove('menu-active');
+            landingMain.style.marginLeft = '0';
         }
         
         // Set initial state
