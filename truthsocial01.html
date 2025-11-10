@@ -13,9 +13,32 @@
     </style>
 </head>
 <body>
-    <header class="main-header">
+    <!-- Fixed Hamburger Menu Icon -->
+    <button id="hamburger-menu" class="hamburger-menu" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    
+    <!-- Fixed Header -->
+    <header class="main-header main-header-fixed">
         <img src="assets/mainlogo02.png" alt="Alpha Frog Logo" class="header-logo">
     </header>
+    
+    <!-- Sidebar Menu -->
+    <nav id="sidebar-menu" class="sidebar-menu">
+        <ul class="menu-list">
+            <li><a href="index.html" class="menu-link">主頁</a></li>
+            <li><a href="truthsocial01.html" class="menu-link">Truth Social</a></li>
+            <li><a href="crypto01.html" class="menu-link">加密貨幣</a></li>
+            <li><a href="ai01.html" class="menu-link">人工智能</a></li>
+            <li><a href="quantum01.html" class="menu-link">量子</a></li>
+            <li><a href="general01.html" class="menu-link">傳統股票</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Menu Overlay (for mobile) -->
+    <div id="menu-overlay" class="menu-overlay"></div>
     
     <main id="posts-container">
         
@@ -2289,6 +2312,58 @@
     </footer>
     
     <script>
+        // Hamburger menu toggle functionality
+        const hamburgerMenu = document.getElementById('hamburger-menu');
+        const sidebarMenu = document.getElementById('sidebar-menu');
+        const menuOverlay = document.getElementById('menu-overlay');
+        
+        function toggleMenu() {
+            sidebarMenu.classList.toggle('menu-open');
+            menuOverlay.classList.toggle('overlay-active');
+            hamburgerMenu.classList.toggle('menu-active');
+            
+            // Update main content margin on desktop
+            if (window.innerWidth >= 769) {
+                const postsContainer = document.getElementById('posts-container');
+                if (sidebarMenu.classList.contains('menu-open')) {
+                    postsContainer.style.marginLeft = '250px';
+                } else {
+                    postsContainer.style.marginLeft = '0';
+                }
+            }
+        }
+        
+        hamburgerMenu.addEventListener('click', toggleMenu);
+        menuOverlay.addEventListener('click', toggleMenu);
+        
+        // Set default menu state based on screen size
+        function setDefaultMenuState() {
+            const postsContainer = document.getElementById('posts-container');
+            if (window.innerWidth >= 769) {
+                // Desktop: menu open by default
+                sidebarMenu.classList.add('menu-open');
+                menuOverlay.classList.remove('overlay-active');
+                hamburgerMenu.classList.remove('menu-active');
+                postsContainer.style.marginLeft = '250px';
+            } else {
+                // Mobile: menu closed by default
+                sidebarMenu.classList.remove('menu-open');
+                menuOverlay.classList.remove('overlay-active');
+                hamburgerMenu.classList.remove('menu-active');
+                postsContainer.style.marginLeft = '0';
+            }
+        }
+        
+        // Set initial state
+        setDefaultMenuState();
+        
+        // Handle window resize
+        let resizeTimeout;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(setDefaultMenuState, 100);
+        });
+        
         const TOTAL_BATCHES = 3;
         const INITIAL_VISIBLE = 1;
         
