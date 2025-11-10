@@ -1265,22 +1265,27 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 30px;
-    height: 24px;
+    width: 40px;
+    height: 43px;
     transition: all 0.3s ease;
 }
 
 .hamburger-menu span {
     display: block;
     width: 100%;
-    height: 3px;
+    height: 4px;
     background-color: var(--text-dark);
     border-radius: 2px;
     transition: all 0.3s ease;
+    margin-bottom: 9px;
+}
+
+.hamburger-menu span:last-child {
+    margin-bottom: 0;
 }
 
 .hamburger-menu.menu-active span:nth-child(1) {
-    transform: rotate(45deg) translate(8px, 8px);
+    transform: rotate(45deg) translate(11px, 11px);
 }
 
 .hamburger-menu.menu-active span:nth-child(2) {
@@ -1288,7 +1293,7 @@ body {
 }
 
 .hamburger-menu.menu-active span:nth-child(3) {
-    transform: rotate(-45deg) translate(8px, -8px);
+    transform: rotate(-45deg) translate(11px, -11px);
 }
 
 /* Sidebar Menu */
@@ -1427,8 +1432,24 @@ body {
     .hamburger-menu {
         top: 15px;
         left: 15px;
-        width: 28px;
-        height: 22px;
+        width: 37px;
+        height: 43px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 1001;
+    }
+    
+    .hamburger-menu span {
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: var(--text-dark);
+        margin-bottom: 9px;
+    }
+    
+    .hamburger-menu span:last-child {
+        margin-bottom: 0;
     }
     
     .sidebar-menu {
