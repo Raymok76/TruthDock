@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AlphaFrog -- Financial News and Analysis</title>
+    <title>人工智能 - AlphaFrog</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -35,53 +35,9 @@
     <div id="menu-overlay" class="menu-overlay"></div>
     
     <!-- Main Content -->
-    <main class="landing-main">
-        <div class="category-grid">
-            <!-- Truth Social -->
-            <a href="truthsocial01.html" class="category-block">
-                <div class="category-image" style="background-image: url('assets/truthsocial_banner.jpg');">
-                    <div class="category-title-overlay">
-                        <h2 class="category-title">Truth Social</h2>
-                    </div>
-                </div>
-            </a>
-            
-            <!-- 加密貨幣 -->
-            <a href="crypto01.html" class="category-block">
-                <div class="category-image" style="background-image: url('assets/crypto_banner.jpg');">
-                    <div class="category-title-overlay">
-                        <h2 class="category-title">加密貨幣</h2>
-                    </div>
-                </div>
-            </a>
-            
-            <!-- 人工智能 -->
-            <a href="ai01.html" class="category-block">
-                <div class="category-image" style="background-image: url('assets/AI_banner.jpg');">
-                    <div class="category-title-overlay">
-                        <h2 class="category-title">人工智能</h2>
-                    </div>
-                </div>
-            </a>
-            
-            <!-- 量子 -->
-            <a href="quantum01.html" class="category-block">
-                <div class="category-image" style="background-image: url('assets/quantum_banner.jpg');">
-                    <div class="category-title-overlay">
-                        <h2 class="category-title">量子</h2>
-                    </div>
-                </div>
-            </a>
-            
-            <!-- 傳統股票 -->
-            <a href="general01.html" class="category-block category-block-single">
-                <div class="category-image" style="background-image: url('assets/general_banner.jpg');">
-                    <div class="category-title-overlay">
-                        <h2 class="category-title">傳統股票</h2>
-                    </div>
-                </div>
-            </a>
-        </div>
+    <main style="max-width: 1400px; margin: 0 auto; padding: 2rem; padding-top: calc(100px + 2rem);">
+        <h1>人工智能</h1>
+        <p>Content coming soon...</p>
     </main>
     
     <!-- Footer -->
@@ -118,11 +74,11 @@
             
             // Update main content margin on desktop
             if (window.innerWidth >= 769) {
-                const landingMain = document.querySelector('.landing-main');
+                const mainContent = document.querySelector('main');
                 if (sidebarMenu.classList.contains('menu-open')) {
-                    landingMain.style.marginLeft = '250px';
+                    mainContent.style.marginLeft = '250px';
                 } else {
-                    landingMain.style.marginLeft = '0';
+                    mainContent.style.marginLeft = '0';
                 }
             }
         }
@@ -132,19 +88,19 @@
         
         // Set default menu state based on screen size
         function setDefaultMenuState() {
-            const landingMain = document.querySelector('.landing-main');
+            const mainContent = document.querySelector('main');
             if (window.innerWidth >= 769) {
                 // Desktop: menu open by default
                 sidebarMenu.classList.add('menu-open');
                 menuOverlay.classList.remove('overlay-active');
                 hamburgerMenu.classList.remove('menu-active');
-                landingMain.style.marginLeft = '250px';
+                mainContent.style.marginLeft = '250px';
             } else {
                 // Mobile: menu closed by default
                 sidebarMenu.classList.remove('menu-open');
                 menuOverlay.classList.remove('overlay-active');
                 hamburgerMenu.classList.remove('menu-active');
-                landingMain.style.marginLeft = '0';
+                mainContent.style.marginLeft = '0';
             }
         }
         
@@ -160,4 +116,3 @@
     </script>
 </body>
 </html>
-

@@ -100,9 +100,9 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add votes/votes.json
-          # Only add index.html if python directory exists (it was regenerated)
+          # Add all HTML files if python directory exists (truthsocial01.html was regenerated)
           if [ -d "python" ]; then
-            git add index.html
+            git add index.html truthsocial01.html ai01.html crypto01.html general01.html quantum01.html
           fi
           if ! git diff --staged --quiet; then
             git commit -m "Auto-update: Process votes and regenerate HTML [skip ci]"
